@@ -46,32 +46,74 @@ namespace IronNations.Battle.Core
         {
             deltaTime = (float)Game.UpdateTime.Elapsed.TotalSeconds;
 
-            if (currentUnitSelected > 0)
+            //Select unit
+            if (Input.IsMouseButtonReleased(MouseButton.Left))
             {
+                SelectUnit();
+            }
+
+            if (currentUnitSelected > 0) // if a unit is selected
+            {
+                // Set destination
                 if (Input.IsMouseButtonReleased(MouseButton.Right))
                 {
-                    HitResult hitResult = ScreenPositionToWorldPositionRaycast(Input.MousePosition, camera, this.GetSimulation());
-                    destinationMarker.Position = hitResult.Point;
+                    SetTarget();
+                }
+            }
+
+            //Zoom
+            ZoomSystem();
+        }
+
+        private void SelectUnit()
+        {
+            HitResult hitResult = ScreenPositionToWorldPositionRaycast(Input.MousePosition, camera, this.GetSimulation());
+
+            //Check if the player clicked the map or an enemy unit
+            if (hitResult.Collider.Entity.Get<UnitController>() != null)
+            {
+                if (hitResult.Collider.Entity.Get<UnitStats>() != null && !hitResult.Collider.Entity.Get<UnitStats>().isEnemy)
+                {
+                    currentUnitSelected = hitResult.Collider.Entity.Get<UnitController>().idUnit;
                 }
             }
             else
             {
-
+                currentUnitSelected = -1;
             }
+        }
 
-            //Zoom
+        private void ZoomSystem() {
             if (Input.IsKeyDown(Keys.Space) && !isZooming)
             {
                 HitResult hitResult = ScreenPositionToWorldPositionRaycast(Input.MousePosition, camera, this.GetSimulation());
-                camera.Entity.Transform.Position = new Vector3(hitResult.Point.X , 12 , hitResult.Point.Z);
+                camera.Entity.Transform.Position = new Vector3(hitResult.Point.X, 12, hitResult.Point.Z);
                 camera.OrthographicSize = 10;
                 isZooming = true;
             }
-            else if(Input.IsKeyReleased(Keys.Space) && isZooming)
+            else if (Input.IsKeyReleased(Keys.Space) && isZooming)
             {
                 camera.OrthographicSize = 20;
                 camera.Entity.Transform.Position = cameraInitialPosition;
                 isZooming = false;
+            }
+        }
+
+        private void SetTarget()
+        {
+            HitResult hitResult = ScreenPositionToWorldPositionRaycast(Input.MousePosition, camera, this.GetSimulation());
+
+            //Check if the player clicked the map or an enemy unit
+            if (hitResult.Collider.Entity.Get<UnitController>() != null)
+            {
+                if (hitResult.Collider.Entity.Get<UnitStats>() != null && hitResult.Collider.Entity.Get<UnitStats>().isEnemy)
+                {
+                    Player1Units[currentUnitSelected].target = hitResult.Collider.Entity.Transform;
+                }
+            }
+            else // (in case the player clicks a position in the map)
+            {
+                destinationMarker.Position = hitResult.Point;
             }
         }
 

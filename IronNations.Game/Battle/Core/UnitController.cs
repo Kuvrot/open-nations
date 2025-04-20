@@ -15,7 +15,7 @@ namespace IronNations.Battle.Core
 
         public int idUnit = 0; //unique identifier for the unit
 
-        private TransformComponent target;
+        public TransformComponent target;
 
         public override void Start()
         {
