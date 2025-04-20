@@ -40,35 +40,38 @@ namespace IronNations.Battle.Core
         }
         #endregion
 
-        bool aux = false;
+        private bool isZooming = false;
 
         public override void Update()
         {
             deltaTime = (float)Game.UpdateTime.Elapsed.TotalSeconds;
 
-            if (Input.IsMouseButtonReleased(MouseButton.Left))
+            if (currentUnitSelected > 0)
+            {
+                if (Input.IsMouseButtonReleased(MouseButton.Right))
+                {
+                    HitResult hitResult = ScreenPositionToWorldPositionRaycast(Input.MousePosition, camera, this.GetSimulation());
+                    destinationMarker.Position = hitResult.Point;
+                }
+            }
+            else
             {
 
-            }
-            else if(Input.IsMouseButtonReleased(MouseButton.Right))
-            {
-                HitResult hitResult = ScreenPositionToWorldPositionRaycast(Input.MousePosition, camera, this.GetSimulation());
-                destinationMarker.Position = hitResult.Point;
             }
 
             //Zoom
-            if (Input.IsKeyDown(Keys.Space) && !aux)
+            if (Input.IsKeyDown(Keys.Space) && !isZooming)
             {
                 HitResult hitResult = ScreenPositionToWorldPositionRaycast(Input.MousePosition, camera, this.GetSimulation());
                 camera.Entity.Transform.Position = new Vector3(hitResult.Point.X , 12 , hitResult.Point.Z);
                 camera.OrthographicSize = 10;
-                aux = true;
+                isZooming = true;
             }
-            else if(Input.IsKeyReleased(Keys.Space) && aux)
+            else if(Input.IsKeyReleased(Keys.Space) && isZooming)
             {
                 camera.OrthographicSize = 20;
                 camera.Entity.Transform.Position = cameraInitialPosition;
-                aux = false;
+                isZooming = false;
             }
         }
 
