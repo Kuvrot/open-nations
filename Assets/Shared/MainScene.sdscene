@@ -46,12 +46,12 @@ Hierarchy:
                 Components:
                     df4667ca4899b14aa8233099b697ba41: !TransformComponent
                         Id: 6d8b5a8c-54b4-4444-9da2-20e141469197
-                        Position: {X: -4.0, Y: 0.0, Z: -13.51009}
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     bf1fe4b13873014684062641dc83069a: !ParticleSystemComponent
-                        Id: ce3bc64d-88fa-4831-8c92-2331fcef3d8d
+                        Id: 2ecf94ca-79cf-4dfd-a139-51dbbfa1722c
                         Control:
                             ResetSeconds: 2.0
                             Control: Play
@@ -201,6 +201,10 @@ Hierarchy:
                                             ForceVortex: 0.0
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
+            Base:
+                BasePartAsset: acf6dd96-a0e4-4501-98e6-8406a98dc25c:Prefabs/Smoke
+                BasePartId: 499a5cbb-4f2c-4952-ab08-d813e4867569
+                InstanceId: cca70627-b84f-4f08-b847-44677192e742
         -   Entity:
                 Id: 2f28d407-bd5f-4e11-b415-9ea1fce90ef7
                 Name: NextScene
@@ -435,7 +439,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     bf1fe4b13873014684062641dc83069a: !ParticleSystemComponent
-                        Id: 22d23a7e-ee63-4d0e-8486-58630c9ca939
+                        Id: c8c1076f-eea0-435e-8260-a586f64d93dc
                         Control:
                             ResetSeconds: 0.0
                             Control: Play
@@ -537,6 +541,10 @@ Hierarchy:
                                                             TangentType: Linear
                                             SamplerOptional: null
                                             SeedOffset: 0
+            Base:
+                BasePartAsset: 96d99568-29d2-41fb-b9d7-6345247363ef:Prefabs/bulletTrail
+                BasePartId: 7850e010-51e1-4286-9d3d-4996e325d92c
+                InstanceId: 462bce30-22e2-4944-b11d-8138466830ec
         -   Entity:
                 Id: 6a0191a4-fefe-483d-be2b-c55bae7fa77f
                 Name: MuzzleFlash

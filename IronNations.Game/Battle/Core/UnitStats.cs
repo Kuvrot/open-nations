@@ -10,7 +10,7 @@ namespace IronNations.Battle.Core
     {
         public bool isSelected = false;
 
-        public byte idUnit = 0; // Type of unit
+        public bool isEnemy = false;
         
         //stats
         public short health = 450; // Number of units
@@ -20,6 +20,7 @@ namespace IronNations.Battle.Core
         public float attackRate = 2; // in seconds
         public bool isEliteUnit = false;
         public bool canMelee = true; // if the unit can melee attack or not
+        public float rotationSpeed = 0.5f;
 
         //Effects
         public Sound atackSound; //Hit sound, shoot sound, cast sound, etc.
@@ -28,6 +29,7 @@ namespace IronNations.Battle.Core
 
         //Components
         SpriteComponent spriteUnit;
+        UnitController unitController;
 
         public override void Start()
         {
@@ -46,7 +48,22 @@ namespace IronNations.Battle.Core
                 attackRange *= 1.25f;
             }
 
+            unitController = Entity.Get<UnitController>();
+
             checkComponents();
+
+            attackEffect.Stop();
+
+            if (isEnemy)
+            {
+                unitController.idUnit = BattleManager.Instance.Player2Units.Count;
+                BattleManager.Instance.Player2Units.Add(unitController);
+            }
+            else
+            {
+                unitController.idUnit = BattleManager.Instance.Player1Units.Count;
+                BattleManager.Instance.Player1Units.Add(unitController);
+            }
         }
 
         public override void Update()
@@ -57,8 +74,12 @@ namespace IronNations.Battle.Core
         public void checkComponents()
         {
             bool incompleteComponents = false;
-            if (spriteUnit != null)
+
+            if (spriteUnit == null
+                || unitController == null)
+            {
                 incompleteComponents = true;
+            }
 
             if (incompleteComponents)
             {

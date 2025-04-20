@@ -1,0 +1,16 @@
+!Model
+Id: d25125e6-7ac7-447d-9b2d-622160138407
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Models/mark.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    587ef44bce4d43d0e6104fbd4c6a4e2f:
+        Name: DefaultMaterial
+        MaterialInstance:
+            Material: null
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    7a0f9d2d208cc89230cbed79d7212704~../../../Resources/Models/mark.obj: 1468be8ea9591a48243b996467ad16ee

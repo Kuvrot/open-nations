@@ -6,8 +6,8 @@ DefaultScene: 454073f0-f612-47f9-8959-5dc66b7376ef:BattleMap
 GraphicsCompositor: e9504b4a-31a4-46b3-a2bb-0187541e1023:GraphicsCompositor
 Defaults:
     - !Stride.Graphics.RenderingSettings,Stride.Graphics
-        DefaultBackBufferWidth: 1280
-        DefaultBackBufferHeight: 720
+        DefaultBackBufferWidth: 1600
+        DefaultBackBufferHeight: 900
         AdaptBackBufferToScreen: false
         DefaultGraphicsProfile: Level_11_0
         ColorSpace: Linear

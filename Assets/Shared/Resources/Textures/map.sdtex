@@ -4,4 +4,4 @@ SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Source: !file ../../../../Resources/Resources/Textures/map.png
 Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    ColorKeyColor: {R: 12, G: 255, B: 0, A: 255}
