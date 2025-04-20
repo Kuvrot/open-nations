@@ -1,0 +1,152 @@
+!SceneAsset
+Id: 454073f0-f612-47f9-8959-5dc66b7376ef
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! dc384e1d-7daa-4fb8-a060-0e5ca6ede185
+        - ref!! 78a55307-970a-4649-83c6-3562b142da35
+        - ref!! fbb93530-d469-494b-861e-24cb02aed3da
+        - ref!! 0008b902-1125-460a-bfaf-96c0a990f22f
+        - ref!! 5aad26a9-4b7a-4b9d-af16-6b5ee64ad58c
+        - ref!! dcc38c8a-8243-40ed-acd1-9498798f5bba
+    Parts:
+        -   Entity:
+                Id: 0008b902-1125-460a-bfaf-96c0a990f22f
+                Name: AmbientLight
+                Components:
+                    7ecce8378f386c44af4041de6ec2b3f3: !TransformComponent
+                        Id: 99e5d097-e31b-46ac-98ed-c6afb35173fd
+                        Position: {X: 0.08389568, Y: 2.8251562, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9cf3cb93ad322a409e004926cc8038a3: !LightComponent
+                        Id: 8b1d64cc-2725-48fc-bb59-47059b384d0a
+                        Type: !LightPoint
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Radius: 10.0
+                            Shadow:
+                                Size: Small
+                                BiasParameters: {}
+        -   Entity:
+                Id: 5aad26a9-4b7a-4b9d-af16-6b5ee64ad58c
+                Name: Directional light
+                Components:
+                    779b75bea59bfe49818d2885cb29b306: !TransformComponent
+                        Id: 5113aa83-1c34-4e4b-92b2-dc2aa02e5c68
+                        Position: {X: 0.0, Y: 5.5789824, Z: 0.0}
+                        Rotation: {X: -0.5540323, Y: 0.21201216, Z: 0.1484525, W: 0.7912401}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8d9e6c9095ca4f439f621a07b0dc40fd: !LightComponent
+                        Id: 0ffcfe51-3a1b-4d7f-a4c4-1aca099e600b
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+        -   Entity:
+                Id: 78a55307-970a-4649-83c6-3562b142da35
+                Name: Camera
+                Components:
+                    c208ef1be51b5de17a0cee758addf405: !TransformComponent
+                        Id: 0f295d04-4fb5-4542-9d6b-fab7490ef834
+                        Position: {X: 0.9248252, Y: 12.618063, Z: 1.3469609}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6075841b422d1f1ba5d6c9bf9a72f02e: !CameraComponent
+                        Id: 9f8478bf-3b2e-49fd-b2c6-7c2d4cc96f99
+                        Name: null
+                        Projection: Orthographic
+                        Slot: 3217b71f-b48d-4321-bab1-7cb4da999c19
+        -   Entity:
+                Id: 8610a6f8-904b-42c2-ac6b-c9d0cdf9903c
+                Name: sprite
+                Components:
+                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
+                        Id: f29500fd-a0eb-4049-9d8f-2560aa5c83af
+                        Position: {X: 0.0, Y: 0.53001493, Z: -6.318271E-08}
+                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
+                        Scale: {X: 0.83074886, Y: 0.83074886, Z: 0.83074886}
+                        Children: {}
+                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
+                        Id: 6e13b324-053c-469d-9f78-18fd8f6d20b0
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 51c5318b-1479-45e8-97f6-5b3819ec1910:Resources/Units/SpriteSheet
+                            CurrentFrame: 2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
+                        Sampler: PointClamp
+        -   Entity:
+                Id: dc384e1d-7daa-4fb8-a060-0e5ca6ede185
+                Name: Terrain
+                Components:
+                    82975bb2013c39fe74d1726b4a5253bf: !TransformComponent
+                        Id: 75dd991f-d444-4b50-83c1-504937d79c7a
+                        Position: {X: 1.0578842, Y: 0.0, Z: 1.2652125}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    951243541ecd16efe18a95e271fcdaef: !SpriteComponent
+                        Id: a47ac485-a74d-4abb-bb47-763de3e847bf
+                        Enabled: false
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 222a61a2-d4a9-4ca9-a3fb-16a27130ebfa:Resources/Textures/SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
+        -   Entity:
+                Id: dcc38c8a-8243-40ed-acd1-9498798f5bba
+                Name: GridBase10x10
+                Components:
+                    79b5b1a1eb82a61c63491719978e6ce0: !TransformComponent
+                        Id: dc25ce89-7075-4604-8e77-7515a2644d33
+                        Position: {X: 1.0356442, Y: -4.7683716E-07, Z: 1.4234881}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.9411752, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    dfa5979539c8f62cc1379fd1aff4713b: !ModelComponent
+                        Id: 68002dd1-3f14-48d9-8473-c315ea50ff1d
+                        Model: 0769d4fd-93f4-4053-a61c-6d7f9865ae50:Models/GridBase10x10
+                        Materials: {}
+        -   Folder: PlayerUnits
+            Entity:
+                Id: fbb93530-d469-494b-861e-24cb02aed3da
+                Name: unit
+                Components:
+                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
+                        Id: 8331fed9-a045-4771-bcf0-72476c428c59
+                        Position: {X: -2.6040578, Y: -0.29083398, Z: -0.0053850412}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            df9127fe7cc11d35907b99d820d3bfaa: ref!! f29500fd-a0eb-4049-9d8f-2560aa5c83af
+                    1c1d15ca993b3804362cff39cee41b81: !ModelComponent
+                        Id: 52fbb7e8-1177-45b1-9447-169cfa3b2783
+                        Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
+                        Materials:
+                            53caea21e6bdf2ccc5cb403684103d01~0: 053bbe99-e66c-4d5a-985a-86b6d74fa676:Materials/BodyWhite
+                    677fbf7057ded1fc66df875b6ea2b79a: !StaticColliderComponent
+                        Id: 8334ad1c-8c4b-4cc2-ab96-361ae18babea
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            d31715c24a111c879b6b854d2dfaab5b: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

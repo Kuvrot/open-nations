@@ -1,0 +1,7 @@
+!Texture
+Id: e19104ab-c728-4628-88c0-621b03d4ce47
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/SparkLight01.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

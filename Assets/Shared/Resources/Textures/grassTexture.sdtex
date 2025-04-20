@@ -1,0 +1,7 @@
+!Texture
+Id: 620a4822-afc6-45c1-af98-27450f41e3f7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/grassTexture.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

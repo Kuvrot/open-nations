@@ -1,0 +1,7 @@
+!Texture
+Id: 5b730cc3-0154-4d8d-816e-9f1defc50948
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/circle02.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

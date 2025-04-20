@@ -1,0 +1,7 @@
+!Texture
+Id: 8d9d3b3c-652e-49e4-9e47-d77a5e3f290a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/Muzzleflash02.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,11 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronNations.Windows", "IronNations.Windows\IronNations.Windows.csproj", "{89A98C7C-3894-488C-AF0D-296908C92DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronNations.Game", "IronNations.Game\IronNations.Game.csproj", "{0383F801-01E1-4B2D-BB53-6735674059A4}"
+EndProject
+Global
+EndGlobal

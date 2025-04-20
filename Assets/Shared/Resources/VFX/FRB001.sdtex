@@ -1,0 +1,7 @@
+!Texture
+Id: 7d629f38-bac1-439f-b685-a2e4f830a1ef
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/FRB001.dds
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

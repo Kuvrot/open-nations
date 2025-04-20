@@ -1,0 +1,7 @@
+!Texture
+Id: 45536d44-2690-4d2a-9268-3a8b983a1766
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/EXP001.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

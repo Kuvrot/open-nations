@@ -1,0 +1,7 @@
+!Texture
+Id: 683be96d-bb63-416b-959b-49484786a1c0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/Aura01.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

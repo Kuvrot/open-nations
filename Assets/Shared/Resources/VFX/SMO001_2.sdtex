@@ -1,0 +1,7 @@
+!Texture
+Id: 5b70e314-b42d-46c0-a89e-2f8b1143dafd
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/SMO001.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

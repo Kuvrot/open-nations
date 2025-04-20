@@ -1,0 +1,7 @@
+!Texture
+Id: d3d93aee-9b0c-43e5-9227-0eff1b9202f2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/Textures/map.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

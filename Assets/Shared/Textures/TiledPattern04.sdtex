@@ -1,0 +1,8 @@
+!Texture
+Id: 2769c2dd-4a50-4345-bd83-607516538dd7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/TiledPattern04.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsStreamable: false

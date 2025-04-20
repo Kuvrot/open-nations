@@ -1,0 +1,16 @@
+!Model
+Id: e50f4be3-4633-4d05-ba64-f3ec6101f2c7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Models/Cube.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    f324beedca663345e79f437df2c07a94:
+        Name: DefaultMaterial
+        MaterialInstance:
+            Material: null
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    0037ae23f4e5237be35580537e0a678c~../../../Resources/Models/Cube.obj: 43974b052f4b323b5727d9869383562b

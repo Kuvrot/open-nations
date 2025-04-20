@@ -1,0 +1,8 @@
+!Texture
+Id: 8dca97e2-512e-4821-a492-c808c028926b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/bonfire8x8.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsStreamable: false

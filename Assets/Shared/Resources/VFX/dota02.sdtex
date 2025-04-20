@@ -1,0 +1,7 @@
+!Texture
+Id: 9f20e75b-b3ef-4de6-8159-1e91c70b1d8d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/dota02.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,25 @@
+!Package
+SerializedVersion: {Assets: 3.1.0.0}
+Meta:
+    Name: IronNations.Game
+    Version: 1.0.0
+    Authors: []
+    Owners: []
+    RootNamespace: IronNations
+    Dependencies: null
+AssetFolders:
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir Effects
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir D:/GameEngines/StrideProjects/IronNations/Assets/Shared
+ResourceFolders:
+    - !dir ../Resources
+OutputGroupDirectories: {}
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets: []

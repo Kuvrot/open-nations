@@ -1,0 +1,8 @@
+!Texture
+Id: f1e04d5b-f163-4d75-bcc3-1f09ccd65f04
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/StrideLogoRed.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsStreamable: false

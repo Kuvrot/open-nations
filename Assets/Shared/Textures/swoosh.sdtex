@@ -1,0 +1,8 @@
+!Texture
+Id: 8b7a9d3b-e3dd-4d58-b2f3-9e6a8920d26f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/swoosh.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsStreamable: false

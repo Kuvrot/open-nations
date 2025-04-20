@@ -1,0 +1,7 @@
+!Texture
+Id: e580c910-5a36-4974-8ba5-bf2622b1361c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/Gradation01.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

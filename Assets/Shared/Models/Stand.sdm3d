@@ -1,0 +1,19 @@
+!Model
+Id: 2b0529a5-c4c3-4a7c-9e43-d1e0eb24557d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Stand/Pd_ground.FBX
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    444959dcd07ef6c7e59c8d0ee59c8d0e:
+        Name: ground_0
+        MaterialInstance:
+            Material: 1d55d6b2-b080-417a-b359-f75f49ec7ed4:Materials/DullSilver
+    7100a7c491e7cc898821031e8821031e:
+        Name: ground_1
+        MaterialInstance:
+            Material: 7c31b1fd-2b4f-42d5-905e-d121689e1d42:Materials/RedCoating
+Modifiers: {}
+~SourceHashes:
+    15b28b3ae89397f80d956d69c2d818e0~../../../Resources/Stand/Pd_ground.FBX: c170a2977ef51a92b83f375a71be5f26

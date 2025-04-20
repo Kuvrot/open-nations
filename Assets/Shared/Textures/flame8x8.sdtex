@@ -1,0 +1,8 @@
+!Texture
+Id: 4ec707ba-2b3f-4524-9187-b8f0de3094cf
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/flame8x8.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsStreamable: false

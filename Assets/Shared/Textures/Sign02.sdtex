@@ -1,0 +1,7 @@
+!Texture
+Id: 08d7ed65-97b0-4889-b4aa-118719ae1c29
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Sign02.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

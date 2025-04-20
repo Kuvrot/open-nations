@@ -1,0 +1,12 @@
+!ProceduralModelAsset
+Id: 846ac570-9de5-4d08-b7ac-66fc324870c7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: !CylinderProceduralModel
+    Radius: 0.6
+    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+    UvScale: {X: 1.0, Y: 1.0}
+    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    NumberOfTextureCoordinates: 10
+    MaterialInstance:
+        Material: 1ae1267d-46ce-4da4-9d0f-2fddcbfe41d3:LaserAssets/RedLaserMaterial

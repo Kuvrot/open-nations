@@ -1,0 +1,9 @@
+!SpriteFont
+Id: cada025f-fcc0-46b3-88ad-a648ce58c710
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+FontSource: !SystemFontProvider
+    FontName: Segoe UI
+    Style: Regular
+FontType: !RuntimeRasterizedSpriteFontType
+    Size: 24.0

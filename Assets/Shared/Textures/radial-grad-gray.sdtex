@@ -1,0 +1,9 @@
+!Texture
+Id: e890d5a9-5b55-4abc-ab1c-bd5ced22cbbd
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/radial-grad-gray.png
+IsCompressed: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsStreamable: false

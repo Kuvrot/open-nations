@@ -1,0 +1,7 @@
+!Texture
+Id: 070062c8-d47a-4a54-8ee8-01f04f378168
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/FIR001.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

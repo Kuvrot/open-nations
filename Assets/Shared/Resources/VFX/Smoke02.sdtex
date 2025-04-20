@@ -1,0 +1,7 @@
+!Texture
+Id: 7e9c851a-cc4e-4ea3-9105-bb9efb2a889f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/VFX/Smoke02.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

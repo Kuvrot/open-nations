@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 222a61a2-d4a9-4ca9-a3fb-16a27130ebfa
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    0cfd975e9fb4f8fb9742462faedb4328:
+        Source: !file ../../../../Resources/Resources/Textures/map.png
+        Name: map
+        TextureRegion: {X: 0, Y: 0, Width: 1920, Height: 1080}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

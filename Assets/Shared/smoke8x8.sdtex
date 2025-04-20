@@ -1,0 +1,9 @@
+!Texture
+Id: 14ae3049-c054-4591-bf06-1f624097dfea
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/smoke8x8.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false
+IsStreamable: false
