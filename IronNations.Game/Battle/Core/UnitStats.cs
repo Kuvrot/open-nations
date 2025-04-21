@@ -10,10 +10,17 @@ using System;
 
 namespace IronNations.Battle.Core
 {
+    public enum UnitType
+    {
+         Infantery,
+         Spearman,
+         Musketeer,
+         Cavalry
+    };
+
     public class UnitStats : SyncScript
     {
-        public bool isSelected = false;
-
+        public UnitType unitType;
         public bool isEnemy = false;
         
         //stats

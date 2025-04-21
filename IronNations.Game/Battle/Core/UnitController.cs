@@ -17,7 +17,6 @@ namespace IronNations.Battle.Core
 {
     public class UnitController : SyncScript
     {
-
         public int idUnit = 0; //unique identifier for the unit
 
         public TransformComponent target;
@@ -40,7 +39,13 @@ namespace IronNations.Battle.Core
             clock = new Random().NextSingle();
         }
 
-        private float auxRange = 0;
+        //Context of the variable: 
+        /*
+            There was a problem, because the unit didn't discriminate between going to a position or attacking an enemy,
+            so the units didin't reached the exact position marked by the player, they always had a distance of the attack range.
+            so this variable can be 0.5f (wich is the minimum distance) or the value of attackRange. With this variable the units will go to the exact place marked by the player, or leaving the required distance in case of attack.
+         */
+        private float auxRange = 0.5f;
         public override void Update()
         {
             if (target != null)
@@ -70,14 +75,16 @@ namespace IronNations.Battle.Core
                     {
                         unitStats.attackEffect.ParticleSystem.Stop();
                         unitStats.attackEffect.ParticleSystem.Play();
-                        
-                        if (distance <= auxRange / 2 && !unitStats.isMeleeMode)
+
+                        MakeDamage();
+
+                        // if the unit has been melee attacked, the new target will be the unit that is attacking
+                        if (target.Entity.Get<UnitStats>().isMeleeMode
+                            && target.Entity.Get<UnitController>().target != Entity.Transform
+                            && target.Entity.Get<UnitStats>().canMelee)
                         {
-                            target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
-                        }
-                        else
-                        {
-                            target.Entity.Get<UnitStats>().health -= unitStats.damage;
+                            target.Entity.Get<UnitController>().target = Entity.Transform;
+                            target.Entity.Get<UnitStats>().isMeleeMode = true;
                         }
 
                         audioManager.PlaySoundOnce(unitStats.attackSound);
@@ -109,6 +116,7 @@ namespace IronNations.Battle.Core
             {
                 StopMoving();
                 characterComponent.Enabled = false;
+                unitStats.spriteUnit.Entity.Transform.Position += new Vector3(0 , 0.51f , 0); //Decreases the sprite height a little bit, so the alive units can pass above the killed unit
                 target = null;
             }
         
@@ -154,6 +162,25 @@ namespace IronNations.Battle.Core
             clock += 1 * (float)Game.UpdateTime.Elapsed.TotalSeconds;
 
             return false;
+        }
+
+        private void MakeDamage ()
+        {
+            UnitStats enemyUnitStats = target.Entity.Get<UnitStats>();
+
+            if (unitStats.unitType == UnitType.Cavalry && enemyUnitStats.unitType == UnitType.Musketeer)
+            {
+                target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
+                return;
+            }
+
+            if (unitStats.unitType == UnitType.Cavalry && enemyUnitStats.unitType == UnitType.Infantery)
+            {
+                target.Entity.Get<UnitStats>().health -= unitStats.damage / 2;
+                return;
+            }
+
+            target.Entity.Get<UnitStats>().health -= unitStats.damage;
         }
     }
 }
