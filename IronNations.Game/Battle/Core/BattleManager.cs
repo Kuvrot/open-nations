@@ -115,6 +115,7 @@ namespace IronNations.Battle.Core
                 {
                     Player1Units[currentUnitSelected].target = hitResult.Collider.Entity.Transform;
                     destinationMarker.Position = new Vector3(0 , 0 , 15);
+                    Player1Units[currentUnitSelected].isAttacking = true;
                 }
             }
             else // (in case the player clicks a position in the map)
@@ -123,6 +124,7 @@ namespace IronNations.Battle.Core
                 TransformComponent auxTarget = new ();
                 auxTarget.Position = destinationMarker.Position;
                 Player1Units[currentUnitSelected].target = auxTarget;
+                Player1Units[currentUnitSelected].isAttacking = false;
             }
         }
 
