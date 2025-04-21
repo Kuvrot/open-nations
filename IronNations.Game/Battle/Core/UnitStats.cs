@@ -3,6 +3,7 @@ using Stride.Audio;
 using Stride.Particles;
 using System.Diagnostics;
 using Stride.Core.Mathematics;
+using Stride.Particles.Components;
 
 namespace IronNations.Battle.Core
 {
@@ -16,20 +17,22 @@ namespace IronNations.Battle.Core
         public short health = 450; // Number of units
         public float damage = 20;
         public float attackRange = 20;
-        public float speedMovement = 0.5f;
+        public float movementSpeed = 0.5f;
         public float attackRate = 2; // in seconds
         public bool isEliteUnit = false;
         public bool canMelee = true; // if the unit can melee attack or not
         public float rotationSpeed = 0.5f;
 
         //Effects
-        public Sound atackSound; //Hit sound, shoot sound, cast sound, etc.
-        public ParticleSystem attackEffect; //Shoot effect, smoke, etc.
+        public Sound attackSound; //Hit sound, shoot sound, cast sound, etc.
+        public ParticleSystemComponent attackEffect; //Shoot effect, smoke, etc.
         public EntityComponent projectile; //(if is a range unit) Bullets, arrows, magic, etc.
 
         //Components
-        SpriteComponent spriteUnit;
-        UnitController unitController;
+        public SpriteComponent spriteUnit;
+        private UnitController unitController;
+
+        private bool initUnit = false;
 
         public override void Start()
         {
@@ -43,32 +46,36 @@ namespace IronNations.Battle.Core
             if (isEliteUnit)
             {
                 damage *= 1.5f;
-                speedMovement *= 1.25f;
+                movementSpeed *= 1.25f;
                 attackRate *= 0.75f;
                 attackRange *= 1.25f;
             }
 
+            spriteUnit = Entity.GetChild(0).Get<SpriteComponent>();
             unitController = Entity.Get<UnitController>();
 
             checkComponents();
 
-            attackEffect.Stop();
-
-            if (isEnemy)
-            {
-                unitController.idUnit = BattleManager.Instance.Player2Units.Count;
-                BattleManager.Instance.Player2Units.Add(unitController);
-            }
-            else
-            {
-                unitController.idUnit = BattleManager.Instance.Player1Units.Count;
-                BattleManager.Instance.Player1Units.Add(unitController);
-            }
+            attackEffect.ParticleSystem.Stop();
         }
 
         public override void Update()
         {
-            // Do stuff every new frame
+            if (!initUnit)
+            {
+                if (isEnemy)
+                {
+                    unitController.idUnit = BattleManager.Instance.Player2Units.Count;
+                    BattleManager.Instance.Player2Units.Add(unitController);
+                }
+                else
+                {
+                    unitController.idUnit = BattleManager.Instance.Player1Units.Count;
+                    BattleManager.Instance.Player1Units.Add(unitController);
+                }
+
+                initUnit = true;
+            }
         }
 
         public void checkComponents()

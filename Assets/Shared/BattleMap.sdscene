@@ -237,12 +237,13 @@ Hierarchy:
                         Children: {}
                     41e742af2e9f97e6d10b88349448689c: !IronNations.Battle.Core.BattleManager,IronNations.Game
                         Id: e788b865-45fc-451d-a284-0dca2000f299
+                        camera: ref!! 9f8478bf-3b2e-49fd-b2c6-7c2d4cc96f99
                         minutes: 0
                         seconds: 0.0
                         destinationMarker: ref!! cb4d2470-a6a3-480e-9a51-d80882b40379
                         Player1Units: {}
                         Player2Units: {}
-                        camera: ref!! 9f8478bf-3b2e-49fd-b2c6-7c2d4cc96f99
+                        selectionColor: {R: 0, G: 255, B: 197, A: 255}
         -   Entity:
                 Id: 5aad26a9-4b7a-4b9d-af16-6b5ee64ad58c
                 Name: Directional light
@@ -270,7 +271,7 @@ Hierarchy:
                 Components:
                     1b9cab84569672ca5b92667442c61a29: !TransformComponent
                         Id: cb4d2470-a6a3-480e-9a51-d80882b40379
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: 0.0, Y: 0.0, Z: 12.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -391,3 +392,23 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ed4b210b89cbb579e35361607f8b6f9e: !IronNations.Battle.Core.UnitController,IronNations.Game
+                        Id: a010473b-6c58-4ab7-8de6-68e3afeb4027
+                        idUnit: 0
+                        target: null
+                    dbb4710deb73d76991b6c4862d88a77c: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                        Id: f7e419a2-c525-40ab-b04b-02e6ad882d2d
+                        isSelected: false
+                        isEnemy: false
+                        health: 450
+                        damage: 20.0
+                        attackRange: 4.0
+                        movementSpeed: 10.0
+                        attackRate: 2.0
+                        isEliteUnit: false
+                        canMelee: true
+                        rotationSpeed: 0.5
+                        attackSound: null
+                        attackEffect: ref!! 3fc2340f-40a3-416b-8e28-7e4c66f30e95
+                        projectile: null
+                        spriteUnit: null

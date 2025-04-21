@@ -14,19 +14,6 @@ namespace IronNations.Battle.Core
 {
     public class BattleManager : SyncScript
     {
-        //Timer
-        public short minutes = 0;
-        public float seconds = 0;
-
-        public TransformComponent destinationMarker;
-
-        private int currentUnitSelected = -1;
-
-        public List<UnitController> Player1Units = [];
-        public List<UnitController> Player2Units = [];
-
-        static float deltaTime = 0;
-
         public CameraComponent camera;
         private Vector3 cameraInitialPosition;
 
@@ -40,6 +27,21 @@ namespace IronNations.Battle.Core
         }
         #endregion
 
+        //Timer
+        public short minutes = 0;
+        public float seconds = 0;
+
+        public TransformComponent destinationMarker;
+
+        private int currentUnitSelected = -1;
+
+        public List<UnitController> Player1Units = [];
+        public List<UnitController> Player2Units = [];
+
+        public Color selectionColor;
+
+        static float deltaTime = 0;
+
         private bool isZooming = false;
 
         public override void Update()
@@ -52,7 +54,7 @@ namespace IronNations.Battle.Core
                 SelectUnit();
             }
 
-            if (currentUnitSelected > 0) // if a unit is selected
+            if (currentUnitSelected >= 0) // if a unit is selected
             {
                 // Set destination
                 if (Input.IsMouseButtonReleased(MouseButton.Right))
@@ -74,11 +76,14 @@ namespace IronNations.Battle.Core
             {
                 if (hitResult.Collider.Entity.Get<UnitStats>() != null && !hitResult.Collider.Entity.Get<UnitStats>().isEnemy)
                 {
+                    deselectPreviousUnit();
                     currentUnitSelected = hitResult.Collider.Entity.Get<UnitController>().idUnit;
+                    Player1Units[currentUnitSelected].Entity.Get<UnitStats>().spriteUnit.Color = selectionColor;
                 }
             }
             else
             {
+                deselectPreviousUnit();
                 currentUnitSelected = -1;
             }
         }
@@ -109,11 +114,15 @@ namespace IronNations.Battle.Core
                 if (hitResult.Collider.Entity.Get<UnitStats>() != null && hitResult.Collider.Entity.Get<UnitStats>().isEnemy)
                 {
                     Player1Units[currentUnitSelected].target = hitResult.Collider.Entity.Transform;
+                    destinationMarker.Position = new Vector3(0 , 0 , 15);
                 }
             }
             else // (in case the player clicks a position in the map)
             {
                 destinationMarker.Position = hitResult.Point;
+                TransformComponent auxTarget = new ();
+                auxTarget.Position = destinationMarker.Position;
+                Player1Units[currentUnitSelected].target = auxTarget;
             }
         }
 
@@ -143,6 +152,14 @@ namespace IronNations.Battle.Core
 
             // Raycast from the point on the near plane to the point on the far plane and get the collision result
             return simulation.Raycast(vectorNear.XYZ(), vectorFar.XYZ());
+        }
+
+        private void deselectPreviousUnit()
+        {
+            if (currentUnitSelected >= 0)
+            {
+                Player1Units[currentUnitSelected].Entity.Get<UnitStats>().spriteUnit.Color = Color.White;
+            }
         }
     }
 }
