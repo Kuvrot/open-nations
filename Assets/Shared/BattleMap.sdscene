@@ -429,7 +429,7 @@ Hierarchy:
                         selectionColor: {R: 0, G: 255, B: 197, A: 255}
                     9aa0c16f534b59c57f5617e4aae1028e: !IronNations.Battle.Core.BattleAudioManager,IronNations.Game
                         Id: 2bc905ea-1901-4116-b87a-798534c947fe
-                        drumsSound: null
+                        drumsSound: 4a535d78-51b2-4ebd-be41-e58d30c6ce2c:Resources/SFX/MarchDrum
                         trumpetSound: f4f981b3-44b8-4646-bd11-859f2b9af0a9:Resources/SFX/trumpetMarch
                         volume: 1.0
         -   Entity:
@@ -663,7 +663,7 @@ Hierarchy:
         -   Folder: PlayerUnits
             Entity:
                 Id: 82e5f20b-904d-46c2-8227-b159803373b2
-                Name: Unit
+                Name: Cavalry
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 6476bf1c-d339-4f32-968b-202fb216710e
@@ -713,15 +713,15 @@ Hierarchy:
                         attackRate: 1.0
                         isEliteUnit: false
                         canMelee: true
+                        isMeleeMode: true
                         rotationSpeed: 0.5
-                        attackSound: bbc2bc1f-a882-4555-8a31-486adaf7e48b:Resources/SFX/musketsshooting
-                        moveSound: 4a535d78-51b2-4ebd-be41-e58d30c6ce2c:Resources/SFX/MarchDrum
+                        attackSound: 6c885ba3-ba4c-4ea2-9d46-e923ed44aba2:Resources/SFX/sword-arm-2a
                         attackEffect: ref!! 085ee0ca-e802-4012-88c8-d0cde71bdf07
                         projectile: null
                         spriteUnit: null
                     8d35cfab6465b6f80a87b1021f8eaf06: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: 161e4296-30d7-45a2-895a-6a784d54fcad
-                        volume: 1.0
+                        volume: 0.25
         -   Entity:
                 Id: 8610a6f8-904b-42c2-ac6b-c9d0cdf9903c
                 Name: sprite
@@ -793,9 +793,9 @@ Hierarchy:
                         attackRate: 5.0
                         isEliteUnit: false
                         canMelee: true
+                        isMeleeMode: false
                         rotationSpeed: 0.5
                         attackSound: bbc2bc1f-a882-4555-8a31-486adaf7e48b:Resources/SFX/musketsshooting
-                        moveSound: 4a535d78-51b2-4ebd-be41-e58d30c6ce2c:Resources/SFX/MarchDrum
                         attackEffect: ref!! 3e3620c1-d6dc-4902-b6d7-e329e744ec3c
                         projectile: null
                         spriteUnit: null
@@ -850,7 +850,7 @@ Hierarchy:
         -   Folder: PlayerUnits
             Entity:
                 Id: fbb93530-d469-494b-861e-24cb02aed3da
-                Name: Unit
+                Name: Musketeers
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 8331fed9-a045-4771-bcf0-72476c428c59
@@ -900,12 +900,12 @@ Hierarchy:
                         attackRate: 5.0
                         isEliteUnit: false
                         canMelee: true
+                        isMeleeMode: false
                         rotationSpeed: 0.5
                         attackSound: bbc2bc1f-a882-4555-8a31-486adaf7e48b:Resources/SFX/musketsshooting
-                        moveSound: 4a535d78-51b2-4ebd-be41-e58d30c6ce2c:Resources/SFX/MarchDrum
                         attackEffect: ref!! 3fc2340f-40a3-416b-8e28-7e4c66f30e95
                         projectile: null
                         spriteUnit: null
                     8d35cfab6465b6f80a87b1021f8eaf06: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: 3508ec82-aa56-4233-be63-4a689d94f5de
-                        volume: 1.0
+                        volume: 0.25

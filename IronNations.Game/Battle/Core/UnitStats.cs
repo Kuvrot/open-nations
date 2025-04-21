@@ -24,13 +24,13 @@ namespace IronNations.Battle.Core
         public float attackRate = 2; // in seconds
         public bool isEliteUnit = false;
         public bool canMelee = true; // if the unit can melee attack or not
+        public bool isMeleeMode = false; // if the unit is on melee mode
         public float rotationSpeed = 0.5f;
 
         private float maxHealth = 0;
 
         //Effects
         public Sound attackSound; //Hit sound, shoot sound, cast sound, etc.
-        public Sound moveSound;
         public ParticleSystemComponent attackEffect; //Shoot effect, smoke, etc.
         public EntityComponent projectile; //(if is a range unit) Bullets, arrows, magic, etc.
 

@@ -1,0 +1,9 @@
+!Sound
+Id: 6c885ba3-ba4c-4ea2-9d46-e923ed44aba2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/SFX/sword-arm-2a.wav
+SampleRate: 48000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

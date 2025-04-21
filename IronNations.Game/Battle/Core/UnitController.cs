@@ -38,8 +38,6 @@ namespace IronNations.Battle.Core
             audioManager = Entity.Get<AudioManager>();
 
             clock = new Random().NextSingle();
-
-            soundInstance = unitStats.moveSound.CreateInstance();
         }
 
         private float auxRange = 0;
@@ -73,13 +71,13 @@ namespace IronNations.Battle.Core
                         unitStats.attackEffect.ParticleSystem.Stop();
                         unitStats.attackEffect.ParticleSystem.Play();
                         
-                        if (distance <= auxRange / 2)
+                        if (distance <= auxRange / 2 && !unitStats.isMeleeMode)
                         {
-                            target.Entity.Get<UnitStats>().health -= unitStats.damage;
+                            target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
                         }
                         else
                         {
-                            target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
+                            target.Entity.Get<UnitStats>().health -= unitStats.damage;
                         }
 
                         audioManager.PlaySoundOnce(unitStats.attackSound);
@@ -112,7 +110,6 @@ namespace IronNations.Battle.Core
                 StopMoving();
                 characterComponent.Enabled = false;
                 target = null;
-
             }
         
         }

@@ -15,18 +15,32 @@ namespace IronNations.Battle.Core
     {
         public Sound drumsSound , trumpetSound;
         public float volume = 1;
-        SoundInstance trumpetInstance;
+        SoundInstance trumpetInstance , drumsInstance;
 
         public override void Start()
         {
             trumpetInstance = trumpetSound.CreateInstance();
+            drumsInstance = drumsSound.CreateInstance();
         }
 
         public async void PlayTrumpet ()
         {
-            trumpetInstance.Volume = volume;
-            await trumpetInstance.ReadyToPlay();
-            trumpetInstance.Play();
+            if (trumpetSound != null)
+            {
+                trumpetInstance.Volume = volume;
+                await trumpetInstance.ReadyToPlay();
+                trumpetInstance.Play();
+            }
+        }
+
+        public async void PlayDrums()
+        {
+            if (drumsSound != null)
+            {
+                drumsInstance.Volume = volume;
+                await drumsInstance.ReadyToPlay();
+                drumsInstance.Play();
+            }
         }
 
         public override void Update()
