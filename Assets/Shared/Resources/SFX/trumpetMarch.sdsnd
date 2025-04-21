@@ -1,0 +1,8 @@
+!Sound
+Id: f4f981b3-44b8-4646-bd11-859f2b9af0a9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/SFX/trumpetMarch.mp3
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

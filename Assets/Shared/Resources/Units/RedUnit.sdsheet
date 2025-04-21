@@ -1,0 +1,96 @@
+!SpriteSheet
+Id: 74960a46-f3ff-4460-b3fe-1ad103744f25
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    19b13d8ecf04140ffc2f951defc43b8b:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 7, Y: 7, Width: 232, Height: 235}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    224d06764c802269086d958705398e49:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 262, Y: 13, Width: 225, Height: 228}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    7025d95077cc1c937eba89e27d0805e6:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 513, Y: 13, Width: 225, Height: 228}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    be3ea244655a4b8d676517d2eac00c63:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 764, Y: 12, Width: 225, Height: 228}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    0bfec20241a04d7e21434c5b5b2c111f:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 12, Y: 262, Width: 225, Height: 228}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    84438d1b2c394ba70ed9541dfc4858aa:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 263, Y: 262, Width: 225, Height: 228}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    8dc5d4f1c5eba40ab50af17f911c95e8:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 514, Y: 263, Width: 225, Height: 228}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    489da21d9ce2b3ff4c6e07ea18347ea8:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 13, Y: 505, Width: 225, Height: 244}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    f6c75f2d66571c6688807a7f906340c9:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 265, Y: 504, Width: 225, Height: 244}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    aaf41217486db58fefb237a64e6568c9:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 515, Y: 506, Width: 225, Height: 244}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    237e2f2ec8ef17357a7d4d5c173bbaae:
+        Source: !file ../../../../Resources/Resources/Units/redUnits.png
+        Name: blueUnits
+        TextureRegion: {X: 756, Y: 506, Width: 225, Height: 244}
+        PixelsPerUnit: 200.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

@@ -1,0 +1,8 @@
+!Sound
+Id: 4a535d78-51b2-4ebd-be41-e58d30c6ce2c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/SFX/MarchDrum.mp3
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

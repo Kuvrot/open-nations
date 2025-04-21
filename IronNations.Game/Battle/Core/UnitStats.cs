@@ -4,6 +4,9 @@ using Stride.Particles;
 using System.Diagnostics;
 using Stride.Core.Mathematics;
 using Stride.Particles.Components;
+using ServiceWire;
+using Stride.Physics;
+using System;
 
 namespace IronNations.Battle.Core
 {
@@ -14,7 +17,7 @@ namespace IronNations.Battle.Core
         public bool isEnemy = false;
         
         //stats
-        public short health = 450; // Number of units
+        public float health = 450; // Number of units
         public float damage = 20;
         public float attackRange = 20;
         public float movementSpeed = 0.5f;
@@ -23,8 +26,11 @@ namespace IronNations.Battle.Core
         public bool canMelee = true; // if the unit can melee attack or not
         public float rotationSpeed = 0.5f;
 
+        private float maxHealth = 0;
+
         //Effects
         public Sound attackSound; //Hit sound, shoot sound, cast sound, etc.
+        public Sound moveSound;
         public ParticleSystemComponent attackEffect; //Shoot effect, smoke, etc.
         public EntityComponent projectile; //(if is a range unit) Bullets, arrows, magic, etc.
 
@@ -57,6 +63,8 @@ namespace IronNations.Battle.Core
             checkComponents();
 
             attackEffect.ParticleSystem.Stop();
+
+            maxHealth = health;
         }
 
         public override void Update()
@@ -76,6 +84,8 @@ namespace IronNations.Battle.Core
 
                 initUnit = true;
             }
+
+            spriteUnit.Intensity = health / maxHealth;
         }
 
         public void checkComponents()

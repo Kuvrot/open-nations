@@ -1,0 +1,8 @@
+!Sound
+Id: bbc2bc1f-a882-4555-8a31-486adaf7e48b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/SFX/musketsshooting.ogg
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false
