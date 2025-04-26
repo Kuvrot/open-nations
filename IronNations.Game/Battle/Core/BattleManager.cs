@@ -40,7 +40,7 @@ namespace IronNations.Battle.Core
 
         public Color selectionColor;
 
-        static float deltaTime = 0;
+        public static float deltaTime = 0;
 
         private bool isZooming = false;
 

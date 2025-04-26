@@ -12,6 +12,7 @@ using Stride.Physics;
 using System.Security.RightsManagement;
 using Stride.Audio;
 using Silk.NET.SDL;
+using System.Windows.Forms;
 
 namespace IronNations.Battle.Core
 {
@@ -24,11 +25,14 @@ namespace IronNations.Battle.Core
         private CharacterComponent characterComponent;
         private UnitStats unitStats;
         private AudioManager audioManager;
-        private float clock = 0;
 
         public bool isAttacking = false;
         public bool moving = true;
         SoundInstance soundInstance;
+
+        //Timers
+        private float tick = 0;
+        private float clock = 0;
 
         public override void Start()
         {
@@ -37,6 +41,7 @@ namespace IronNations.Battle.Core
             audioManager = Entity.Get<AudioManager>();
 
             clock = new Random().NextSingle();
+            tick = new Random().Next(0 , 6);
         }
 
         //Context of the variable: 
@@ -52,9 +57,12 @@ namespace IronNations.Battle.Core
             {
                 LookTarget();
 
+                if (unitStats.isEnemy)
+                {
+                    SearchForNewEnemy();
+                }
+
                 float distance = Vector3.Distance(Entity.Transform.Position , target.Position);
-                
-                DebugText.Print(distance.ToString(), new Int2(500, 300));
 
                 if (isAttacking)
                 {
@@ -77,15 +85,6 @@ namespace IronNations.Battle.Core
                         unitStats.attackEffect.ParticleSystem.Play();
 
                         MakeDamage();
-
-                        // if the unit has been melee attacked, the new target will be the unit that is attacking
-                        if (target.Entity.Get<UnitStats>().isMeleeMode
-                            && target.Entity.Get<UnitController>().target != Entity.Transform
-                            && target.Entity.Get<UnitStats>().canMelee)
-                        {
-                            target.Entity.Get<UnitController>().target = Entity.Transform;
-                            target.Entity.Get<UnitStats>().isMeleeMode = true;
-                        }
 
                         audioManager.PlaySoundOnce(unitStats.attackSound);
 
@@ -159,7 +158,7 @@ namespace IronNations.Battle.Core
                 return true;
             }
 
-            clock += 1 * (float)Game.UpdateTime.Elapsed.TotalSeconds;
+            clock += 1 * BattleManager.deltaTime;
 
             return false;
         }
@@ -181,6 +180,32 @@ namespace IronNations.Battle.Core
             }
 
             target.Entity.Get<UnitStats>().health -= unitStats.damage;
+        }
+
+        private void SearchForNewEnemy()
+        {
+            if (tick >= unitStats.searchEnemyRate)
+            {
+                float closestEnemyDistance = 100;
+                ushort selectedEnemy = 0;
+
+                for (ushort i  = 0; i < BattleManager.Instance.Player1Units.Count; i++)
+                {
+                    float distance = Vector3.Distance(Entity.Transform.Position, BattleManager.Instance.Player1Units[i].Entity.Transform.Position);
+
+                    if (distance <= closestEnemyDistance)
+                    {
+                        closestEnemyDistance = distance;
+                        selectedEnemy = i;
+                    }
+                }
+
+                target = BattleManager.Instance.Player1Units[selectedEnemy].Entity.Transform;
+
+                tick = 0;
+            }
+
+            tick += 1 * BattleManager.deltaTime;
         }
     }
 }
