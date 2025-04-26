@@ -28,6 +28,7 @@ namespace IronNations.Battle.Core
 
         public bool isAttacking = false;
         public bool moving = true;
+        private bool isUnitDead = false;
         SoundInstance soundInstance;
 
         //Timers
@@ -53,6 +54,32 @@ namespace IronNations.Battle.Core
         private float auxRange = 0.5f;
         public override void Update()
         {
+            //Kill unit
+            if (unitStats.health <= 0)
+            {
+                if (isUnitDead)
+                {
+                    StopMoving();
+                    characterComponent.Enabled = false;
+                    unitStats.spriteUnit.Entity.Transform.Position += new Vector3(0, 0.50f, 0); //Decreases the sprite height a little bit, so the alive units can pass above the killed unit
+                    target = null;
+
+                    if (unitStats.isEnemy)
+                    {
+                        BattleManager.Instance.Player2Units.Remove(this);
+                    }
+                    else
+                    {
+                        BattleManager.Instance.Player1Units.Remove(this);
+                    }
+                    isUnitDead = true;
+                }
+                else
+                {
+                    return;
+                }
+            }
+
             if (target != null)
             {
                 LookTarget();
@@ -87,11 +114,6 @@ namespace IronNations.Battle.Core
                         MakeDamage();
 
                         audioManager.PlaySoundOnce(unitStats.attackSound);
-
-                        if (target.Entity.Get<UnitStats>().health <= 0)
-                        {
-                            target = null;
-                        }
                     }
                     StopMoving();
                 }
@@ -109,16 +131,6 @@ namespace IronNations.Battle.Core
                     }
                 }
             }
-        
-            //Kill unit
-            if (unitStats.health <= 0)
-            {
-                StopMoving();
-                characterComponent.Enabled = false;
-                unitStats.spriteUnit.Entity.Transform.Position += new Vector3(0 , 0.51f , 0); //Decreases the sprite height a little bit, so the alive units can pass above the killed unit
-                target = null;
-            }
-        
         }
         public void LookTarget()
         {
@@ -167,6 +179,12 @@ namespace IronNations.Battle.Core
         {
             UnitStats enemyUnitStats = target.Entity.Get<UnitStats>();
 
+            if (target.Entity.Get<UnitStats>().health <= 0)
+            {
+                target = null;
+                return;
+            }
+
             if (unitStats.unitType == UnitType.Cavalry && enemyUnitStats.unitType == UnitType.Musketeer)
             {
                 target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
@@ -187,9 +205,9 @@ namespace IronNations.Battle.Core
             if (tick >= unitStats.searchEnemyRate)
             {
                 float closestEnemyDistance = 100;
-                ushort selectedEnemy = 0;
+                int selectedEnemy = 0;
 
-                for (ushort i  = 0; i < BattleManager.Instance.Player1Units.Count; i++)
+                for (int i  = BattleManager.Instance.Player1Units.Count - 1; i > 0; i--)
                 {
                     float distance = Vector3.Distance(Entity.Transform.Position, BattleManager.Instance.Player1Units[i].Entity.Transform.Position);
 
