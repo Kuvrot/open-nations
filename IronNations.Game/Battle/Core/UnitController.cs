@@ -57,7 +57,7 @@ namespace IronNations.Battle.Core
             //Kill unit
             if (unitStats.health <= 0)
             {
-                if (isUnitDead)
+                if (!isUnitDead)
                 {
                     StopMoving();
                     characterComponent.Enabled = false;
@@ -185,15 +185,16 @@ namespace IronNations.Battle.Core
                 return;
             }
 
-            if (unitStats.unitType == UnitType.Cavalry && enemyUnitStats.unitType == UnitType.Musketeer)
+            // The musketeers make half the damage to cavalry
+            if (unitStats.unitType == UnitType.Musketeer && enemyUnitStats.unitType == UnitType.Cavalry)
             {
-                target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
+                target.Entity.Get<UnitStats>().health -= unitStats.damage * 0.5f;
                 return;
             }
 
-            if (unitStats.unitType == UnitType.Cavalry && enemyUnitStats.unitType == UnitType.Infantery)
+            if (unitStats.unitType == UnitType.Infantery && enemyUnitStats.unitType == UnitType.Cavalry)
             {
-                target.Entity.Get<UnitStats>().health -= unitStats.damage / 2;
+                target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
                 return;
             }
 
@@ -204,7 +205,7 @@ namespace IronNations.Battle.Core
         {
             if (tick >= unitStats.searchEnemyRate)
             {
-                float closestEnemyDistance = 100;
+                float closestEnemyDistance = 500;
                 int selectedEnemy = 0;
 
                 for (int i  = BattleManager.Instance.Player1Units.Count - 1; i > 0; i--)
