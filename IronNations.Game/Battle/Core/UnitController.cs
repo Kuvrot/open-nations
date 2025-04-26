@@ -135,11 +135,11 @@ namespace IronNations.Battle.Core
         public void LookTarget()
         {
            if (target != null)
-            {
+           {
                 Vector2 lookAngle = GetLookAtAngle(Entity.Transform.Position, target.Position);
                 Quaternion result = Quaternion.RotationYawPitchRoll(lookAngle.Y, 0, 0);
                 Entity.Transform.Rotation = result;
-            }
+           }
         }
 
         private Vector2 GetLookAtAngle(Vector3 source, Vector3 destination)
