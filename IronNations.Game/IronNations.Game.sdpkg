@@ -14,6 +14,11 @@ AssetFolders:
     -   Path: !dir ../Assets/Shared
     -   Path: !dir ../Assets/Shared
     -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
+    -   Path: !dir ../Assets/Shared
     -   Path: !dir D:/GameEngines/StrideProjects/IronNations/Assets/Shared
 ResourceFolders:
     - !dir ../Resources

@@ -108,6 +108,11 @@ namespace IronNations.Battle.Core
         {
             HitResult hitResult = ScreenPositionToWorldPositionRaycast(Input.MousePosition, camera, this.GetSimulation());
 
+            if (Player1Units[currentUnitSelected] == null)
+            {
+                return;
+            }
+
             //Check if the player clicked the map or an enemy unit
             if (hitResult.Collider.Entity.Get<UnitController>() != null)
             {
@@ -162,7 +167,10 @@ namespace IronNations.Battle.Core
         {
             if (currentUnitSelected >= 0)
             {
-                Player1Units[currentUnitSelected].Entity.Get<UnitStats>().spriteUnit.Color = Color.White;
+                if (Player1Units[currentUnitSelected] != null)
+                {
+                    Player1Units[currentUnitSelected].Entity.Get<UnitStats>().spriteUnit.Color = Color.White;
+                }
             }
         }
     }
