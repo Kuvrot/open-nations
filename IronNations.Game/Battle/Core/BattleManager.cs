@@ -44,6 +44,8 @@ namespace IronNations.Battle.Core
 
         private bool isZooming = false;
 
+        public Prefab CannonDamage;
+
         public override void Update()
         {
             deltaTime = (float)Game.UpdateTime.Elapsed.TotalSeconds;

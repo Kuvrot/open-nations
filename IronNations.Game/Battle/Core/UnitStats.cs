@@ -7,6 +7,7 @@ using Stride.Particles.Components;
 using ServiceWire;
 using Stride.Physics;
 using System;
+using Stride.UI.Controls;
 
 namespace IronNations.Battle.Core
 {
@@ -43,6 +44,7 @@ namespace IronNations.Battle.Core
         //Components
         public SpriteComponent spriteUnit;
         private UnitController unitController;
+        private EntityComponent healthBar;
 
         private bool initUnit = false;
 
@@ -66,11 +68,13 @@ namespace IronNations.Battle.Core
             spriteUnit = Entity.GetChild(0).Get<SpriteComponent>();
             unitController = Entity.Get<UnitController>();
 
-            checkComponents();
+            CheckComponents();
 
             attackEffect.ParticleSystem.Stop();
 
             maxHealth = health;
+
+            healthBar = Entity.GetChild(2).Get<EntityComponent>();
         }
 
         public override void Update()
@@ -92,9 +96,14 @@ namespace IronNations.Battle.Core
             }
 
             spriteUnit.Intensity = health / maxHealth;
+
+            if (healthBar != null)
+            {
+                healthBar.Entity.Transform.Scale = new Vector3 (1 , 1, spriteUnit.Intensity);
+            }
         }
 
-        public void checkComponents()
+        public void CheckComponents()
         {
             bool incompleteComponents = false;
 

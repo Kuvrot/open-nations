@@ -1,19 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Stride.Core.Mathematics;
-using Stride.Input;
 using Stride.Engine;
-using System.Printing;
-using ServiceWire;
 using Stride.Physics;
-using System.Security.RightsManagement;
 using Stride.Audio;
-using Silk.NET.SDL;
-using System.Windows.Forms;
-using System.Reflection.Metadata.Ecma335;
 
 namespace IronNations.Battle.Core
 {
@@ -196,9 +186,36 @@ namespace IronNations.Battle.Core
                 return;
             }
 
-            if (unitStats.unitType == UnitType.Infantery && enemyUnitStats.unitType == UnitType.Cavalry)
+            // The musketeers make half the damage to cavalry
+            if (unitStats.unitType == UnitType.Artillery)
             {
-                target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
+                int random = new Random().Next(0 , 101);
+
+                Vector3 hitPosition = new ();
+
+                //Cannon has a 50% chance of hitting the target
+                if (random >= 50)
+                {
+                    target.Entity.Get<UnitStats>().health -= unitStats.damage;
+                    int randomZ = new Random().Next(0, 2);
+                    int randomX = new Random().Next(0, 2);
+                    hitPosition = target.Position + new Vector3(randomX / 2, 0, randomZ / 2);
+                }
+                else
+                {
+                    int randomZ = new Random().Next(1, 3);
+                    int randomX = new Random().Next(1,3);
+                    hitPosition = target.Position + new Vector3(randomX , 0 , randomZ);
+                }
+
+                if (BattleManager.Instance.CannonDamage != null)
+                {
+                    List<Entity> cannonHole = BattleManager.Instance.CannonDamage.Instantiate();
+                    cannonHole[0].Transform.Position = hitPosition;
+                    Entity.Scene.Entities.AddRange(cannonHole);
+                }
+
+                target.Entity.Get<UnitStats>().health -= unitStats.damage * 0.5f;
                 return;
             }
 
