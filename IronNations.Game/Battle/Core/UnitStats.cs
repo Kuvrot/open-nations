@@ -99,7 +99,7 @@ namespace IronNations.Battle.Core
 
             if (healthBar != null)
             {
-                healthBar.Entity.Transform.Scale = new Vector3 (1 , 1, spriteUnit.Intensity);
+                healthBar.Entity.Transform.Scale = new Vector3 (spriteUnit.Intensity, 1, 1);
             }
         }
 
