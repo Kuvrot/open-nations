@@ -8,42 +8,26 @@ Hierarchy:
     RootParts:
         - !Grid ref!! dd156d61-8b83-44ea-8e3a-b350405adeae
     Parts:
-        -   UIElement: !Slider
-                Id: 506ccf58-ab74-48f9-b6a1-003a4ecf00e3
+        -   UIElement: !TextBlock
+                Id: 75b95f16-e0aa-4cf7-982f-0b7ba845539e
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                DrawLayerNumber: 5
-                Width: 1280.0
-                Height: 170.0
-                HorizontalAlignment: Stretch
-                VerticalAlignment: Stretch
-                Margin: {Top: 319.0, Bottom: 231.0}
-                Name: HealthBar
-                Value: 0.5
-                TrackBackgroundImage: !SpriteFromSheet
-                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
-                    CurrentFrame: 9
-                TrackForegroundImage: !SpriteFromSheet
-                    Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                    CurrentFrame: 12
-                TrackStartingOffsets: {X: 3.0, Y: 3.0}
-                ThumbImage: !SpriteFromSheet
-                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
-                    CurrentFrame: 7
-                MouseOverThumbImage: !SpriteFromSheet
-                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
-                    CurrentFrame: 6
-                TickImage: !SpriteFromSheet
-                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
-                    CurrentFrame: 8
-                TickOffset: 13.0
+                Margin: {}
+                Name: Clock
+                Text: '00 : 00'
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                OutlineColor: {R: 0, G: 0, B: 0, A: 255}
+                OutlineThickness: 2.0
+                TextAlignment: Center
         -   UIElement: !Grid
                 Id: dd156d61-8b83-44ea-8e3a-b350405adeae
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
                 Margin: {}
                 Children:
-                    07722b3966b4fbadc239ea3922dd3cb4: !Slider ref!! 506ccf58-ab74-48f9-b6a1-003a4ecf00e3
+                    d11bf0276dc54cd3142d2c0b786fe7a6: !TextBlock ref!! 75b95f16-e0aa-4cf7-982f-0b7ba845539e
                 RowDefinitions: {}
                 ColumnDefinitions: {}
                 LayerDefinitions: {}

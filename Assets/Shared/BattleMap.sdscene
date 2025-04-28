@@ -1038,6 +1038,14 @@ Hierarchy:
                         drumsSound: 4a535d78-51b2-4ebd-be41-e58d30c6ce2c:Resources/SFX/MarchDrum
                         trumpetSound: f4f981b3-44b8-4646-bd11-859f2b9af0a9:Resources/SFX/trumpetMarch
                         volume: 1.0
+                    063a723c70ead5690382fc7b01b10d14: !UIComponent
+                        Id: d68a29b1-fae2-4bf8-8a00-e56eba6f5110
+                        Page: 8082d23d-394b-4217-b960-1e9c51c1faaf:Page
+                        Sampler: PointClamp
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    59c79b925ff4f874c3238ae926363d1f: !IronNations.Battle.Core.BattleUIManager,IronNations.Game
+                        Id: c691caea-6b9c-44f7-a823-02621ab3217d
         -   Entity:
                 Id: 2ae77804-790f-49e6-8679-c77c33f59249
                 Name: HealthBar

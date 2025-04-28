@@ -69,7 +69,7 @@ Hierarchy:
                             Emitters:
                                 03c99c41d2394e47ad9509b8596d749c:
                                     ParticleLifetime: {X: 1.0, Y: 1.0}
-                                    ShapeBuilder: !IronNations.Particles.ShapeBuilders.CustomParticleShape,IronNations.Game
+                                    ShapeBuilder: !CustomParticleShape
                                         FixYAxis: true
                                     Material: !ParticleMaterialComputeColor
                                         ComputeColor: !ComputeTextureColor
@@ -82,7 +82,7 @@ Hierarchy:
                                         UVBuilder: null
                                         ForceTexCoords: false
                                     Spawners:
-                                        4957231736c162e9df14bc22efe33730: !SimpleCustomParticles.Particles.Spawners.CustomParticleSpawner,IronNations.Game
+                                        4957231736c162e9df14bc22efe33730: !CustomParticleSpawner
                                             LoopCondition: Looping
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
@@ -103,7 +103,7 @@ Hierarchy:
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
                                             RandomSize: {X: 0.2, Y: 0.1}
-                                        07ac9fe44d9a7e1f89bbc1dd91329e81: !IronNations.Particles.Initializers.CustomParticleInitializer,IronNations.Game
+                                        07ac9fe44d9a7e1f89bbc1dd91329e81: !CustomParticleInitializer
                                             DebugDraw: true
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -120,7 +120,7 @@ Hierarchy:
                                             Angle: 30.0
                                             Strength: 1.0
                                     Updaters:
-                                        fa586a5cba091f1421d37c68ac666bb5: !IronNations.Particles.Updaters.CustomParticleUpdater,IronNations.Game
+                                        fa586a5cba091f1421d37c68ac666bb5: !CustomParticleUpdater
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
@@ -158,7 +158,7 @@ Hierarchy:
                             Emitters:
                                 03c99c41d2394e47ad9509b8596d749c:
                                     ParticleLifetime: {X: 1.0, Y: 1.0}
-                                    ShapeBuilder: !IronNations.Particles.ShapeBuilders.CustomParticleShape,IronNations.Game
+                                    ShapeBuilder: !CustomParticleShape
                                         FixYAxis: true
                                     Material: !ParticleMaterialComputeColor
                                         ComputeColor: !ComputeTextureColor
@@ -171,7 +171,7 @@ Hierarchy:
                                         UVBuilder: null
                                         ForceTexCoords: false
                                     Spawners:
-                                        484a66cf8965e3d4d250d5e88f321d59: !SimpleCustomParticles.Particles.Spawners.CustomParticleSpawner,IronNations.Game
+                                        484a66cf8965e3d4d250d5e88f321d59: !CustomParticleSpawner
                                             LoopCondition: Looping
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
@@ -192,7 +192,7 @@ Hierarchy:
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
                                             RandomSize: {X: 0.2, Y: 0.1}
-                                        0ec2d86bf8ab5c81253ddb4a2be3197b: !IronNations.Particles.Initializers.CustomParticleInitializer,IronNations.Game
+                                        0ec2d86bf8ab5c81253ddb4a2be3197b: !CustomParticleInitializer
                                             DebugDraw: true
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -209,7 +209,7 @@ Hierarchy:
                                             Angle: 15.0
                                             Strength: 2.0
                                     Updaters:
-                                        f3893aa13bc60f5fd2538a976d8fcbfd: !IronNations.Particles.Updaters.CustomParticleUpdater,IronNations.Game
+                                        f3893aa13bc60f5fd2538a976d8fcbfd: !CustomParticleUpdater
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
@@ -281,7 +281,7 @@ Hierarchy:
                             Emitters:
                                 03c99c41d2394e47ad9509b8596d749c:
                                     ParticleLifetime: {X: 1.0, Y: 1.0}
-                                    ShapeBuilder: !IronNations.Particles.ShapeBuilders.CustomParticleShape,IronNations.Game
+                                    ShapeBuilder: !CustomParticleShape
                                         FixYAxis: true
                                     Material: !ParticleMaterialComputeColor
                                         ComputeColor: !ComputeTextureColor
@@ -294,7 +294,7 @@ Hierarchy:
                                         UVBuilder: null
                                         ForceTexCoords: false
                                     Spawners:
-                                        252c68e79ac21a753c9a85f611c42883: !SimpleCustomParticles.Particles.Spawners.CustomParticleSpawner,IronNations.Game
+                                        252c68e79ac21a753c9a85f611c42883: !CustomParticleSpawner
                                             LoopCondition: Looping
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
@@ -315,7 +315,7 @@ Hierarchy:
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
                                             RandomSize: {X: 0.05, Y: 0.1}
-                                        6ad4528b2efaf10243d0ea8824821028: !IronNations.Particles.Initializers.CustomParticleInitializer,IronNations.Game
+                                        6ad4528b2efaf10243d0ea8824821028: !CustomParticleInitializer
                                             DebugDraw: true
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -332,7 +332,7 @@ Hierarchy:
                                             Angle: 45.0
                                             Strength: 0.3
                                     Updaters:
-                                        5d358a58247da1ddae7389a101e4d46d: !IronNations.Particles.Updaters.CustomParticleUpdater,IronNations.Game
+                                        5d358a58247da1ddae7389a101e4d46d: !CustomParticleUpdater
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
