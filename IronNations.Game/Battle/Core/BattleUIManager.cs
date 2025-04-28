@@ -23,6 +23,12 @@ namespace IronNations.Battle.Core
                 seconds++;
             }
 
+            if (seconds >= 60)
+            {
+                seconds = 0;
+                minutes++;
+            }
+
             Display();
         }
 
