@@ -442,7 +442,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    a23020c7a715e04a9bb7af7ef1448bf0: !IronNations.NextSceneScript,IronNations.Game
+                    40521bce9d80d9c89f36d0b13410d71c: !IronNations.NextSceneScript,IronNations.Game
                         Id: c72030a2-15a7-4ae0-9bb7-af7ef1448bf0
                         Next: 98fa8455-958e-4a66-a67f-15be8da718c9:ChildParticles
                         Previous: 3751b9dc-13ea-497e-aca0-0f3007c49172:MainScene

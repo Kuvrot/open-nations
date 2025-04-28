@@ -199,13 +199,13 @@ Hierarchy:
                     566f060bf906e54f9319be71331e8664: !AnimationComponent
                         Id: 0b066f56-06f9-4fe5-9319-be71331e8664
                         Animations: {}
-                    bbb13d0841522b4c9d52900851b0ea99: !IronNations.RotateEntity,IronNations.Game
+                    c5aab25f25b427ffbb7349cd78ef208d: !IronNations.RotateEntity,IronNations.Game
                         Id: 083db1bb-5241-4c2b-9d52-900851b0ea99
                     9433f15293f3e74998b1356161a493f4: !ModelComponent
                         Id: 52f13394-f393-49e7-98b1-356161a493f4
                         Model: 6ccee7a9-d0e2-44c9-9fa6-4786e471d6bf:Models/Character
                         Materials: {}
-                    725fa3168f7c22738b4755b40da6230e: !IronNations.AnimationStart,IronNations.Game
+                    17ffe266f0af89a1d3219204e5bb6331: !IronNations.AnimationStart,IronNations.Game
                         Id: 873057af-b46e-4a32-9778-a0645e6f4e25
                         Animations:
                             67b37ff0bd92d1276e3119efeff8e1e2:
@@ -237,7 +237,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    ce46f1f5897ac34d8d524db6cc951774: !IronNations.GameProfiler,IronNations.Game
+                    7be4476261eb19aad6b85ca757269285: !IronNations.GameProfiler,IronNations.Game
                         Id: f5f146ce-7a89-4dc3-8d52-4db6cc951774
                         Enabled: false
                         TextColor: {R: 144, G: 238, B: 144, A: 255}
@@ -255,7 +255,7 @@ Hierarchy:
                         Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    dd79eccfc535b342af29ced46f15dffd: !IronNations.PrefabInstance,IronNations.Game
+                    b26388a3a725736a46bad952c6309d05: !IronNations.PrefabInstance,IronNations.Game
                         Id: cfec79dd-35c5-42b3-af29-ced46f15dffd
                         SourcePrefab: 59121e38-9b07-446c-8362-c125ac067128:Prefabs/PrefabRainbow
                         Following: true
@@ -426,7 +426,7 @@ Hierarchy:
                         Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    dd79eccfc535b342af29ced46f15dffd: !IronNations.PrefabInstance,IronNations.Game
+                    6ebb5dd74b927da8b3b711213b36e7e2: !IronNations.PrefabInstance,IronNations.Game
                         Id: 1b767af9-9e1f-4f61-9160-5a49d429670e
                         SourcePrefab: 5d683ac3-1756-4c1c-aa1c-a1d206edcbcd:Prefabs/PrefabTrails
                         Following: true
@@ -529,13 +529,13 @@ Hierarchy:
                     566f060bf906e54f9319be71331e8664: !AnimationComponent
                         Id: 384c4adc-dc48-4474-b515-2cbacff177cd
                         Animations: {}
-                    bbb13d0841522b4c9d52900851b0ea99: !IronNations.RotateEntity,IronNations.Game
+                    4ef0d4ad3583d0b8925ce288fddc8303: !IronNations.RotateEntity,IronNations.Game
                         Id: d01f970e-18ac-4c1f-b71c-f55b1f70f310
                     9433f15293f3e74998b1356161a493f4: !ModelComponent
                         Id: 3f881799-8298-4ef2-a59c-4d9489c30713
                         Model: 6ccee7a9-d0e2-44c9-9fa6-4786e471d6bf:Models/Character
                         Materials: {}
-                    b16435397d9cb4ffc46d4bc1748ccb1a: !IronNations.AnimationStart,IronNations.Game
+                    8ed15085cc6f07d8d572eec7f4a0bb6f: !IronNations.AnimationStart,IronNations.Game
                         Id: b57770c0-2dc1-4c7e-8d14-ae4813c3f360
                         Animations:
                             de4cf0b85c6c6c684c47903102249e48:
@@ -1106,13 +1106,13 @@ Hierarchy:
                     566f060bf906e54f9319be71331e8664: !AnimationComponent
                         Id: fec14fec-d0ca-47a5-9c2e-ae9a16c16d28
                         Animations: {}
-                    bbb13d0841522b4c9d52900851b0ea99: !IronNations.RotateEntity,IronNations.Game
+                    4fe6e1d4cbeb5bd996cd48a1c6cc82d6: !IronNations.RotateEntity,IronNations.Game
                         Id: cee040b5-81ed-4b92-ae4e-8b35f6a1ed03
                     9433f15293f3e74998b1356161a493f4: !ModelComponent
                         Id: 01e84022-7e73-43e7-bf34-ab8143707458
                         Model: 6ccee7a9-d0e2-44c9-9fa6-4786e471d6bf:Models/Character
                         Materials: {}
-                    b0bcfb70271f0963d284080b54b876ae: !IronNations.AnimationStart,IronNations.Game
+                    9ab8d3640ed2c6ffb8b669e2483441d1: !IronNations.AnimationStart,IronNations.Game
                         Id: aa9eb17f-9040-4101-bf17-7692d6f407cf
                         Animations:
                             41b98d0294e6b724dac39410a5973b52:
@@ -1136,13 +1136,13 @@ Hierarchy:
                     566f060bf906e54f9319be71331e8664: !AnimationComponent
                         Id: 0e38b44a-c9bb-49ad-923c-750125751651
                         Animations: {}
-                    bbb13d0841522b4c9d52900851b0ea99: !IronNations.RotateEntity,IronNations.Game
+                    1a599a55c609aaf30b01af50857fd2db: !IronNations.RotateEntity,IronNations.Game
                         Id: 8f727cf0-39d3-43cf-aa05-61fdd855cd12
                     9433f15293f3e74998b1356161a493f4: !ModelComponent
                         Id: 3bd3cb01-f657-4a27-b41b-bcaff4f58271
                         Model: 6ccee7a9-d0e2-44c9-9fa6-4786e471d6bf:Models/Character
                         Materials: {}
-                    fa48a3a39209ae53db0df3e4276eb79a: !IronNations.AnimationStart,IronNations.Game
+                    3520e25b990e52b1c13197da53162369: !IronNations.AnimationStart,IronNations.Game
                         Id: 23c0d5ef-fc4d-4181-8422-5e2446fc08bb
                         Animations:
                             980c9eff2405540f4b6ecfd423bc406a:
@@ -1175,7 +1175,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    87fde3ad733dba49b7d69960222f50b0: !IronNations.NextSceneScript,IronNations.Game
+                    36e62e4fa28066b61c6167cd9549b378: !IronNations.NextSceneScript,IronNations.Game
                         Id: ade3fd87-3d73-49ba-b7d6-9960222f50b0
                         Next: 3751b9dc-13ea-497e-aca0-0f3007c49172:MainScene
                         Previous: b9ad5ab7-4272-458a-9cb7-c912e67607c6:Lasers
@@ -1382,7 +1382,7 @@ Hierarchy:
                         Rotation: {X: 0.70710677, Y: -3.4896288E-15, Z: 3.4896288E-15, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    dd79eccfc535b342af29ced46f15dffd: !IronNations.PrefabInstance,IronNations.Game
+                    61e03c3ff455baaacec3280fa7870f05: !IronNations.PrefabInstance,IronNations.Game
                         Id: 189da10d-9ed0-4b7e-befc-94429405cf47
                         SourcePrefab: 1cd0f101-be84-478c-8ca5-8640077059be:Prefabs/PrefabMovingTrail
                         Following: true

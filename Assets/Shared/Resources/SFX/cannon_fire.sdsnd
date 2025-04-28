@@ -1,0 +1,9 @@
+!Sound
+Id: b4a5a2b0-50ba-4c75-8fd2-47ec6250236a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/SFX/cannon_fire.ogg
+SampleRate: 48000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

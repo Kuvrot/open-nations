@@ -61,7 +61,7 @@ namespace IronNations.Battle.Core
                 {
                     StopMoving();
                     characterComponent.Enabled = false;
-                    unitStats.spriteUnit.Entity.Transform.Position += new Vector3(0, 0.50f, 0); //Decreases the sprite height a little bit, so the alive units can pass above the killed unit
+                    unitStats.spriteUnit.Entity.Transform.Position -= new Vector3(0, 0.02f, 0); //Decreases the sprite height a little bit, so the alive units can pass above the killed unit
                     target = null;
 
                     if (unitStats.isEnemy)

@@ -15,7 +15,8 @@ namespace IronNations.Battle.Core
          Infantery,
          Spearman,
          Musketeer,
-         Cavalry
+         Cavalry,
+         Artillery
     };
 
     public class UnitStats : SyncScript
