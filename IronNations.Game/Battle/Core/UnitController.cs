@@ -187,10 +187,24 @@ namespace IronNations.Battle.Core
                 return;
             }
 
-            // The musketeers make half the damage to cavalry
+            // The infantry make 150% more damage to Cavalry
             if (unitStats.unitType == UnitType.Infantery && enemyUnitStats.unitType == UnitType.Cavalry)
             {
                 target.Entity.Get<UnitStats>().health -= unitStats.damage * 2.5f;
+                return;
+            }
+
+            // The Cavalry make 200% more damage to Musketeer
+            if (unitStats.unitType == UnitType.Cavalry && enemyUnitStats.unitType == UnitType.Musketeer)
+            {
+                target.Entity.Get<UnitStats>().health -= unitStats.damage * 3f;
+                return;
+            }
+
+            // The infantry make 100% more damage to Musketeer
+            if (unitStats.unitType == UnitType.Infantery && enemyUnitStats.unitType == UnitType.Musketeer)
+            {
+                target.Entity.Get<UnitStats>().health -= unitStats.damage * 2f;
                 return;
             }
 
