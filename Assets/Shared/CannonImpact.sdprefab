@@ -182,7 +182,7 @@ Hierarchy:
                                             ForceVortex: 0.0
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
-                    d48fb4e1ebe690e05a0a9af459fd2809: !IronNations.Effects.LifeTime,IronNations.Game
+                    d6c7029555282fe9c38b9b7c4e58c841: !IronNations.Effects.LifeTime,IronNations.Game
                         Id: 30b595c8-097b-4c5c-a39f-3f864b892795
                         lifeTime: 1.0
         -   Entity:

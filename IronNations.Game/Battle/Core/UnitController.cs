@@ -98,12 +98,19 @@ namespace IronNations.Battle.Core
                 {
                     if (Counter() && isAttacking)
                     {
-                        unitStats.attackEffect.ParticleSystem.Stop();
-                        unitStats.attackEffect.ParticleSystem.Play();
+                        //Check if friendly fire is possible
+                        HitResult hit = this.GetSimulation().Raycast(Entity.Transform.Position, target.Position);
 
-                        MakeDamage();
+                        //If friendly fire is possible then don't shoot
+                        if (hit.Collider != null && hit.Collider.Entity.Get<UnitStats>().isEnemy != unitStats.isEnemy)
+                        {
+                            unitStats.attackEffect.ParticleSystem.Stop();
+                            unitStats.attackEffect.ParticleSystem.Play();
 
-                        audioManager.PlaySoundOnce(unitStats.attackSound);
+                            MakeDamage();
+
+                            audioManager.PlaySoundOnce(unitStats.attackSound);
+                        }
                     }
                     StopMoving();
                 }
@@ -126,6 +133,7 @@ namespace IronNations.Battle.Core
                 }
             }
         }
+
         public void LookTarget()
         {
            if (target != null)
@@ -176,6 +184,13 @@ namespace IronNations.Battle.Core
             if (target.Entity.Get<UnitStats>().health <= 0)
             {
                 target = null;
+                return;
+            }
+
+            // The musketeers make half the damage to cavalry
+            if (unitStats.unitType == UnitType.Infantery && enemyUnitStats.unitType == UnitType.Cavalry)
+            {
+                target.Entity.Get<UnitStats>().health -= unitStats.damage * 2.5f;
                 return;
             }
 
