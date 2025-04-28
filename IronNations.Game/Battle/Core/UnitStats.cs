@@ -30,8 +30,6 @@ namespace IronNations.Battle.Core
         public float movementSpeed = 0.5f;
         public float attackRate = 2; // in seconds
         public bool isEliteUnit = false;
-        public bool canMelee = true; // if the unit can melee attack or not
-        public bool isMeleeMode = false; // if the unit is on melee mode
         public float searchEnemyRate = 10f;
 
         private float maxHealth = 0;

@@ -13,6 +13,7 @@ using System.Security.RightsManagement;
 using Stride.Audio;
 using Silk.NET.SDL;
 using System.Windows.Forms;
+using System.Reflection.Metadata.Ecma335;
 
 namespace IronNations.Battle.Core
 {
@@ -27,7 +28,6 @@ namespace IronNations.Battle.Core
         private AudioManager audioManager;
 
         public bool isAttacking = false;
-        public bool moving = true;
         private bool isUnitDead = false;
         SoundInstance soundInstance;
 
@@ -66,11 +66,11 @@ namespace IronNations.Battle.Core
 
                     if (unitStats.isEnemy)
                     {
-                        BattleManager.Instance.Player2Units.Remove(this);
+                        BattleManager.Instance.Player2Units[idUnit] = null;
                     }
                     else
                     {
-                        BattleManager.Instance.Player1Units.Remove(this);
+                        BattleManager.Instance.Player1Units[idUnit] = null;
                     }
                     isUnitDead = true;
                 }
@@ -126,8 +126,12 @@ namespace IronNations.Battle.Core
                     if (BattleManager.Instance.Player1Units.Count > 0)
                     {
                         isAttacking = true;
-                        int random = new Random().Next(0 , BattleManager.Instance.Player1Units.Count);
-                        target = BattleManager.Instance.Player1Units[random].Entity.Transform;
+                        int random = new Random().Next(0, BattleManager.Instance.Player1Units.Count);
+
+                        if (BattleManager.Instance.Player1Units[random] != null)
+                        {
+                            target = BattleManager.Instance.Player1Units[random].Entity.Transform;
+                        }
                     }
                 }
             }
@@ -208,10 +212,15 @@ namespace IronNations.Battle.Core
                 float closestEnemyDistance = 500;
                 int selectedEnemy = 0;
 
-                for (int i  = BattleManager.Instance.Player1Units.Count - 1; i > 0; i--)
+                for (int i = BattleManager.Instance.Player1Units.Count - 1; i >= 0; i--)
                 {
-                    float distance = Vector3.Distance(Entity.Transform.Position, BattleManager.Instance.Player1Units[i].Entity.Transform.Position);
+                    if (BattleManager.Instance.Player1Units[i] == null)
+                    {
+                        continue;
+                    }
 
+                    float distance = Vector3.Distance(Entity.Transform.Position, BattleManager.Instance.Player1Units[i].Entity.Transform.Position);
+                    
                     if (distance <= closestEnemyDistance)
                     {
                         closestEnemyDistance = distance;
@@ -223,7 +232,6 @@ namespace IronNations.Battle.Core
 
                 tick = 0;
             }
-
             tick += 1 * BattleManager.deltaTime;
         }
     }
