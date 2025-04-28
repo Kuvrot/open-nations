@@ -210,7 +210,7 @@ Hierarchy:
                     a758122f2a14e7ed45e55195f12d8927: !TransformComponent
                         Id: ae160835-906d-4166-96d9-4975dc82196a
                         Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
                         Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
                         Children: {}
                     c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
@@ -381,22 +381,6 @@ Hierarchy:
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
-                Id: 089e4a25-6ff3-4c49-8c9a-1386e4750341
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: 2a2399c5-c2b9-4b69-9389-fe67d8825703
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: b19520d3-b0d5-450d-87c9-b6e88bc2af27
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-        -   Entity:
                 Id: 0cc3a867-47e0-4817-89b1-b43e2bbd1c1b
                 Name: Sphere
                 Components:
@@ -410,22 +394,6 @@ Hierarchy:
                         Id: 4992bd90-bee5-4755-bf2a-fcb34eded35f
                         Model: e027eec8-f3de-4667-a27a-6871d9337154:Materials/Sphere
                         Materials: {}
-        -   Entity:
-                Id: 0cf22c4b-2a25-4469-859a-65b41d02421b
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: c64649db-0f6a-461f-8c82-a1c6fc0734b3
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 9eeb2fad-65d5-4f30-af12-8284a01f5052
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
         -   Entity:
                 Id: 0d59d4cb-165c-4a30-9493-add8c6ebbe08
                 Name: sprite
@@ -450,13 +418,13 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 6d4df060-ca1d-4df5-942f-ffdfb9f25c21
-                        Position: {X: -5.6814914, Y: 0.0, Z: 2.2481596}
-                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Position: {X: 4.7457156, Y: 0.0, Z: 4.111358}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! 792ee8e2-9a7a-40fd-b58c-12ff59509991
                             8239c71b88bf1c94de3e375d56834829: ref!! 80fe2237-a14f-4bb8-b1e1-8a9750a44c10
-                            2f5c23111a3305631e62feac855a8db8: ref!! 840d12d0-7faf-4b93-a21a-a4f68d401b76
+                            e08279c727c08678d559ad64145ddd45: ref!! 3380a5bf-7f85-4819-8217-f6d7e5fd2c67
                     1c1d15ca993b3804362cff39cee41b81: !ModelComponent
                         Id: b68a108a-18af-49f3-a345-e8a040cc173b
                         Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
@@ -503,17 +471,6 @@ Hierarchy:
                     18edbb69110c09ebfd449e6ec335d59e: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: 87277c2f-507d-4015-bf72-619f7d805cef
                         volume: 0.25
-        -   Entity:
-                Id: 133ca9a4-8173-4c12-af64-4b41d668c87c
-                Name: HealthBar
-                Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: f7cef201-06a8-4637-a81a-fa03d97188bf
-                        Position: {X: 0.7, Y: 1.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! d6913c03-7f0e-4c4e-96fe-3b503d397409
         -   Entity:
                 Id: 183102ad-c6f2-472a-b4e3-74984df886b2
                 Name: CannonImpact
@@ -691,6 +648,17 @@ Hierarchy:
                                             ForceVortex: 0.0
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: 1858c7b5-325e-4c8a-8948-fcc443db5afa
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: e2a5fb61-e9b6-4e44-8b03-6a373a406d95
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 484cc04a-c402-437f-93dc-6b5f7265795c
         -   Folder: Units
             Entity:
                 Id: 1c394319-1059-4e02-9c41-bed54fed4008
@@ -698,13 +666,13 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 0481163f-f742-4315-a677-6fcab50131af
-                        Position: {X: 9.658198, Y: 0.0, Z: -0.08961272}
+                        Position: {X: -0.096334614, Y: 0.0, Z: -7.2519755}
                         Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! 296ce8e3-31be-4cba-890d-f93cf4cde9c5
                             8239c71b88bf1c94de3e375d56834829: ref!! 4ce29e24-e37d-4f09-b82c-bfad36533961
-                            9e2e57eff045efde7616e156e4f8bb9e: ref!! 5b45545b-9976-40ad-aa02-2cdb974aa40d
+                            e8cc0b7596e4ccf8b65cceeba398f8af: ref!! fb3a1a09-8e81-47b3-907b-78f45eeeeb57
                     1c1d15ca993b3804362cff39cee41b81: !ModelComponent
                         Id: 0b16125b-ef47-4aa6-a588-15df9f581e55
                         Enabled: false
@@ -768,17 +736,6 @@ Hierarchy:
                         Model: d25125e6-7ac7-447d-9b2d-622160138407:Models/mark
                         Materials:
                             6b933713981752c41fcad4f3be1450fd~0: 371c8eab-26bd-4b8f-b818-9d4d4214b826:Materials/DestinationMarkMaterial
-        -   Entity:
-                Id: 21bc6844-d9d2-4e46-862e-9e2ce6f945f0
-                Name: HealthBar
-                Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: 5b45545b-9976-40ad-aa02-2cdb974aa40d
-                        Position: {X: 0.7, Y: 1.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! a4267fae-85f6-440c-9490-da8735733bd1
         -   Entity:
                 Id: 23005d18-9fed-4d77-aaf8-32719c9106ba
                 Name: Smoke
@@ -960,13 +917,13 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 70e7f993-0cf2-422d-a46e-2c592a892ccd
-                        Position: {X: -5.6814914, Y: 0.0, Z: -2.6650703}
-                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Position: {X: -4.650263, Y: 0.0, Z: 3.8161504}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! 3c026b69-0660-40b8-8b3d-89c373db26c3
                             8239c71b88bf1c94de3e375d56834829: ref!! 69206334-d8d8-4b5b-bbbe-db39d2dd4a14
-                            e1f7e41b835bbd409ac30e40a29bc77a: ref!! da9707d7-3cc8-4e32-841b-e03c4c8fa00a
+                            8be440fef4d0e42923d6200bd4e9ffac: ref!! e2a5fb61-e9b6-4e44-8b03-6a373a406d95
                     1c1d15ca993b3804362cff39cee41b81: !ModelComponent
                         Id: ec0ef71d-9fa1-4ae4-ad7d-3105973849a8
                         Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
@@ -1047,17 +1004,6 @@ Hierarchy:
                     59c79b925ff4f874c3238ae926363d1f: !IronNations.Battle.Core.BattleUIManager,IronNations.Game
                         Id: c691caea-6b9c-44f7-a823-02621ab3217d
         -   Entity:
-                Id: 2ae77804-790f-49e6-8679-c77c33f59249
-                Name: HealthBar
-                Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: da9707d7-3cc8-4e32-841b-e03c4c8fa00a
-                        Position: {X: 0.7, Y: 1.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 653be516-8dbc-40f3-85cb-dbd7144ce4a6
-        -   Entity:
                 Id: 2e2fd6ae-ab02-4742-a9df-07c726a173c8
                 Name: sprite
                 Components:
@@ -1080,13 +1026,13 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: efcfe09d-a0ff-4c19-a4a0-b2225eba15ca
-                        Position: {X: 6.318794, Y: 0.0, Z: -2.0559628}
+                        Position: {X: -0.027460732, Y: 0.0, Z: -4.7013106}
                         Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! 034bbb06-357f-4aa1-a27b-eb622f6aa21f
                             8239c71b88bf1c94de3e375d56834829: ref!! 892154a0-2123-4868-8819-6f0d00d949af
-                            9983a58b5090cfaceac0482d86b5d7c2: ref!! 70781a66-0ac7-4183-b2b5-b66ba259b0af
+                            468d58e6a03df21d294d1af1cc1c8d48: ref!! 8ed7cc0f-4d27-483e-9d25-5d5c073ee207
                     1c1d15ca993b3804362cff39cee41b81: !ModelComponent
                         Id: 6d451d78-030f-4c09-9c59-0d3b05141d9f
                         Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
@@ -1134,12 +1080,34 @@ Hierarchy:
                         Id: c10388df-cae1-4c85-be11-abc624c018b7
                         volume: 0.25
         -   Entity:
+                Id: 4630b6f4-b854-47ca-9b1a-d7321bdc1cb0
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: fb3a1a09-8e81-47b3-907b-78f45eeeeb57
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 7dc36e3c-9911-47a0-8fe1-66232cfad1ae
+        -   Entity:
+                Id: 468fc9ce-2ba0-4b4b-a9f4-269ab4bbc22b
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: 3380a5bf-7f85-4819-8217-f6d7e5fd2c67
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! cf25d399-aba8-4827-94b7-820ee8177179
+        -   Entity:
                 Id: 47e21946-3594-426c-b563-799454b68cf8
                 Name: HealthBar
                 Components:
                     e7aaae3ce201057bf190d395c920180a: !TransformComponent
                         Id: abbd4c87-d86b-472e-84e3-5eafd4dd7615
-                        Position: {X: 0.7, Y: 1.0, Z: 0.0}
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1201,22 +1169,6 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 ComputeTransmittance: false
                                 BiasParameters: {}
-        -   Entity:
-                Id: 5ad0e95e-dd9e-4ece-b8c1-00e09e25d628
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: a4267fae-85f6-440c-9490-da8735733bd1
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 00fb5518-0bcf-4a3d-a0dc-684dff366440
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
         -   Folder: Units
             Entity:
                 Id: 5f7d4121-288f-4455-b634-3b44b469b387
@@ -1224,13 +1176,13 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 0a4393eb-10f1-4596-9bdf-b6398dc13982
-                        Position: {X: 6.369599, Y: 0.0, Z: 2.2481596}
+                        Position: {X: 4.633291, Y: 0.0, Z: -4.734518}
                         Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! a7322c33-9f5e-4b7c-bdbb-da6a155e7cf1
                             8239c71b88bf1c94de3e375d56834829: ref!! a1364cc9-6133-4e52-8fd5-bd4a342b6abe
-                            2f5c23111a3305631e62feac855a8db8: ref!! 87b9d948-93ba-43d0-b5b1-b8a9a75da3f2
+                            6fee717798a9a3bccf31acc4de479c93: ref!! 1b7f7f8e-b5fb-4cd2-8d2f-df1d0726d2ab
                     1c1d15ca993b3804362cff39cee41b81: !ModelComponent
                         Id: e727fc32-7cd7-463e-9a92-d6aa322ff595
                         Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
@@ -1284,13 +1236,13 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 8331cb1a-bb37-456b-bff7-7fd4b5b9a8d5
-                        Position: {X: -7.8988123, Y: 0.0, Z: -0.08961272}
-                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Position: {X: -0.05170409, Y: 0.0, Z: 5.938891}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! f55349d6-ea1c-4616-83f6-795033adb54b
                             8239c71b88bf1c94de3e375d56834829: ref!! 475064eb-a0ca-4c0f-acf9-b5cff3b9edc6
-                            9e2e57eff045efde7616e156e4f8bb9e: ref!! 7953f904-ec04-4f2d-a6b1-7c2b19581f26
+                            bfb7b1206eb5e94c60e060d8790835b2: ref!! c47acb17-d365-4e7a-a12e-33d7d48e63b7
                     1c1d15ca993b3804362cff39cee41b81: !ModelComponent
                         Id: 597dbff6-b3b9-4d1d-a0e9-c534a7758345
                         Enabled: false
@@ -1338,17 +1290,6 @@ Hierarchy:
                     ff09b7c75068a60000864e0d4d77870f: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: ccf12983-302d-40d2-bc6b-30c9e367f722
                         volume: 0.25
-        -   Entity:
-                Id: 6e602fd5-1677-480c-81a0-dde868a4c443
-                Name: HealthBar
-                Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: 70781a66-0ac7-4183-b2b5-b66ba259b0af
-                        Position: {X: 0.7, Y: 1.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! c67a33ac-9123-46f7-9d7d-6b7dc856c562
         -   Entity:
                 Id: 706df99e-ab82-49c5-85a2-41cfc4b4dfcd
                 Name: Smoke
@@ -1522,6 +1463,22 @@ Hierarchy:
                         Children:
                             6d0e02700df013832aa190a4fa263950: ref!! 88d8e455-4be0-4244-9a06-c5b3f9a4dac0
         -   Entity:
+                Id: 77d1cd32-8633-4ddd-902b-b9b065e6fbb1
+                Name: SpriteSheet_2
+                Components:
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: 2450198a-4959-424a-a437-885172b5a832
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 16656808-601d-4ed5-b9b0-cd9a04676be9
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
+        -   Entity:
                 Id: 78a55307-970a-4649-83c6-3562b142da35
                 Name: Camera
                 Components:
@@ -1539,6 +1496,33 @@ Hierarchy:
                         OrthographicSize: 20.0
                         FarClipPlane: 50.0
                         Slot: 3217b71f-b48d-4321-bab1-7cb4da999c19
+        -   Entity:
+                Id: 797fb63e-f3ab-44be-be19-68a13c7b8b0a
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: 0b141737-e5ba-493a-9416-08173f17f66c
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 3ac76d97-f244-4cb2-970d-da926ce5b969
+        -   Entity:
+                Id: 79b076ee-00fb-4891-b13f-5f41071f3740
+                Name: SpriteSheet_2
+                Components:
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: 7dc36e3c-9911-47a0-8fe1-66232cfad1ae
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 6b3efb5c-93f6-4284-9282-e78e88a55552
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
         -   Entity:
                 Id: 8610a6f8-904b-42c2-ac6b-c9d0cdf9903c
                 Name: sprite
@@ -1558,16 +1542,16 @@ Hierarchy:
                         IsAlphaCutoff: true
                         Sampler: PointClamp
         -   Entity:
-                Id: 8ba60f1c-eb51-48aa-ade8-52b943f8eb85
+                Id: 8cb802dd-29e6-4b39-a45a-1495cc7ef6e9
                 Name: HealthBar
                 Components:
                     e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: 7953f904-ec04-4f2d-a6b1-7c2b19581f26
-                        Position: {X: 0.7, Y: 1.0, Z: 0.0}
+                        Id: c47acb17-d365-4e7a-a12e-33d7d48e63b7
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! c64649db-0f6a-461f-8c82-a1c6fc0734b3
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! bada4bfd-bf4b-4037-9671-49fb520d2de6
         -   Entity:
                 Id: 8eb0f820-8b19-4796-8c27-ae6e2b06def3
                 Name: SpriteSheet
@@ -1588,48 +1572,43 @@ Hierarchy:
                 BasePartId: 03e9e82c-dce4-4ecd-8389-e0daaca238f7
                 InstanceId: e988b843-9702-4eaf-876a-ffe4d9b06a60
         -   Entity:
-                Id: ad08d6d4-4429-4786-b3b5-1169bc97370c
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: d6913c03-7f0e-4c4e-96fe-3b503d397409
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: e96e1a7f-ba66-4696-a254-49bf4dd623dc
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-        -   Entity:
-                Id: b3d7643c-9a0b-4920-a7ec-7c6e82372c22
+                Id: 95f683f6-6e5d-47c6-b8d6-5483abcadaf3
                 Name: HealthBar
                 Components:
                     e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: 87b9d948-93ba-43d0-b5b1-b8a9a75da3f2
-                        Position: {X: 0.7, Y: 1.0, Z: 0.0}
+                        Id: 1b7f7f8e-b5fb-4cd2-8d2f-df1d0726d2ab
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 3f6767ea-2c40-4965-a722-8063d5c94c10
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! ce4734be-ff9c-43d8-bd08-b8072419fda9
         -   Entity:
-                Id: b711e822-32d7-48b7-957b-0b3172b5f2f6
+                Id: a30964da-74c1-4e7f-8235-c7d49f7e64b6
                 Name: SpriteSheet_2
                 Components:
                     a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: c67a33ac-9123-46f7-9d7d-6b7dc856c562
+                        Id: 484cc04a-c402-437f-93dc-6b5f7265795c
                         Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
                         Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
                         Children: {}
                     c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: b77a25d2-0a64-4b0e-bb44-d91cce340dee
+                        Id: 32bb7ddc-9d05-47c5-b93e-7774d430bec1
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         Sampler: PointClamp
+        -   Entity:
+                Id: b8ec6044-f224-4862-93cd-78568bae49e9
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: 8ed7cc0f-4d27-483e-9d25-5d5c073ee207
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 2450198a-4959-424a-a437-885172b5a832
         -   Entity:
                 Id: bc2a9fb9-412b-4233-9b6b-ca2a1877ecd3
                 Name: Smoke
@@ -1798,13 +1777,13 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 48253cc3-75d1-4814-af31-47921acb306f
-                        Position: {X: 6.227873, Y: 0.0, Z: 0.15396202}
+                        Position: {X: -4.8726883, Y: 0.0, Z: -4.7356687}
                         Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! cbfb47d3-aa6c-4589-8a6f-9e94ad0dca9b
                             8239c71b88bf1c94de3e375d56834829: ref!! 9fd48225-5527-456c-a2b6-04f067ebbbcc
-                            bcfb0e9e28a9261378d919857d41962d: ref!! f7cef201-06a8-4637-a81a-fa03d97188bf
+                            998e88ea2c794eb7e5c0d552d0fd809e: ref!! 0b141737-e5ba-493a-9416-08173f17f66c
                     1c1d15ca993b3804362cff39cee41b81: !ModelComponent
                         Id: 1a8a357d-1655-4c2a-b799-517c922e528f
                         Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
@@ -1851,6 +1830,22 @@ Hierarchy:
                     e56c7b753ee4327601094f6aa7bdafff: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: c3d55edc-85e2-441e-b7c8-da13874da72a
                         volume: 0.25
+        -   Entity:
+                Id: c2a7e9df-be87-4538-ad65-359c98d81c67
+                Name: SpriteSheet_2
+                Components:
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: 3ac76d97-f244-4cb2-970d-da926ce5b969
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: a4af9cdf-13d8-49f9-93b6-297b777a4ea0
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
         -   Entity:
                 Id: c7b5ee60-4cb9-475d-9816-c0030066f0cb
                 Name: sprite
@@ -2031,6 +2026,22 @@ Hierarchy:
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
+                Id: d9b6b2e2-f58a-4ba1-8f5a-6c18d40a20f4
+                Name: SpriteSheet_2
+                Components:
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: ce4734be-ff9c-43d8-bd08-b8072419fda9
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 94cd671b-dce8-42ff-9c52-6852f2b0d346
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
+        -   Entity:
                 Id: dc384e1d-7daa-4fb8-a060-0e5ca6ede185
                 Name: SpriteTerrain
                 Components:
@@ -2093,22 +2104,6 @@ Hierarchy:
                         IsAlphaCutoff: true
                         Sampler: PointClamp
         -   Entity:
-                Id: e1b44b0d-726e-4c88-ac34-b845bb718851
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: 653be516-8dbc-40f3-85cb-dbd7144ce4a6
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 76d611b7-5415-41f9-a28f-14f1f05176ac
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-        -   Entity:
                 Id: f0cfb7e2-f5a6-4f35-b732-44cc2543cf74
                 Name: sprite
                 Components:
@@ -2127,16 +2122,21 @@ Hierarchy:
                         IsAlphaCutoff: true
                         Sampler: PointClamp
         -   Entity:
-                Id: f2f40919-a80f-4b91-ae6b-c6bf4f8f373f
-                Name: HealthBar
+                Id: f3599426-9b0b-4810-b047-1916e1894377
+                Name: SpriteSheet_2
                 Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: 840d12d0-7faf-4b93-a21a-a4f68d401b76
-                        Position: {X: 0.7, Y: 1.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 2a2399c5-c2b9-4b69-9389-fe67d8825703
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: bada4bfd-bf4b-4037-9671-49fb520d2de6
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 260aed74-8afc-4c09-9c87-bcc26e766d8e
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
         -   Entity:
                 Id: f6578fe8-6df9-4e07-a67d-7e643dca02cd
                 Name: Smoke
@@ -2305,8 +2305,8 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 8331fed9-a045-4771-bcf0-72476c428c59
-                        Position: {X: -5.6814914, Y: 0.0, Z: 0.0}
-                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Position: {X: 0.05831178, Y: 0.0, Z: 3.95706}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! f29500fd-a0eb-4049-9d8f-2560aa5c83af
@@ -2358,6 +2358,22 @@ Hierarchy:
                     b5eb7f1dbde35a6d9215128f534b36a0: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: 3508ec82-aa56-4233-be63-4a689d94f5de
                         volume: 0.25
+        -   Entity:
+                Id: fd655f13-50ff-4226-a69c-3c96de9b804d
+                Name: SpriteSheet_2
+                Components:
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: cf25d399-aba8-4827-94b7-820ee8177179
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 013f3ec0-ed5c-4d14-a9e6-ddd0c12304e5
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
         -   Entity:
                 Id: fe5f956a-9d3d-4b20-a5c6-8782ad055a01
                 Name: Smoke
@@ -2519,19 +2535,3 @@ Hierarchy:
                                             ForceVortex: 0.0
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
-        -   Entity:
-                Id: ffd7a44f-489c-4f55-83bc-7e0339c98b4b
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: 3f6767ea-2c40-4965-a722-8063d5c94c10
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 46427eb3-6c63-4be3-9a3d-cff8a92d7ece
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
