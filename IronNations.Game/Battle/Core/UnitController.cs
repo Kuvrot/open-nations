@@ -74,7 +74,8 @@ namespace IronNations.Battle.Core
             {
                 LookTarget();
 
-                if (unitStats.isEnemy)
+                //Search a new enemy every x seconds, in order to find the closest one
+                if (unitStats.isEnemy && BattleManager.Instance.Player1Units.Count > 0)
                 {
                     SearchForNewEnemy();
                 }
