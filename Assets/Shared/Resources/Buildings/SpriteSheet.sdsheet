@@ -1,0 +1,36 @@
+!SpriteSheet
+Id: 69caf551-8017-410f-8ebf-1ef60b5335e1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    ef9579f34a314b1bbd7f56cd19e22a99:
+        Source: !file ../../../../Resources/Resources/Buildings/HouseSpriteSheet.png
+        Name: HouseSpriteSheet
+        TextureRegion: {X: 17, Y: 8, Width: 480, Height: 480}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    ac150458c4204ec3da56fa04311d9327:
+        Source: !file ../../../../Resources/Resources/Buildings/HouseSpriteSheet.png
+        Name: HouseSpriteSheet
+        TextureRegion: {X: 516, Y: 8, Width: 480, Height: 480}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    5185092e7306e6091a8214397ab4b5c3:
+        Source: !file ../../../../Resources/Resources/Buildings/HouseSpriteSheet.png
+        Name: HouseSpriteSheet
+        TextureRegion: {X: 7, Y: 517, Width: 480, Height: 480}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    9a8cc1d0af403a08b6bc6408d3b12c21:
+        Source: !file ../../../../Resources/Resources/Buildings/HouseSpriteSheet.png
+        Name: HouseSpriteSheet
+        TextureRegion: {X: 515, Y: 525, Width: 481, Height: 481}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

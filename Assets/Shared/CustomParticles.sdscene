@@ -82,7 +82,7 @@ Hierarchy:
                                         UVBuilder: null
                                         ForceTexCoords: false
                                     Spawners:
-                                        4957231736c162e9df14bc22efe33730: !CustomParticleSpawner
+                                        b19b3f95d349959523926638673fe0f8: !CustomParticleSpawner
                                             LoopCondition: Looping
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
@@ -103,7 +103,7 @@ Hierarchy:
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
                                             RandomSize: {X: 0.2, Y: 0.1}
-                                        07ac9fe44d9a7e1f89bbc1dd91329e81: !CustomParticleInitializer
+                                        6426d0c3ac8af51e0846de9beda44073: !CustomParticleInitializer
                                             DebugDraw: true
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -120,7 +120,7 @@ Hierarchy:
                                             Angle: 30.0
                                             Strength: 1.0
                                     Updaters:
-                                        fa586a5cba091f1421d37c68ac666bb5: !CustomParticleUpdater
+                                        4ddf799f74636e829750e38e7561d011: !CustomParticleUpdater
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
@@ -171,7 +171,7 @@ Hierarchy:
                                         UVBuilder: null
                                         ForceTexCoords: false
                                     Spawners:
-                                        484a66cf8965e3d4d250d5e88f321d59: !CustomParticleSpawner
+                                        3a7c43637f386f87ca266aeac575e5dc: !CustomParticleSpawner
                                             LoopCondition: Looping
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
@@ -192,7 +192,7 @@ Hierarchy:
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
                                             RandomSize: {X: 0.2, Y: 0.1}
-                                        0ec2d86bf8ab5c81253ddb4a2be3197b: !CustomParticleInitializer
+                                        5c6df2997b21fe04ec522a5187f85855: !CustomParticleInitializer
                                             DebugDraw: true
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -209,7 +209,7 @@ Hierarchy:
                                             Angle: 15.0
                                             Strength: 2.0
                                     Updaters:
-                                        f3893aa13bc60f5fd2538a976d8fcbfd: !CustomParticleUpdater
+                                        9bed6d545acb281a83b587e6feb127c1: !CustomParticleUpdater
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true
@@ -246,7 +246,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    60d990d94152980cb9d820eb368b4680: !IronNations.NextSceneScript,IronNations.Game
+                    95dae1dafd2cf964031ec7ac7dd50385: !IronNations.NextSceneScript,IronNations.Game
                         Id: 2dd62824-7955-4d54-93e2-0e0b5686bd65
                         Next: b9ad5ab7-4272-458a-9cb7-c912e67607c6:Lasers
                         Previous: 01cc892b-349f-4ba6-bb43-227dba37d72e:CustomMaterials
@@ -294,7 +294,7 @@ Hierarchy:
                                         UVBuilder: null
                                         ForceTexCoords: false
                                     Spawners:
-                                        252c68e79ac21a753c9a85f611c42883: !CustomParticleSpawner
+                                        3451db5832ee2754e57eb3722e2b0a90: !CustomParticleSpawner
                                             LoopCondition: Looping
                                             Delay: {X: 0.0, Y: 0.0}
                                             Duration: {X: 1.0, Y: 1.0}
@@ -315,7 +315,7 @@ Hierarchy:
                                             DisplayParticleScale: false
                                             DisplayParticleScaleUniform: true
                                             RandomSize: {X: 0.05, Y: 0.1}
-                                        6ad4528b2efaf10243d0ea8824821028: !CustomParticleInitializer
+                                        5110691c1dac4e2d0a97a9e789ea3d6c: !CustomParticleInitializer
                                             DebugDraw: true
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -332,7 +332,7 @@ Hierarchy:
                                             Angle: 45.0
                                             Strength: 0.3
                                     Updaters:
-                                        5d358a58247da1ddae7389a101e4d46d: !CustomParticleUpdater
+                                        d3a56f1acc5795018a41e062d02228f8: !CustomParticleUpdater
                                             InheritPosition: true
                                             Position: {X: 0.0, Y: 0.0, Z: 0.0}
                                             InheritRotation: true

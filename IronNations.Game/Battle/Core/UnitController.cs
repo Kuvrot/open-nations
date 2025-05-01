@@ -4,6 +4,7 @@ using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Physics;
 using Stride.Audio;
+using Stride.Rendering.Sprites;
 
 namespace IronNations.Battle.Core
 {
@@ -19,8 +20,8 @@ namespace IronNations.Battle.Core
 
         public bool isAttacking = false;
         private bool isUnitDead = false;
-        SoundInstance soundInstance;
-
+        private SoundInstance soundInstance;
+        private UnitStats enemyUnitStats;
         //Timers
         private float tick = 0;
         private float clock = 0;
@@ -84,7 +85,17 @@ namespace IronNations.Battle.Core
 
                 if (isAttacking)
                 {
-                    auxRange = unitStats.attackRange;
+                    enemyUnitStats = target.Entity.Get<UnitStats>();
+                    //Check if the unit is attacking a building
+                    if (enemyUnitStats.unitType == UnitType.Building && !IsRangeUnit())
+                    {
+                        //If is attacking a building and is not a range unit, then increase the attackRange
+                        auxRange = unitStats.attackRange * 2;
+                    }
+                    else
+                    {
+                        auxRange = unitStats.attackRange;
+                    }
                 }
                 else
                 {
@@ -130,6 +141,35 @@ namespace IronNations.Battle.Core
                         {
                             target = BattleManager.Instance.Player1Units[random].Entity.Transform;
                         }
+                    }
+                }
+            }
+
+            if (unitStats.unitType == UnitType.Building)
+            {
+                SpriteComponent buildingSprite = unitStats.buildingSprite;
+
+                if (buildingSprite != null)
+                {
+                    DebugText.Print(unitStats.spriteUnit.Intensity.ToString(), new Int2(200,200));
+
+                    SpriteFromSheet spriteSheet = buildingSprite.SpriteProvider as SpriteFromSheet;
+                    if (unitStats.spriteUnit.Intensity >= 0.67f)
+                    {
+                        spriteSheet.CurrentFrame = 0;
+                    }
+                    else if (unitStats.spriteUnit.Intensity < 0.67f && unitStats.spriteUnit.Intensity >= 0.33f)
+                    {
+                        spriteSheet.CurrentFrame = 1;
+                    }
+                    else if (unitStats.spriteUnit.Intensity < 0.33f && unitStats.spriteUnit.Intensity >= 0.2f)
+                    {
+                        spriteSheet.CurrentFrame = 2;
+                    }
+
+                    if (unitStats.health <= 0f)
+                    {
+                        spriteSheet.CurrentFrame = 3;
                     }
                 }
             }
@@ -180,8 +220,6 @@ namespace IronNations.Battle.Core
 
         private void MakeDamage ()
         {
-            UnitStats enemyUnitStats = target.Entity.Get<UnitStats>();
-
             if (target.Entity.Get<UnitStats>().health <= 0)
             {
                 target = null;
@@ -226,7 +264,15 @@ namespace IronNations.Battle.Core
                 //Cannon has a 50% chance of hitting the target
                 if (random >= 50)
                 {
-                    target.Entity.Get<UnitStats>().health -= unitStats.damage;
+                    if (unitStats.unitType == UnitType.Artillery && enemyUnitStats.unitType == UnitType.Building)
+                    {
+                        target.Entity.Get<UnitStats>().health -= unitStats.damage * 2;
+                    }
+                    else
+                    {
+                        target.Entity.Get<UnitStats>().health -= unitStats.damage;
+                    }
+                    
                     int randomZ = new Random().Next(0, 2);
                     int randomX = new Random().Next(0, 2);
                     hitPosition = target.Position + new Vector3(randomX / 2, 0, randomZ / 2);
@@ -244,8 +290,6 @@ namespace IronNations.Battle.Core
                     cannonHole[0].Transform.Position = hitPosition;
                     Entity.Scene.Entities.AddRange(cannonHole);
                 }
-
-                target.Entity.Get<UnitStats>().health -= unitStats.damage * 0.5f;
                 return;
             }
 
@@ -267,7 +311,7 @@ namespace IronNations.Battle.Core
                     }
 
                     float distance = Vector3.Distance(Entity.Transform.Position, BattleManager.Instance.Player1Units[i].Entity.Transform.Position);
-                    
+
                     if (distance <= closestEnemyDistance)
                     {
                         closestEnemyDistance = distance;
@@ -280,6 +324,16 @@ namespace IronNations.Battle.Core
                 tick = 0;
             }
             tick += 1 * BattleManager.deltaTime;
+        }
+
+        private bool IsRangeUnit()
+        {
+            if (unitStats.unitType == UnitType.Musketeer)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

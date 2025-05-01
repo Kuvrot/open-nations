@@ -8,6 +8,7 @@ using ServiceWire;
 using Stride.Physics;
 using System;
 using Stride.UI.Controls;
+using Stride.Core;
 
 namespace IronNations.Battle.Core
 {
@@ -17,7 +18,8 @@ namespace IronNations.Battle.Core
          Spearman,
          Musketeer,
          Cavalry,
-         Artillery
+         Artillery,
+         Building
     };
 
     public class UnitStats : SyncScript
@@ -42,7 +44,10 @@ namespace IronNations.Battle.Core
         public EntityComponent projectile; //(if is a range unit) Bullets, arrows, magic, etc.
 
         //Components
+        [Display("Sprite of the unit (leave null)")]
         public SpriteComponent spriteUnit;
+        [Display("Building sprite (in case is a building, if not leave null)")]
+        public SpriteComponent buildingSprite;
         private UnitController unitController;
         private EntityComponent healthBar;
 
