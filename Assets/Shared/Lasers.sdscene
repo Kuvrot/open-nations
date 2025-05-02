@@ -79,7 +79,7 @@ Hierarchy:
                         Children:
                             b9cca0bb6d732b4a880171348f616a77: ref!! bba0ccb9-736d-4a2b-8801-71348f616a77
                             8250107a1787032ccda11bbcad8527d5: ref!! 76a98a51-ef9d-4e81-bf5a-a1606d9c5a79
-                    cad91cc14a452394e52aa2d0841a7345: !IronNations.LaserOrientationScript,IronNations.Game
+                    fb961a495db4476c5848324adcde3116: !IronNations.LaserOrientationScript,IronNations.Game
                         Id: 49c91b07-0733-4418-9c0b-5162f1738f12
                         Target: ref!! 67d9a84d-40bd-4b82-bf51-d7231708fa37
                         doNotScale: false
@@ -341,20 +341,23 @@ Hierarchy:
                         Id: 0237ef3f-dca7-44d4-8b84-58b2ee51b8c0
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    6953b559a46d8de601fae9d13dd0ceb8*: !IronNations.RotationScript,IronNations.Game
                         Id: 6e0bb716-16e9-4dde-a270-81dc8fd21dd5
                         TimeFactor: 1.0
-                    2c6a08f11a4dc7a00c30cda8a8fc3e3d*: !IronNations.RotationScript,IronNations.Game
+                    4acdf28b5f23fc4beaf1f1cbe3115e76*: !IronNations.RotationScript,IronNations.Game
                         Id: 070065aa-49ef-43cb-bf1b-2b102ba7a6ea
                         TimeFactor: 1.0
-                    8eefcd3860f505698c366e5705d9a8d8*: !IronNations.RotationScript,IronNations.Game
+                    9df1dcd2ffc5d542eea1b630fd67c7a0*: !IronNations.RotationScript,IronNations.Game
                         Id: 5669b1c9-f54e-459e-b0de-6f8311c7595c
                         TimeFactor: 1.0
-                    95f1003a0bcea5efb38397cd7c36282b*: !IronNations.RotationScript,IronNations.Game
+                    f027b25a1e6c2a71313745ca089f2e19*: !IronNations.RotationScript,IronNations.Game
                         Id: 1abb79e4-efee-42ad-b8d6-c82c459c0472
                         TimeFactor: 1.0
-                    5267c472750b345427644c7983cab7c2*: !IronNations.RotationScript,IronNations.Game
+                    404113575ef73357d7e83492f1ca07a5*: !IronNations.RotationScript,IronNations.Game
                         Id: b84a9d01-6c33-49a9-912c-1cb165fef383
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: 8f2125c3-6a73-4ce0-8d65-ef97f78cee9c
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -384,20 +387,23 @@ Hierarchy:
                         Id: 34e3e0cb-ae56-4f1e-a6f8-0ace08e86947
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    524c29a7a459dc024da36dc41baa6b01*: !IronNations.RotationScript,IronNations.Game
                         Id: e74dd635-127b-4e5a-a081-9fcbe4c35460
                         TimeFactor: 1.0
-                    e68adf783468b0d4f1a94be003a7caba*: !IronNations.RotationScript,IronNations.Game
+                    8d2b8dfd9f464342005c78b65e23f71c*: !IronNations.RotationScript,IronNations.Game
                         Id: 8bdc5c0e-8082-4fc0-8344-e5ff8b7ec46a
                         TimeFactor: 1.0
-                    879b60e1b8a55ceaf8fdd4c4cd92e884*: !IronNations.RotationScript,IronNations.Game
+                    83d4a7508b9cd7ac698ffa7bf3f3200e*: !IronNations.RotationScript,IronNations.Game
                         Id: 731cef35-80c8-42cf-96d8-d958ce8b5d41
                         TimeFactor: 1.0
-                    14c42574f361f9d9708fcf1c9814708c*: !IronNations.RotationScript,IronNations.Game
+                    3b94ebd73267aed581b19bceb4650e51*: !IronNations.RotationScript,IronNations.Game
                         Id: 4c53ab05-68fd-43fb-9666-de94d7dfac93
                         TimeFactor: 1.0
-                    ddb226a57a190dbf393e8a262d3369cf*: !IronNations.RotationScript,IronNations.Game
+                    275b34e9e53f43b117c1a19b94f94508*: !IronNations.RotationScript,IronNations.Game
                         Id: d74cec4f-8dfe-41f5-9b32-47e155d01be8
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: d1b5933f-103d-4940-bce1-636c80ef7fee
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -417,20 +423,23 @@ Hierarchy:
                         Id: 847e71e8-4473-49af-adfd-83a907b83827
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    031b86aa46c4db97b7bfa7301d183e9c*: !IronNations.RotationScript,IronNations.Game
                         Id: 30ff219e-318b-4533-a56e-bf0190fa8501
                         TimeFactor: 0.65
-                    f081e6e633139d25598c0e4a41df60e7*: !IronNations.RotationScript,IronNations.Game
+                    da76a8eec0d1cbc56ad52ecc0a7d6035*: !IronNations.RotationScript,IronNations.Game
                         Id: 745b05ac-38f5-4f47-b29c-2367a7ff43b5
                         TimeFactor: 0.65
-                    805586277349b86131d2824dc9be4b9c*: !IronNations.RotationScript,IronNations.Game
+                    0cd75718817b70f88fdd6e41b05a1a0f*: !IronNations.RotationScript,IronNations.Game
                         Id: 64dbbf31-b868-4d52-9d2e-d28e94d84b66
                         TimeFactor: 0.65
-                    6f219fcc19dfb75cc9c49390ce3aa9c8*: !IronNations.RotationScript,IronNations.Game
+                    2f6395e681f7a8bd7570b4f455054c89*: !IronNations.RotationScript,IronNations.Game
                         Id: e01a80e4-3f07-4102-8593-e38382cafa83
                         TimeFactor: 0.65
-                    44799ebb7551c01e3617d36446db1a39*: !IronNations.RotationScript,IronNations.Game
+                    11c7c234a9f51bb8f7c2d24affbfa48a*: !IronNations.RotationScript,IronNations.Game
                         Id: 26987dfe-59f8-467f-9558-18c1c95503fc
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: 44765f10-f27e-4c52-a7c7-80b93a74c06e
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -640,7 +649,7 @@ Hierarchy:
                         Children:
                             b9cca0bb6d732b4a880171348f616a77: ref!! bec425de-0385-4e99-8124-d286c0ac4abf
                             e8c2f5be8c642ea1a2d2b8335c55ce69: ref!! 8f7e61fe-2d04-4eae-99e5-02d7e6ff7301
-                    ff3fccac3537348970f5f9f504fbfc9e: !IronNations.LaserOrientationScript,IronNations.Game
+                    25f5b4c8277fda555312058061391088: !IronNations.LaserOrientationScript,IronNations.Game
                         Id: 31b487fc-3bf0-4e6c-ab92-c99c5762a68f
                         Target: ref!! dc102f0c-7257-47a4-b595-aa47b0533de5
                         doNotScale: false
@@ -689,20 +698,23 @@ Hierarchy:
                         Id: da747f38-69ca-4ff6-bfe6-81879ce7b492
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    91ea02d28d876d251b38b7fd3f5bd87c*: !IronNations.RotationScript,IronNations.Game
                         Id: 06adda02-9cb8-4812-85ba-90a7aa4d0faf
                         TimeFactor: 0.8
-                    6a1b44b6a19841caac9483fbfa9a9f4d*: !IronNations.RotationScript,IronNations.Game
+                    68edb6f5827e8685659f467a9c95b875*: !IronNations.RotationScript,IronNations.Game
                         Id: 365ce20c-0ec0-4d37-81c6-6027f827fbfc
                         TimeFactor: 0.8
-                    ba94d2fd9b5f31cdd2082b30020ceafd*: !IronNations.RotationScript,IronNations.Game
+                    91359726ce984739bb0cbc152c3e8f0f*: !IronNations.RotationScript,IronNations.Game
                         Id: ceb583d7-65c0-4d0b-9fd7-867b1944ad9c
                         TimeFactor: 0.8
-                    d2e58feddb5cd3e57e5c97211379bdb3*: !IronNations.RotationScript,IronNations.Game
+                    de91f75fe4d12f85bbd828c245aadf63*: !IronNations.RotationScript,IronNations.Game
                         Id: fc3c12f8-cc0f-4829-afd1-9f08fadd32c8
                         TimeFactor: 0.8
-                    dae11327be6c79dbd044a13495fc631a*: !IronNations.RotationScript,IronNations.Game
+                    51de01679bd4bfb0a9241b5601c892b1*: !IronNations.RotationScript,IronNations.Game
                         Id: ddc6efa7-01d5-4808-87ef-4a793002a425
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: f8cf0f4b-4b30-451c-a414-1a0d702bb356
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -867,20 +879,23 @@ Hierarchy:
                         Id: 5a86b169-7dde-4036-b28e-1b5f54bb4b9b
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    4a3d95e8db8ea1a2e9185178ae0e13f3*: !IronNations.RotationScript,IronNations.Game
                         Id: c5a6a03d-9866-4402-813b-00efe9885c25
                         TimeFactor: 0.8
-                    305e687cc46196b51c53721dbb4c2cc9*: !IronNations.RotationScript,IronNations.Game
+                    e4766dd511564c7e146758c213566f0a*: !IronNations.RotationScript,IronNations.Game
                         Id: 2d900104-dd0a-4333-bd25-26e9a28ec41d
                         TimeFactor: 0.8
-                    08444e1f7f57dbf1410727a1602549d7*: !IronNations.RotationScript,IronNations.Game
+                    de894069abb784c7c727d50a58b2e2a5*: !IronNations.RotationScript,IronNations.Game
                         Id: 96f85f70-d486-4371-b7c4-06dd699619c0
                         TimeFactor: 0.8
-                    f4cc9e3c64c0d1da8ade48ea24035120*: !IronNations.RotationScript,IronNations.Game
+                    b21d1affd845b516b33f2ff71ca7f847*: !IronNations.RotationScript,IronNations.Game
                         Id: 66fb94ed-f54e-43d0-bb62-c89b13f49885
                         TimeFactor: 0.8
-                    86514af2eb78e1cf42f6bc9e326ee19d*: !IronNations.RotationScript,IronNations.Game
+                    b07a03fce6c15e1fdfb39637075cd74e*: !IronNations.RotationScript,IronNations.Game
                         Id: 99195e6f-d370-4f71-b643-91aeef1fa209
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: d0726203-c86c-4aa5-b40d-f4a6d2ee22b1
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -947,20 +962,23 @@ Hierarchy:
                         Id: 34f70455-ba93-47c9-9029-b04d21cf07f5
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    7b204787498bcd29e03a6cd593b99176*: !IronNations.RotationScript,IronNations.Game
                         Id: 3e99499c-57f5-4061-97d6-ef32f4a9671a
                         TimeFactor: 0.65
-                    b46b230f156ced7750c824a83b7b1fe8*: !IronNations.RotationScript,IronNations.Game
+                    a4fc4978b0a6de674f50b1ac02d53eb2*: !IronNations.RotationScript,IronNations.Game
                         Id: cde6d7f5-4ab1-46e5-91a8-5011bb129e2e
                         TimeFactor: 0.65
-                    62cafb1c20f8e848b21f1c5776a9bfb1*: !IronNations.RotationScript,IronNations.Game
+                    74d1c7616b118d5f48cca713870505dc*: !IronNations.RotationScript,IronNations.Game
                         Id: 22b36f5c-9980-40dc-89bd-0a0c230320b3
                         TimeFactor: 0.65
-                    221cb529a2a57e5087ef15117302ff6c*: !IronNations.RotationScript,IronNations.Game
+                    8b641014aa1a31c3d9a650ec12224091*: !IronNations.RotationScript,IronNations.Game
                         Id: a0271d12-3065-4cfb-9c0c-ac180d84b39b
                         TimeFactor: 0.65
-                    50ed01f9138b65d5e2b2c75bf055fa84*: !IronNations.RotationScript,IronNations.Game
+                    0f718b7819e465e463a638e7a1042d70*: !IronNations.RotationScript,IronNations.Game
                         Id: 1d0bd322-4167-49fb-802a-4ae51216f69c
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: b3303564-9ea2-4902-b62c-11ef9c4cc770
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -991,20 +1009,23 @@ Hierarchy:
                         Id: dd20db83-2ce5-4ee3-9749-851936dfaca9
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    98c58750b172d98b0bd590bda2b6b72b*: !IronNations.RotationScript,IronNations.Game
                         Id: ae6a6b75-ae4c-47f0-abd9-1d9aaf66f1dd
                         TimeFactor: 1.0
-                    5a682c3eae481a195526a490bb401dc9*: !IronNations.RotationScript,IronNations.Game
+                    0ea157a37d02f8323ed759ba46c285d1*: !IronNations.RotationScript,IronNations.Game
                         Id: 260f913f-0969-4b47-93bf-fc7c4c57ae79
                         TimeFactor: 1.0
-                    9af12991b971ac4e6cc2b6655a12d5b2*: !IronNations.RotationScript,IronNations.Game
+                    dfe7214853e97ca529368b7ad5b17a07*: !IronNations.RotationScript,IronNations.Game
                         Id: 55d2198b-e9fc-419c-8344-8c6f02b01134
                         TimeFactor: 1.0
-                    e8034f74d4110319571bba78d62b0c81*: !IronNations.RotationScript,IronNations.Game
+                    a78444d8e3b11bff9ef861c3e118c2b6*: !IronNations.RotationScript,IronNations.Game
                         Id: 6e2d6c48-2f8f-4f19-9fd0-fab296a9dd6d
                         TimeFactor: 1.0
-                    74c6aa7306d3e76f16412f5310ce5edb*: !IronNations.RotationScript,IronNations.Game
+                    cd6b385ce530a6d4932e458b1308f550*: !IronNations.RotationScript,IronNations.Game
                         Id: 534169eb-ff60-423e-98cf-7a736899ac0f
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: dbd325d6-f12e-479d-92f5-16b95d1bb8a4
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -1201,20 +1222,23 @@ Hierarchy:
                         Id: a9ac9d27-5ed9-4df3-a178-f357f2fd2696
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    f4351480914951c3fc859b1caa9df54c*: !IronNations.RotationScript,IronNations.Game
                         Id: 106b56fc-e610-4b46-9c8e-4cb171a83d83
                         TimeFactor: 1.0
-                    6be512116fe6c7cb6ac1b997d02b18be*: !IronNations.RotationScript,IronNations.Game
+                    3801c9a51f3af32fb070b6ef27d7b48f*: !IronNations.RotationScript,IronNations.Game
                         Id: 3a9a413c-3c9d-4ef8-bf4e-3de8ddfb35b9
                         TimeFactor: 1.0
-                    c47eb725829707a144d04e344a1b84a2*: !IronNations.RotationScript,IronNations.Game
+                    1c96c41f5e96793427117f1d87c8ef64*: !IronNations.RotationScript,IronNations.Game
                         Id: 5397ba46-0ace-449a-a09e-3c1ce4860424
                         TimeFactor: 1.0
-                    c3095d87fe499cb42c936eaa18e57623*: !IronNations.RotationScript,IronNations.Game
+                    010331ce0d453915d6dcdebb53e72fab*: !IronNations.RotationScript,IronNations.Game
                         Id: 8cbe9b90-2d74-408f-8795-d32e3ecb644c
                         TimeFactor: 1.0
-                    d380c074329776f91906fa45d326911a*: !IronNations.RotationScript,IronNations.Game
+                    c91cc47e0a4c505413529e611421fee8*: !IronNations.RotationScript,IronNations.Game
                         Id: 99ea082e-3d7f-4671-8d0c-677a7196e972
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: 031cd3c0-87f8-439c-9e6f-171f37eeaf31
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -1382,7 +1406,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             b40cc5b14d224c4b933e0e8a376bc8a7: ref!! f9f358cd-02bd-4397-a7e7-6472e569285b
-                    716335109d855e21ba025ba12cf5a83a: !IronNations.RotationScript,IronNations.Game
+                    e6ea48940faaced101933b0cff23bfc9: !IronNations.RotationScript,IronNations.Game
                         Id: e646737c-d02e-4227-8b0f-c70b491e5a59
                         TimeFactor: 0.2
         -   Entity:
@@ -1425,20 +1449,23 @@ Hierarchy:
                         Id: 727f15df-d2dd-4108-94dd-9fef5261e10a
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    828b82ccbe4ab54b3ef5aa7429a96522*: !IronNations.RotationScript,IronNations.Game
                         Id: 0db300bb-88b5-46d7-96e0-9ebfa37022b6
                         TimeFactor: 1.0
-                    4e51fc46569aef038aa45e4136c59636*: !IronNations.RotationScript,IronNations.Game
+                    9ef9793751d0d4224e1f66b955365df9*: !IronNations.RotationScript,IronNations.Game
                         Id: f7ec2813-8923-48e3-ab43-92b75dea7fd4
                         TimeFactor: 1.0
-                    3cd3cac437460587fdd3693da7681880*: !IronNations.RotationScript,IronNations.Game
+                    2978102554fc3f7a7fce7eaf7ec0d271*: !IronNations.RotationScript,IronNations.Game
                         Id: f1be80e2-d3b0-4d2b-b48f-439f17a09bb9
                         TimeFactor: 1.0
-                    5623525cefa535b0a6d49b1bed58f9f3*: !IronNations.RotationScript,IronNations.Game
+                    553f3df151374b0ac470d279f58af016*: !IronNations.RotationScript,IronNations.Game
                         Id: 40230c5b-823a-4e5c-b906-6a0ec139859a
                         TimeFactor: 1.0
-                    72a68c734877271c993c338195b91420*: !IronNations.RotationScript,IronNations.Game
+                    6d1d81500d4e7346efaa9fb98ac23736*: !IronNations.RotationScript,IronNations.Game
                         Id: 2a29d40f-78a9-4f0a-b60d-230e27212179
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: 65983bec-65d3-4c93-9b5c-0fe9a48a010d
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -1501,20 +1528,23 @@ Hierarchy:
                         Id: 9c979533-778b-49cf-9f88-a9cf69f0b837
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    a0b177790b8be7b5dbde22a9b6427343*: !IronNations.RotationScript,IronNations.Game
                         Id: c237aaa6-436e-4788-b998-dae55ce17a86
                         TimeFactor: 1.0
-                    1cab1182b786e02c499cc0997a653f63*: !IronNations.RotationScript,IronNations.Game
+                    72b11a4e7c7466dd6249badaf3970b86*: !IronNations.RotationScript,IronNations.Game
                         Id: 92d49d49-8ca8-45c3-b9da-47c09c3f57ff
                         TimeFactor: 1.0
-                    d8e65f1f974a6282fc635c8e138955a9*: !IronNations.RotationScript,IronNations.Game
+                    6db5530f48b31fc7c810b99e1df9af38*: !IronNations.RotationScript,IronNations.Game
                         Id: e841f5f3-3af0-40e2-887b-6d1e1c1b2a37
                         TimeFactor: 1.0
-                    8f1a9acf4cd276ea23864ea837d7480f*: !IronNations.RotationScript,IronNations.Game
+                    3a7c212f6f7be62206ed5da0822ef2f7*: !IronNations.RotationScript,IronNations.Game
                         Id: 0c8e1850-0be2-46b9-9725-0ee96740753c
                         TimeFactor: 1.0
-                    9eb1d9f13c8b1512c3f03f83bdb1dc52*: !IronNations.RotationScript,IronNations.Game
+                    99081185c4ed6ef0e85221491154522c*: !IronNations.RotationScript,IronNations.Game
                         Id: fce854a5-83dd-4fc4-ad40-f5aa2e9e1177
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: e2884b3d-c797-4b04-ad38-54fc3f322b7e
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -1673,20 +1703,23 @@ Hierarchy:
                         Id: 7400a753-6e82-475a-b5a1-e41ff21dffca
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    95b9d3781b3d720eab3a5c918e688f10*: !IronNations.RotationScript,IronNations.Game
                         Id: f5df01a1-3d84-4319-b5f1-51f59cd4f1d7
                         TimeFactor: 0.8
-                    46dd49b7023e12dbbf87e9d5a31a33d2*: !IronNations.RotationScript,IronNations.Game
+                    0ff13854812fb3074316982b929ad968*: !IronNations.RotationScript,IronNations.Game
                         Id: 23308f48-186c-4ab9-9323-c8a1ad1e91b1
                         TimeFactor: 0.8
-                    b4ce02c2a4e1fbc8584429479bd24915*: !IronNations.RotationScript,IronNations.Game
+                    2775cbe5e391e5d148a714b1eadefbc6*: !IronNations.RotationScript,IronNations.Game
                         Id: 362c17fc-6263-4b65-9069-b14ebe6ab0ad
                         TimeFactor: 0.8
-                    34536c3d4d7cccc5a7aca40fd0b053a5*: !IronNations.RotationScript,IronNations.Game
+                    5d9e51c095551fc85d3554a51f9c1910*: !IronNations.RotationScript,IronNations.Game
                         Id: 8e400bc8-38e5-4c00-b112-4f0f6034d43c
                         TimeFactor: 0.8
-                    c16cca29033d5139feaa7b5498a46e49*: !IronNations.RotationScript,IronNations.Game
+                    a1d3f0da6a8622528b41cbd24b6a2532*: !IronNations.RotationScript,IronNations.Game
                         Id: ba15c888-1c8e-4f1c-b5f5-2c4efb659091
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: 451b9ba6-d433-48d9-9f7c-837b77f924ef
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -1706,20 +1739,23 @@ Hierarchy:
                         Id: 2ba71c11-e0f2-4349-a630-338d7f99298b
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    d5491207ead02c9746731a86da9cedbb*: !IronNations.RotationScript,IronNations.Game
                         Id: cddcb352-1aaf-4ae9-94ea-bc17b44a9467
                         TimeFactor: 0.65
-                    68795f6a278fcdd0a5d74b8d0304dfea*: !IronNations.RotationScript,IronNations.Game
+                    a335de827df99759526dab4608389155*: !IronNations.RotationScript,IronNations.Game
                         Id: ee771588-3638-475d-8f69-2919e1f9c27f
                         TimeFactor: 0.65
-                    bbae8b06b05b98b2b6a709bbd24f35c2*: !IronNations.RotationScript,IronNations.Game
+                    99ab5f5ec8dc3c1dc0fa4d5c70bf575f*: !IronNations.RotationScript,IronNations.Game
                         Id: c98ab747-5b80-4513-ba3e-f471f19b3b76
                         TimeFactor: 0.65
-                    8c302f2b4c1ad2114330097ece5c23f6*: !IronNations.RotationScript,IronNations.Game
+                    eaf981d2d0915a47cbdf990890a03b1d*: !IronNations.RotationScript,IronNations.Game
                         Id: b4fd8ad9-09c2-41ef-88e9-6a656efd0558
                         TimeFactor: 0.65
-                    d1ef87b8aa8845b6d05023323b27e513*: !IronNations.RotationScript,IronNations.Game
+                    4fce987b2db6212fd06786c07447156a*: !IronNations.RotationScript,IronNations.Game
                         Id: cd0e19c5-27af-4610-bc2e-bf83bc32ab1c
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: 9293cb08-39e6-4034-a63f-9801cca407ed
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -1754,20 +1790,23 @@ Hierarchy:
                         Id: 6b077efc-cb15-41b9-8c28-53ecff014230
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    200f24f7a21e39d52e772712a1033fd4*: !IronNations.RotationScript,IronNations.Game
                         Id: a1b3b367-cbbd-4740-8388-6f12adc81052
                         TimeFactor: 0.8
-                    5165187bb63ed560979388621c8a807b*: !IronNations.RotationScript,IronNations.Game
+                    6731d093574aa28fdaa822ebc3405381*: !IronNations.RotationScript,IronNations.Game
                         Id: 9d5900fc-9b3c-43bf-be11-aa182761744d
                         TimeFactor: 0.8
-                    9ccfa77148358bde7ef390f9573be339*: !IronNations.RotationScript,IronNations.Game
+                    2e08bd727769fe090d19f1ada5999609*: !IronNations.RotationScript,IronNations.Game
                         Id: 5771991a-e984-4084-a4a7-102df163b33d
                         TimeFactor: 0.8
-                    3e67f7a6be3b4da62e869e17e9033615*: !IronNations.RotationScript,IronNations.Game
+                    a868f95b933fd50b01ca95a5eccdbd03*: !IronNations.RotationScript,IronNations.Game
                         Id: 4795e73b-ebf1-448f-8e16-308b817492b7
                         TimeFactor: 0.8
-                    815891983e273d6d7bd1b86ee1a1b736*: !IronNations.RotationScript,IronNations.Game
+                    c8451aa5b059d85982b16438c71fb898*: !IronNations.RotationScript,IronNations.Game
                         Id: 3738617a-e9b7-417b-b37c-3b3a1374e658
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: ffb044df-393d-4a27-bb7a-82cf30e97495
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -1821,20 +1860,23 @@ Hierarchy:
                         Id: 2511807a-ec04-4f1f-8b5d-2bd64d82f441
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    6c0ece1efe841f03bcbfe5688a0b0e9c*: !IronNations.RotationScript,IronNations.Game
                         Id: 6b55226b-c7ba-4522-bc4a-1dfebf2e53fd
                         TimeFactor: 0.65
-                    546707a7f7f7acd3d830d6c47c4b8add*: !IronNations.RotationScript,IronNations.Game
+                    056121f7063cd45dff389dc54c0ed40c*: !IronNations.RotationScript,IronNations.Game
                         Id: 63ab32fd-bb77-4e21-8d98-6e6af06ebe50
                         TimeFactor: 0.65
-                    9276e40ef53e0c8a374573465f601d53*: !IronNations.RotationScript,IronNations.Game
+                    7befde1175ccd0f340f3805f3ffd284a*: !IronNations.RotationScript,IronNations.Game
                         Id: a3e4c367-0893-49d9-bc14-07add92f0d93
                         TimeFactor: 0.65
-                    d83bf1636bdccb27e6e6654aa79bf461*: !IronNations.RotationScript,IronNations.Game
+                    938552c47743d5e7c1e6f02b636bacbe*: !IronNations.RotationScript,IronNations.Game
                         Id: aebd2f1b-7762-4798-b7c8-25823e5b0ff1
                         TimeFactor: 0.65
-                    a95f529c1c291c5d39f5136a13a1ea56*: !IronNations.RotationScript,IronNations.Game
+                    358d929e7732bec88c3c242aa4312a38*: !IronNations.RotationScript,IronNations.Game
                         Id: 9a45eeee-d92f-42d4-b16c-b06de2be1095
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: 7272b1fb-9c2c-4c86-9807-d84137fcd628
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -2412,7 +2454,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             e219b27977b6a64882008816798b86ea: ref!! 79b219e2-b677-48a6-8200-8816798b86ea
-                    acfb8f32d569039761a3f77bc3e99406: !IronNations.LaserOrientationScript,IronNations.Game
+                    5dd260a195d490808ebb0fd8f99f6695: !IronNations.LaserOrientationScript,IronNations.Game
                         Id: 4ef3a967-a808-432b-8b24-6b0aaf914b8f
                         Target: ref!! 38896f97-400c-4ad9-8e04-0f1dc1172ffa
                         doNotScale: false
@@ -2447,20 +2489,23 @@ Hierarchy:
                         Id: 085006c0-1c23-4969-9d5f-a7fb595e8d82
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    c00d7a1536f291c622c6d52d9d028514*: !IronNations.RotationScript,IronNations.Game
                         Id: 30781f78-ec8a-4ad5-81d0-6662fdc210fe
                         TimeFactor: 0.65
-                    ed32c3e44206dc09633454fd289a10a5*: !IronNations.RotationScript,IronNations.Game
+                    26531c093c76b0ca90caa18d04d1494e*: !IronNations.RotationScript,IronNations.Game
                         Id: 0f8620c6-c001-4840-bba7-7ca6a2fdb7cf
                         TimeFactor: 0.65
-                    fd631bb02ce5a27bd35076ea664e2eb9*: !IronNations.RotationScript,IronNations.Game
+                    821cdf11f3e0699531581a5c69719ced*: !IronNations.RotationScript,IronNations.Game
                         Id: 527568b4-d100-4ea9-ad7e-d4a16944c231
                         TimeFactor: 0.65
-                    7a8360d81784c580183f4613f145bea1*: !IronNations.RotationScript,IronNations.Game
+                    c91132d94bf3593d3a2dba57168abbc4*: !IronNations.RotationScript,IronNations.Game
                         Id: 58b13ee0-5954-4be1-873d-1cd12ca58cf9
                         TimeFactor: 0.65
-                    58167cb470f42416d3a77c5dc7d20db9*: !IronNations.RotationScript,IronNations.Game
+                    8d4bd49f4c1fd6a2503967de37dc40d0*: !IronNations.RotationScript,IronNations.Game
                         Id: 5fbcfe32-910b-45e5-b6a7-2d8416b80ee5
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: 06bfec7f-479e-4a7b-bd46-a00139201ffa
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -2480,20 +2525,23 @@ Hierarchy:
                         Id: 747a49d2-9332-4f2f-8ddc-35b8ac762d92
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    f20158daefab2e27ca7788db1efc254b*: !IronNations.RotationScript,IronNations.Game
                         Id: 1888a10d-2f8a-4f5f-9ea5-0339885f16ea
                         TimeFactor: 0.65
-                    3a5fd35b7aedb0eeaa1216d1acbe5f7d*: !IronNations.RotationScript,IronNations.Game
+                    636d5adfbabf0856fcfbc7a277a3d670*: !IronNations.RotationScript,IronNations.Game
                         Id: e7ac5472-4a18-4ab6-85b3-507f690c6d56
                         TimeFactor: 0.65
-                    2f910d40821e5ef418b0e5e8dfd8c8fc*: !IronNations.RotationScript,IronNations.Game
+                    0fc9929d230dbc851ca8b9e8173b68d8*: !IronNations.RotationScript,IronNations.Game
                         Id: ef50651c-32a5-4a78-9493-400932e51f64
                         TimeFactor: 0.65
-                    dffc57b1fdc4d3e7bf6dd04285c853df*: !IronNations.RotationScript,IronNations.Game
+                    ba0ed79b20a71894457741e3244fdd12*: !IronNations.RotationScript,IronNations.Game
                         Id: b364cf93-a131-49a9-98d9-17b66d0514f8
                         TimeFactor: 0.65
-                    f1980e1686220a346375ce350c758351*: !IronNations.RotationScript,IronNations.Game
+                    27cd031a33ddc98f76083abd5cdb6a38*: !IronNations.RotationScript,IronNations.Game
                         Id: f01727e8-b4ea-4361-a467-2310a2e4e039
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: f9b3f030-4a36-4097-b7cf-e10359ae236a
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -2563,20 +2611,23 @@ Hierarchy:
                         Id: e7f93c2c-3a48-4bca-9cd2-567295b418c7
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    48a63aa75100960128be677184e62316*: !IronNations.RotationScript,IronNations.Game
                         Id: 24f15777-72d8-48a6-8b16-ad0c76ff98b0
                         TimeFactor: 1.0
-                    4fff62d47bdeb6aa7047e45d88c3d2aa*: !IronNations.RotationScript,IronNations.Game
+                    18b9efeb6aa29a313cfe89eecb885a9d*: !IronNations.RotationScript,IronNations.Game
                         Id: d2bf8d75-1042-4d03-90f9-6b5f79f15104
                         TimeFactor: 1.0
-                    6fdc14b220474a14411d578cd5ecd9ed*: !IronNations.RotationScript,IronNations.Game
+                    7a22d91f1fc4ab6c1f9fee269c4cbb6f*: !IronNations.RotationScript,IronNations.Game
                         Id: a975a2a7-02bf-4638-9f55-607961af6175
                         TimeFactor: 1.0
-                    d3c4ef96e317c43549571ebf4cb39b62*: !IronNations.RotationScript,IronNations.Game
+                    e4c239928d6b508a699ea746dbbbd37a*: !IronNations.RotationScript,IronNations.Game
                         Id: c195cd5d-b571-4709-ac70-e8937ca09b5a
                         TimeFactor: 1.0
-                    533577df7fec5b09db719c1a57294653*: !IronNations.RotationScript,IronNations.Game
+                    59be2c49a600dbe12636c3fb8089540a*: !IronNations.RotationScript,IronNations.Game
                         Id: 2025dce2-6c47-4315-a3eb-b22522f0d9e2
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: 13a54467-1394-4d39-9ffe-7e0f32e9a925
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -2593,7 +2644,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             b40cc5b14d224c4b933e0e8a376bc8a7: ref!! 633cde60-6783-45e7-89d8-b905115a6883
-                    955724e8739d22f487853a1eab694469: !IronNations.RotationScript,IronNations.Game
+                    d25c1fc4760cbaeb7c24d6bbc1ba5a5a: !IronNations.RotationScript,IronNations.Game
                         Id: 5cdb2bbe-c579-4fd6-97c5-f4485b9dc088
                         TimeFactor: 0.2
         -   Entity:
@@ -2610,20 +2661,23 @@ Hierarchy:
                         Id: 7a9336a1-1295-4513-84c9-4cbbce17cc62
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    40ce8963a8e5639b0373cf58d873f068*: !IronNations.RotationScript,IronNations.Game
                         Id: 93c97c1d-783f-4667-8b0b-2671dd3ee776
                         TimeFactor: 0.65
-                    99b35fcb8439251eb3720849c117f2ce*: !IronNations.RotationScript,IronNations.Game
+                    679e72772fe1f2dcec66afa78430e871*: !IronNations.RotationScript,IronNations.Game
                         Id: 8503f9d2-4a45-4417-8bed-2f3775958632
                         TimeFactor: 0.65
-                    6e841f495414678b1eb6644211e2db11*: !IronNations.RotationScript,IronNations.Game
+                    49cefc67014327f4578dd3927ce7e872*: !IronNations.RotationScript,IronNations.Game
                         Id: 8010c17e-8489-4d12-88d4-6d985b0b5648
                         TimeFactor: 0.65
-                    cdb4b92a607dd2ff9e742c9a3e85aef2*: !IronNations.RotationScript,IronNations.Game
+                    32028c57a619f6aea95b6761d8709228*: !IronNations.RotationScript,IronNations.Game
                         Id: 813331f7-bae9-4ed3-891d-a0e039df421b
                         TimeFactor: 0.65
-                    3ace425c93517be0bbe505ed11444d0a*: !IronNations.RotationScript,IronNations.Game
+                    b35c35dbe1cd42557f9526d2ab29eb98*: !IronNations.RotationScript,IronNations.Game
                         Id: 1446e4ef-dbcc-4e3b-aac0-ba6c1507ab93
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: 237d2a31-b04c-4320-a4f7-d70941b79e1e
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -2676,20 +2730,23 @@ Hierarchy:
                         Id: 724f27ea-7137-439f-982c-4b30640650d1
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    23cec413eb7ccdd700790fc4b1325fc8*: !IronNations.RotationScript,IronNations.Game
                         Id: a762ce9a-decf-428f-a935-5ae2df50430c
                         TimeFactor: 0.65
-                    36b2973608dd377b5de91ad90f382c72*: !IronNations.RotationScript,IronNations.Game
+                    9a9124e2ae71809903d6d6e45ee3331e*: !IronNations.RotationScript,IronNations.Game
                         Id: b93c0d35-14b5-4856-ac85-1ae0c44ba386
                         TimeFactor: 0.65
-                    424b9b1775414e72449087b1d0906f1b*: !IronNations.RotationScript,IronNations.Game
+                    746dcb18b1ad636f5405d0fb12b28e74*: !IronNations.RotationScript,IronNations.Game
                         Id: 47aaeca1-01fd-4007-805f-e1ba6fb231bf
                         TimeFactor: 0.65
-                    5491de8550ee83ad9ced9611c3d8ee77*: !IronNations.RotationScript,IronNations.Game
+                    b578448fb754981d01045d7f69378ce1*: !IronNations.RotationScript,IronNations.Game
                         Id: b83db1c4-6894-4a0e-9e62-151a7ea828e2
                         TimeFactor: 0.65
-                    ed4ff27ddd88a71be6f2b75238e72065*: !IronNations.RotationScript,IronNations.Game
+                    8da2817db189a5d08168805b3baab98c*: !IronNations.RotationScript,IronNations.Game
                         Id: cfc79067-31e7-478c-9196-c42702658058
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: ed3838b0-484c-43e1-bdf2-abd1df35d471
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -2743,7 +2800,7 @@ Hierarchy:
                         Name: null
                         Projection: Perspective
                         Slot: 3217b71f-b48d-4321-bab1-7cb4da999c19
-                    929bfcff8fc781a486573d064d6942e3: !IronNations.CameraOrbitScript,IronNations.Game
+                    64df47ab1ca3c4785f0bf135fb2b2620: !IronNations.CameraOrbitScript,IronNations.Game
                         Id: 5bc83c29-7826-49d6-a70b-5c6f5b9f20ee
         -   Entity:
                 Id: a4da17e2-9bdc-4193-befc-5d92d165d6d1
@@ -2980,20 +3037,23 @@ Hierarchy:
                         Id: b54c294b-2f01-4925-b4c4-cb9afe4cdd8e
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    cf7469496264bec08e4b93861b9517d9*: !IronNations.RotationScript,IronNations.Game
                         Id: fb41f705-b45e-47ac-a2dd-6ebdfde5c0f0
                         TimeFactor: 0.8
-                    b2d6245af1c1f0d5db7f26b3d69454b4*: !IronNations.RotationScript,IronNations.Game
+                    c611d3e208a2017319e9b7774e2b71a7*: !IronNations.RotationScript,IronNations.Game
                         Id: ee8cc59c-3208-4e91-bf5e-c8bd86da2a1e
                         TimeFactor: 0.8
-                    3f5f766d26858821759c534681c3a6cd*: !IronNations.RotationScript,IronNations.Game
+                    838dcdbe3518d185cf303ae33f4401be*: !IronNations.RotationScript,IronNations.Game
                         Id: 5e56cf14-90b8-40d2-a511-1ab0cdea3c61
                         TimeFactor: 0.8
-                    f3fe070d48059bde8fee38e7ade9de33*: !IronNations.RotationScript,IronNations.Game
+                    df28c677f4b38d113d84a8b4cb1c3945*: !IronNations.RotationScript,IronNations.Game
                         Id: bbfa38ec-8795-4b2e-9c07-78ef8f78abda
                         TimeFactor: 0.8
-                    e1cdd3580c344b6cebc1314bbd4a663e*: !IronNations.RotationScript,IronNations.Game
+                    a8d5d37a1ba757d8890aae82e02232c4*: !IronNations.RotationScript,IronNations.Game
                         Id: 758f7769-5894-472c-afeb-bd0a87bb773d
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: 3274d81a-0c41-4670-858e-ce29aa0b05df
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -3028,20 +3088,23 @@ Hierarchy:
                         Id: 90e54e9f-4bcf-462f-ba48-81e1381225a9
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    f7dfb7e9e9658ab7355d484d48b66818*: !IronNations.RotationScript,IronNations.Game
                         Id: a854d620-6135-4368-b75f-fbd1052c53ef
                         TimeFactor: 0.8
-                    a7b1bb4c9d93d62342af50bde557571f*: !IronNations.RotationScript,IronNations.Game
+                    ef6076716870da0ac7e0ce04a9dfbc6d*: !IronNations.RotationScript,IronNations.Game
                         Id: 40f3cd04-f0bb-4b54-b3fd-af18543729ed
                         TimeFactor: 0.8
-                    d9c701018a953e4577ef4ef9db52faae*: !IronNations.RotationScript,IronNations.Game
+                    403e039acf1f33700cb8dcd81968dbf0*: !IronNations.RotationScript,IronNations.Game
                         Id: ab8e3d28-2602-4ec4-aa04-b975385810ef
                         TimeFactor: 0.8
-                    6a2f3e8ed69b76b71f3a63c3b409af3e*: !IronNations.RotationScript,IronNations.Game
+                    0efaf8871aef455cc484ad8737ef15b7*: !IronNations.RotationScript,IronNations.Game
                         Id: 6fb93588-d3cd-4016-bf30-d89a56ee0918
                         TimeFactor: 0.8
-                    d018e154bbe541372150a30a32ba1dd8*: !IronNations.RotationScript,IronNations.Game
+                    59a598b8af3f540bef82a94757df714d*: !IronNations.RotationScript,IronNations.Game
                         Id: 7a0464f0-7a95-46a3-bf6c-fc2e1b4b81b2
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: 1397776c-2498-4617-86fe-a177853c20df
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -3058,7 +3121,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             b40cc5b14d224c4b933e0e8a376bc8a7: ref!! 8e631c69-4900-419e-b4d8-08d15167a84e
-                    e198ee223952ed5dce6150b8ca5e33b2: !IronNations.RotationScript,IronNations.Game
+                    4be079d36020bf1467f7f4ee8918f95d: !IronNations.RotationScript,IronNations.Game
                         Id: 06af0897-64fb-4f47-bbcf-5ff4ced7fe7b
                         TimeFactor: 1.0
         -   Entity:
@@ -3360,7 +3423,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    25226e83bdbbfef749b40d201411a3e4: !IronNations.NextSceneScript,IronNations.Game
+                    de7d9c0b81a5d87c1e5a7b2ad4c1b50a: !IronNations.NextSceneScript,IronNations.Game
                         Id: 19a971bf-8f68-42e5-9954-03742abc1a77
                         Next: 20fc2f4b-4abc-4a8d-95a2-591de8197314:RibbonParticles
                         Previous: e937debb-2381-414d-86dc-e0f1c498baa5:CustomParticles
@@ -3381,7 +3444,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             b40cc5b14d224c4b933e0e8a376bc8a7: ref!! 2e474e01-dbd2-4e17-96b8-a6bf17ee5db0
-                    0e0c6845793deea4bd2d9e39f49c0cc0: !IronNations.RotationScript,IronNations.Game
+                    f11258b36d12b50af6cafb59a2f2a2c8: !IronNations.RotationScript,IronNations.Game
                         Id: 87a7eb36-ec32-4c48-a6c0-70a85cf5375d
                         TimeFactor: 1.0
         -   Entity:
@@ -3451,20 +3514,23 @@ Hierarchy:
                         Id: 64a106f5-df3c-491f-8bce-c41fb3679afc
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    107e579dbce155e52d6ff2f12a8c7046*: !IronNations.RotationScript,IronNations.Game
                         Id: dac2a623-cdcb-4e50-9c2c-4c440ba41319
                         TimeFactor: 0.8
-                    43565dce93507b8932c3dd076c51c413*: !IronNations.RotationScript,IronNations.Game
+                    32c53903b3c04f05c9697a42b5c38157*: !IronNations.RotationScript,IronNations.Game
                         Id: 2bde8c7e-f99e-4ad7-acc8-56fe37ff72a3
                         TimeFactor: 0.8
-                    076de060c62f39c87a34912a10e8291e*: !IronNations.RotationScript,IronNations.Game
+                    2b24cf6e56dca72c4b3b73a85f6b1604*: !IronNations.RotationScript,IronNations.Game
                         Id: 54fa9ac5-03d6-48d9-8fec-8b81f7080c24
                         TimeFactor: 0.8
-                    1583b7c4409e7d82e0a02fa05d56e862*: !IronNations.RotationScript,IronNations.Game
+                    22ec73d99dcda14eb0f89c647255a3b2*: !IronNations.RotationScript,IronNations.Game
                         Id: 4863c702-6040-40d1-aae4-6d7bb995f0b5
                         TimeFactor: 0.8
-                    61f75970f89fd1a4fc61b85f162fd01f*: !IronNations.RotationScript,IronNations.Game
+                    ef8eec324ba86bdca9252d4db8dac4e3*: !IronNations.RotationScript,IronNations.Game
                         Id: 2164d9d8-1dd9-4426-8c44-4289bee5775c
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: 11f54613-a2c7-4db4-9206-e21f1efb2516
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -3484,20 +3550,23 @@ Hierarchy:
                         Id: ba4024fc-f048-4fbc-8999-e74fb9400c62
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    f5b44c47d426d0c519e6d68841249f17*: !IronNations.RotationScript,IronNations.Game
                         Id: c8ec5fb0-6537-41a7-ad6a-fe2b782b01d5
                         TimeFactor: 0.8
-                    ab31a7e3e59f3f1fdffb0b45f0c1747c*: !IronNations.RotationScript,IronNations.Game
+                    2af81451adaee4cacbd4e40e9f1551b5*: !IronNations.RotationScript,IronNations.Game
                         Id: 2663efd2-dd60-44c4-bd14-c0923d32f35c
                         TimeFactor: 0.8
-                    849f79756fef8906e074cc5d9428667a*: !IronNations.RotationScript,IronNations.Game
+                    cd9061ba4ba968c970cbf0efc463144b*: !IronNations.RotationScript,IronNations.Game
                         Id: 7cf1889b-b6cf-4f54-b428-717dc11a02f8
                         TimeFactor: 0.8
-                    319162987501ef43dd7b2fa6e3b98541*: !IronNations.RotationScript,IronNations.Game
+                    5bba0fe0818c5fca40c9f1d611952915*: !IronNations.RotationScript,IronNations.Game
                         Id: 0d74f98b-815f-43ff-b59b-cfac19592c68
                         TimeFactor: 0.8
-                    baab1ba14e27caae90ac74b5af4fc1a0*: !IronNations.RotationScript,IronNations.Game
+                    136e60e8ae6b41562339428511188a28*: !IronNations.RotationScript,IronNations.Game
                         Id: eecb4934-9b76-491e-b651-ee3aa6a2e54b
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: c92ce787-c1bf-4b13-b4a7-99e2de3108b0
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -3517,20 +3586,23 @@ Hierarchy:
                         Id: f89b0de5-514a-4aa1-ba23-a1761dade4c3
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    37ebc3c762bc972c4d19b19f9e46dda6*: !IronNations.RotationScript,IronNations.Game
                         Id: b033529b-af47-4eee-bed2-47cb86c4248f
                         TimeFactor: 1.0
-                    a32d8a7181f052029f9579d0df72be1e*: !IronNations.RotationScript,IronNations.Game
+                    601d23d7802b824592e46218822f0532*: !IronNations.RotationScript,IronNations.Game
                         Id: 17f10267-4e27-40f3-a22c-bc8e9aca53ee
                         TimeFactor: 1.0
-                    51b56f57f368c7031b57198ba88e545a*: !IronNations.RotationScript,IronNations.Game
+                    97572a7cf2c55720384848fee663bc7f*: !IronNations.RotationScript,IronNations.Game
                         Id: 9ac22d39-3877-4e42-b18a-90fb16d5a75d
                         TimeFactor: 1.0
-                    cf273e2965aba4a7c3f07e5f75b8663d*: !IronNations.RotationScript,IronNations.Game
+                    c636a3adc902446825d7a18d40d87b3c*: !IronNations.RotationScript,IronNations.Game
                         Id: 420375ac-e8ba-4dda-847a-0eff377af8c1
                         TimeFactor: 1.0
-                    c6212720cc3f43304ce0524bc82a71f8*: !IronNations.RotationScript,IronNations.Game
+                    c9d7a0cc28b1a1c1b2a975ef4a32e42d*: !IronNations.RotationScript,IronNations.Game
                         Id: 94f88556-cfad-47df-a393-b47311e1162b
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: 1fb423fe-1c0a-4726-8f18-3fe2348d46c6
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -3565,20 +3637,23 @@ Hierarchy:
                         Id: 0a0a5042-7662-422d-9cb5-4d30373f0e43
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    e1ef8f2e034f17e4a370c3efc3fc34ea: !IronNations.RotationScript,IronNations.Game
+                    b77831fbf00e1189825f9e9bc695a0ba*: !IronNations.RotationScript,IronNations.Game
                         Id: 72ce34cc-ddde-4d43-ab2f-305d05b92915
                         TimeFactor: 1.0
-                    6c5c50c6a5f7fae0505be3f95f54fbc9*: !IronNations.RotationScript,IronNations.Game
+                    572cc485eb921d4c87b8e8aa97dc459c*: !IronNations.RotationScript,IronNations.Game
                         Id: 47c1e5d4-1ed1-45e7-8c8c-fa4cdc107e1a
                         TimeFactor: 1.0
-                    4f9825b3a5f28b78bc35ed899a894d80*: !IronNations.RotationScript,IronNations.Game
+                    bcfa4daa449dc24da04b9a564b5e0fb1*: !IronNations.RotationScript,IronNations.Game
                         Id: 6dbfc290-7630-408b-b944-2d9bf90ed12b
                         TimeFactor: 1.0
-                    a04914663abef2137ab47894f31ea9ff*: !IronNations.RotationScript,IronNations.Game
+                    b576fd19997e75b5d7b3c0ae332fe20a*: !IronNations.RotationScript,IronNations.Game
                         Id: bf519b3a-b0de-4b78-85c9-bb76d8ad3669
                         TimeFactor: 1.0
-                    c735561afb2169c27e380a6089b047f9*: !IronNations.RotationScript,IronNations.Game
+                    b8d7812495646d1f64bc315037059572*: !IronNations.RotationScript,IronNations.Game
                         Id: 880c3862-4f0e-46c2-a84f-8017943867d1
+                        TimeFactor: 1.0
+                    1902d0fddc2503f6bf982a47b890f976: !IronNations.RotationScript,IronNations.Game
+                        Id: 662cc512-7ffb-4ec6-bc36-137b241a8ecf
                         TimeFactor: 1.0
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -4267,20 +4342,23 @@ Hierarchy:
                         Id: 0de8583f-50eb-4ddf-817f-f8f1eb7136eb
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    80eb073ccfa5184a50fc426ae76a1740: !IronNations.RotationScript,IronNations.Game
+                    884b0678e5b33d7f6911766583b9a97c*: !IronNations.RotationScript,IronNations.Game
                         Id: 8f0e7a57-a432-4a5a-97c1-f57a1ae89363
                         TimeFactor: 0.8
-                    e02681e3362022f759aea6c1f5e45d73*: !IronNations.RotationScript,IronNations.Game
+                    fa884f72928376af3451b49f6b46305c*: !IronNations.RotationScript,IronNations.Game
                         Id: 8e17390f-cbd1-4f76-8560-b2966351f670
                         TimeFactor: 0.8
-                    ef29b88bfed7ffd11b8217b5a8c6d628*: !IronNations.RotationScript,IronNations.Game
+                    a38adf619425f2d59c52213d86c8181f*: !IronNations.RotationScript,IronNations.Game
                         Id: 0e202f6f-f61c-455e-8086-26a77b1dd87b
                         TimeFactor: 0.8
-                    b7fd8c520f5542af0c90eddbc5f8e38b*: !IronNations.RotationScript,IronNations.Game
+                    75b67e79193f04da57564360dec5c556*: !IronNations.RotationScript,IronNations.Game
                         Id: 1c7a51ed-e8dd-44a1-aa88-c07a87777ca7
                         TimeFactor: 0.8
-                    d23db92c4933cd285b3546c755a2798d*: !IronNations.RotationScript,IronNations.Game
+                    38dabaa567b739fe14ea61a9755fa25c*: !IronNations.RotationScript,IronNations.Game
                         Id: 694722de-0cd0-4227-a82b-0ef6cc291e35
+                        TimeFactor: 0.8
+                    d4c26383b2a23dc2ff9f4b17af2cdb5b: !IronNations.RotationScript,IronNations.Game
+                        Id: bab5a1d5-8a55-4d60-b931-ce8654ebe132
                         TimeFactor: 0.8
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab
@@ -4315,20 +4393,23 @@ Hierarchy:
                         Id: d7515d62-3115-4a09-866f-f0dd600d195b
                         Model: 29f2ff76-b7e1-43e1-b511-0ffb1572c8bd:Models/MetalRing
                         Materials: {}
-                    5815a029b48825be9ded572a4d88dc10: !IronNations.RotationScript,IronNations.Game
+                    79abf1d6bd2092f8d3b8121a49f4e3ae*: !IronNations.RotationScript,IronNations.Game
                         Id: d0978b25-222c-4c36-a628-c12f3fcc67cb
                         TimeFactor: 0.65
-                    245c19837cbf21977b16b52d9bea5e9a*: !IronNations.RotationScript,IronNations.Game
+                    fdb4a0ec88817ba6ca2a63a8d463c3f4*: !IronNations.RotationScript,IronNations.Game
                         Id: be19dc02-1475-4def-99e3-23ef36ec99dd
                         TimeFactor: 0.65
-                    1da5953946475b87eeedd6c355660bd4*: !IronNations.RotationScript,IronNations.Game
+                    4f0c538efe6eefa48cf00a00f5b88ccc*: !IronNations.RotationScript,IronNations.Game
                         Id: e8076b19-cc36-4e63-9e2a-59d06576acb6
                         TimeFactor: 0.65
-                    bc77721d76213f30f1415f27c6c4705e*: !IronNations.RotationScript,IronNations.Game
+                    880b2890db5b863b3206d0892ddf08ba*: !IronNations.RotationScript,IronNations.Game
                         Id: 1ae45fa7-07de-4ace-9c65-50dc8672d85b
                         TimeFactor: 0.65
-                    304067ed7eaa44249bddbef346d0c725*: !IronNations.RotationScript,IronNations.Game
+                    b11e48db686310c694723f15729b4661*: !IronNations.RotationScript,IronNations.Game
                         Id: 57515765-03a7-437a-a772-d44c3caeef96
+                        TimeFactor: 0.65
+                    451ef55c4e0e59f7b3b9f69e6734db22: !IronNations.RotationScript,IronNations.Game
+                        Id: 56e2cb68-08b8-474a-bf11-11de56f0fd59
                         TimeFactor: 0.65
             Base:
                 BasePartAsset: bd44d6b0-a9cd-48f5-b088-d5446d4f8efe:Prefab

@@ -9,19 +9,20 @@ Hierarchy:
         - ref!! dc384e1d-7daa-4fb8-a060-0e5ca6ede185
         - ref!! 78a55307-970a-4649-83c6-3562b142da35
         - ref!! fbb93530-d469-494b-861e-24cb02aed3da
-        - ref!! 32d6bc44-1ab3-4ae7-ae57-be15ddb2dcac
         - ref!! 0e612352-9c2d-4fbc-8c35-1c323dd484a2
-        - ref!! 5f7d4121-288f-4455-b634-3b44b469b387
         - ref!! 232098b4-c8ad-4549-a9de-5193964c3e5b
-        - ref!! c00439f2-a216-42c5-a666-86b91b0647a1
         - ref!! 6a7e5ac6-6d60-4bab-b0db-27b27ee5cfb1
-        - ref!! 1c394319-1059-4e02-9c41-bed54fed4008
+        - ref!! 04034c36-65ce-4498-a04e-1d08a25825bb
+        - ref!! e0d965f8-e0d3-473a-b16f-29667d62527e
+        - ref!! 909303a9-4d75-448b-99fa-db4f160c5b5d
         - ref!! 0008b902-1125-460a-bfaf-96c0a990f22f
         - ref!! 5aad26a9-4b7a-4b9d-af16-6b5ee64ad58c
         - ref!! dcc38c8a-8243-40ed-acd1-9498798f5bba
         - ref!! 75fe1bf2-0f57-4d04-b88a-645774473c77
         - ref!! 2626df99-d58f-4d6e-b0c6-a8180244181a
         - ref!! 183102ad-c6f2-472a-b4e3-74984df886b2
+        - ref!! 48502b9d-5020-4954-b5bf-d5a16e3a8602
+        - ref!! 76ddbac3-61ce-4fbe-8001-938f2abc551b
     Parts:
         -   Entity:
                 Id: 0008b902-1125-460a-bfaf-96c0a990f22f
@@ -42,167 +43,68 @@ Hierarchy:
                             Shadow:
                                 Size: Small
                                 BiasParameters: {}
-        -   Entity:
-                Id: 02065d92-ec58-47e3-ac4d-e537c1aad567
-                Name: Smoke
+        -   Folder: Units
+            Entity:
+                Id: 04034c36-65ce-4498-a04e-1d08a25825bb
+                Name: Artillery
                 Components:
-                    df4667ca4899b14aa8233099b697ba41: !TransformComponent
-                        Id: 4ce29e24-e37d-4f09-b82c-bfad36533961
-                        Position*: {X: -0.012596205, Y: 0.0, Z: -0.48729226}
+                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
+                        Id: e4240cb1-356e-4e51-9266-a25f641933ae
+                        Position: {X: -3.1290631, Y: 0.0, Z: 1.0513229}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale*: {X: 0.05, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    bf1fe4b13873014684062641dc83069a: !ParticleSystemComponent
-                        Id: 4670e49b-e0fc-4c78-bfa6-7702fe96e1b5
-                        Control:
-                            ResetSeconds: 2.0
-                            Control: Play
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Speed: 1.0
-                        ParticleSystem:
-                            Settings: {}
-                            BoundingShape: !BoundingSpheretatic
-                                Radius: 3.0
-                            Emitters:
-                                b82fdaf2ef02c644ab0462ec43c7ec6d:
-                                    ParticleLifetime: {X: 0.5, Y: 1.0}
-                                    ShapeBuilder: !ShapeBuilderBillboard
-                                        SamplerPosition: null
-                                        SamplerSize: null
-                                        SamplerRotation: null
-                                    Material: !ParticleMaterialComputeColor
-                                        ZOffset: 0.25
-                                        ComputeColor: !ComputeTextureColor
-                                            Texture: 14ae3049-c054-4591-bf06-1f624097dfea:smoke8x8
-                                            FallbackValue:
-                                                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                                            Scale: {X: 1.0, Y: 1.0}
-                                            Offset: {X: 0.0, Y: 0.0}
-                                            Swizzle: null
-                                        UVBuilder: !UVBuilderFlipbook
-                                            XDivisions: 8
-                                            YDivisions: 8
-                                            StartingFrame: 0
-                                            AnimationSpeed: 64
-                                        ForceTexCoords: false
-                                    Spawners:
-                                        2a7fbdd91d5a594eae7f7e5a38642886: !SpawnerBurst
-                                            LoopCondition: OneShot
-                                            Delay: {X: 0.0, Y: 0.0}
-                                            Duration: {X: 1.0, Y: 1.0}
-                                            SpawnCount: 100
-                                    Initializers:
-                                        46b7991efe9dc6428410e088ac99aa2d: !InitialVelocitySeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: true
-                                            VelocityMin: {X: -1.0, Y: 0.0, Z: -1.0}
-                                            VelocityMax: {X: 1.0, Y: 0.0, Z: 1.0}
-                                        132b8f715578354f89ec7b0b74a7e209: !InitialSizeSeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 1
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: false
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: true
-                                            RandomSize: {X: 0.5, Y: 1.0}
-                                        ef1353cc50497449804cd73287f17fde: !InitialPositionSeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: true
-                                            PositionMin: {X: -0.1, Y: 0.3, Z: -0.1}
-                                            PositionMax: {X: 0.1, Y: 0.2, Z: 0.1}
-                                            Interpolate: false
-                                        6959a006657d6746bc17236b808abb8b: !InitialRotationSeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: false
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: false
-                                            AngularRotation: {X: 0.0, Y: 360.0}
-                                    Updaters:
-                                        75b283bf73a71445a9cb4250a5117a81: !UpdaterForceField
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            DisplayParticlePosition: true
-                                            FieldShape: !FieldShapeCylinder
-                                                HalfHeight: 1.0
-                                                Radius: 1.0
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: true
-                                            DisplayParticleScaleUniform: false
-                                            FieldFalloff:
-                                                StrengthInside: 1.0
-                                                FalloffStart: 0.1
-                                                StrengthOutside: 0.0
-                                                FalloffEnd: 0.9
-                                            EnergyConservation: 0.5
-                                            ForceDirected: 0.0
-                                            ForceVortex: 0.0
-                                            ForceRepulsive: 10.0
-                                            ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
-                                        31d34beac45bd741808eb660e1b16657: !UpdaterForceField
-                                            DebugDraw: true
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            DisplayParticlePosition: true
-                                            FieldShape: !FieldShapeCylinder
-                                                HalfHeight: 1.0
-                                                Radius: 4.0
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: true
-                                            DisplayParticleScaleUniform: false
-                                            FieldFalloff:
-                                                StrengthInside: 0.0
-                                                FalloffStart: 0.1
-                                                StrengthOutside: 1.0
-                                                FalloffEnd: 0.5
-                                            EnergyConservation: 1.0
-                                            ForceDirected: 0.0
-                                            ForceVortex: 0.0
-                                            ForceRepulsive: -20.0
-                                            ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            df9127fe7cc11d35907b99d820d3bfaa: ref!! 4233742c-55ec-4c3c-8ba9-1e01030961f0
+                            8239c71b88bf1c94de3e375d56834829: ref!! cd8e5347-10cb-49ab-b46d-aa3d3f900c6b
+                            bfb7b1206eb5e94c60e060d8790835b2: ref!! 9a8c3210-a872-4557-a69d-fe7b2cab2b58
+                    1c1d15ca993b3804362cff39cee41b81: !ModelComponent
+                        Id: d8321cc5-062f-4781-a93d-226270ae4c37
+                        Enabled: false
+                        Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
+                        Materials:
+                            53caea21e6bdf2ccc5cb403684103d01~0: 053bbe99-e66c-4d5a-985a-86b6d74fa676:Materials/BodyWhite
+                    10fd9229bc3fe3c668450c091f214df5: !CharacterComponent
+                        Id: 1139ad22-9a6d-45d2-9349-152f95126931
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 0.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            13ea863b2aa4d67339a94139276dbdcd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    e30ce1d76ca3ba0578040e96614bbeca: !IronNations.Battle.Core.UnitController,IronNations.Game
+                        Id: fc65b761-060f-4601-8e8e-ebb712068b43
+                        idUnit: 0
+                        target: null
+                        isAttacking: false
+                    a96e49439f4d4444e0e3a02c5a99af93: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                        Id: 42556b04-c74e-4641-8c2e-8e95a15b1ee0
+                        unitType: Artillery
+                        isEnemy: false
+                        health: 100.0
+                        damage: 40.0
+                        attackRange: 14.0
+                        movementSpeed: 5.0
+                        attackRate: 6.5
+                        isEliteUnit: false
+                        searchEnemyRate: 10.0
+                        attackSound: b4a5a2b0-50ba-4c75-8fd2-47ec6250236a:Resources/SFX/cannon_fire
+                        attackEffect: ref!! aa8e4917-1d91-4676-8508-55b54af221ea
+                        projectile: null
+                        spriteUnit: null
+                        buildingSprite: null
+                    a7a1c56937fb18ca9031f1973a77c525: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        Id: e6af233d-fd69-4a8e-9e87-eaf3ddac2e18
+                        volume: 0.25
         -   Entity:
                 Id: 050f8227-474b-4648-8fe7-b6b48cb56b0e
                 Name: SpriteSheet_2
@@ -394,23 +296,6 @@ Hierarchy:
                         Id: 4992bd90-bee5-4755-bf2a-fcb34eded35f
                         Model: e027eec8-f3de-4667-a27a-6871d9337154:Materials/Sphere
                         Materials: {}
-        -   Entity:
-                Id: 0d59d4cb-165c-4a30-9493-add8c6ebbe08
-                Name: sprite
-                Components:
-                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
-                        Id: cbfb47d3-aa6c-4589-8a6f-9e94ad0dca9b
-                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
-                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
-                        Children: {}
-                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
-                        Id: e2fd2f4e-97cd-4d83-9872-1b1776257f93
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 74960a46-f3ff-4460-b3fe-1ad103744f25:Resources/Units/RedUnit
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
-                        Sampler: PointClamp
         -   Folder: Units
             Entity:
                 Id: 0e612352-9c2d-4fbc-8c35-1c323dd484a2
@@ -448,12 +333,12 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    f7a958fc5c6c72fa68f13d101de3db3e: !IronNations.Battle.Core.UnitController,IronNations.Game
+                    e8c69d2f2b8ae3e0e73e065e582a3ae8: !IronNations.Battle.Core.UnitController,IronNations.Game
                         Id: 02f76076-6d42-4356-865a-b6b3f44dc563
                         idUnit: 0
                         target: null
                         isAttacking: false
-                    f313e99f3aa32464960bed10f3bf37fc: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                    146421252be656509b857a0252117d22: !IronNations.Battle.Core.UnitStats,IronNations.Game
                         Id: 768711fd-d9db-446b-8b7f-000cb52c74b6
                         unitType: Cavalry
                         isEnemy: false
@@ -468,7 +353,8 @@ Hierarchy:
                         attackEffect: ref!! eecb6520-2651-4601-be70-108b967e6669
                         projectile: null
                         spriteUnit: null
-                    18edbb69110c09ebfd449e6ec335d59e: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        buildingSprite: null
+                    208ad1f1019a40fd6ef9cb896bf1d621: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: 87277c2f-507d-4015-bf72-619f7d805cef
                         volume: 0.25
         -   Entity:
@@ -659,67 +545,6 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             d129caf8b9159ece3dba0d6f34042eb5: ref!! 484cc04a-c402-437f-93dc-6b5f7265795c
-        -   Folder: Units
-            Entity:
-                Id: 1c394319-1059-4e02-9c41-bed54fed4008
-                Name: Artillery
-                Components:
-                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
-                        Id: 0481163f-f742-4315-a677-6fcab50131af
-                        Position: {X: -0.096334614, Y: 0.0, Z: -7.2519755}
-                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            df9127fe7cc11d35907b99d820d3bfaa: ref!! 296ce8e3-31be-4cba-890d-f93cf4cde9c5
-                            8239c71b88bf1c94de3e375d56834829: ref!! 4ce29e24-e37d-4f09-b82c-bfad36533961
-                            e8cc0b7596e4ccf8b65cceeba398f8af: ref!! fb3a1a09-8e81-47b3-907b-78f45eeeeb57
-                    1c1d15ca993b3804362cff39cee41b81: !ModelComponent
-                        Id: 0b16125b-ef47-4aa6-a588-15df9f581e55
-                        Enabled: false
-                        Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
-                        Materials:
-                            53caea21e6bdf2ccc5cb403684103d01~0: 053bbe99-e66c-4d5a-985a-86b6d74fa676:Materials/BodyWhite
-                    10fd9229bc3fe3c668450c091f214df5: !CharacterComponent
-                        Id: 579875b3-eb1e-4970-a4a6-32337dde4b26
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 0.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            13ea863b2aa4d67339a94139276dbdcd: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    00070f86535d548f67468672e89bb338: !IronNations.Battle.Core.UnitController,IronNations.Game
-                        Id: 35caa38b-a9fe-4bd5-8049-af5112535a16
-                        idUnit: 0
-                        target: null
-                        isAttacking: false
-                    c5f61bfa42479b387d9677ca718639d1: !IronNations.Battle.Core.UnitStats,IronNations.Game
-                        Id: ac8025fb-3eb0-4828-a931-0519b6ff16d9
-                        unitType: Artillery
-                        isEnemy: true
-                        health: 100.0
-                        damage: 40.0
-                        attackRange: 14.0
-                        movementSpeed: 5.0
-                        attackRate: 6.5
-                        isEliteUnit: false
-                        searchEnemyRate: 10.0
-                        attackSound: b4a5a2b0-50ba-4c75-8fd2-47ec6250236a:Resources/SFX/cannon_fire
-                        attackEffect: ref!! 4670e49b-e0fc-4c78-bfa6-7702fe96e1b5
-                        projectile: null
-                        spriteUnit: null
-                    bdec7d0195e8c51ac1fdd92165b52dfb: !IronNations.Battle.Core.AudioManager,IronNations.Game
-                        Id: 334ee113-1653-4859-9053-ad57ef8f5253
-                        volume: 0.25
         -   Entity:
                 Id: 200e8ede-08eb-4ac0-80c5-bb73677df9d6
                 Name: MarkModel
@@ -897,14 +722,17 @@ Hierarchy:
                                             ForceVortex: 0.0
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
-                    d6c7029555282fe9c38b9b7c4e58c841: !IronNations.Effects.LifeTime,IronNations.Game
+                    c313831a7a4a015e25642acbeeaf92a0*: !IronNations.Effects.LifeTime,IronNations.Game
                         Id: 712c0d7d-92e2-495b-984d-5636d266cdbb
                         lifeTime: 1.0
-                    1d49ce274450869383b430da9e542168*: !IronNations.Effects.LifeTime,IronNations.Game
+                    05ac52966f30914902e7b9a77025945a*: !IronNations.Effects.LifeTime,IronNations.Game
                         Id: 4d16d196-5fb5-494e-bdda-ada542334fce
                         lifeTime: 1.0
-                    f6b101e3f6094ffda9eaa139ad55e043*: !IronNations.Effects.LifeTime,IronNations.Game
+                    ce07cc0577ddc0d107b374600d846fcd*: !IronNations.Effects.LifeTime,IronNations.Game
                         Id: 301b4bfd-042f-4f73-b9e2-4212bb09b3c5
+                        lifeTime: 1.0
+                    d2a2a2959a0f434e692b1d4a2297f272: !IronNations.Effects.LifeTime,IronNations.Game
+                        Id: a30cb636-96c7-4dba-99de-a739962b3162
                         lifeTime: 1.0
             Base:
                 BasePartAsset: fe90105a-f332-44b3-89c6-6acbf0f6dcce:CannonImpact
@@ -917,7 +745,7 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 70e7f993-0cf2-422d-a46e-2c592a892ccd
-                        Position: {X: -4.650263, Y: 0.0, Z: 3.8161504}
+                        Position: {X: -4.650263, Y: 0.0, Z: -5.8361483}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -947,12 +775,12 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    faf79578a6c0a03f47b00fdb9d06ffae: !IronNations.Battle.Core.UnitController,IronNations.Game
+                    a4c4b1f4815c155035d21238382f15a9: !IronNations.Battle.Core.UnitController,IronNations.Game
                         Id: 9efbb833-a1ee-4781-82e9-4fe93d083cce
                         idUnit: 0
                         target: null
                         isAttacking: false
-                    13da2f2eba12063044137e72c254d5d9: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                    1c1ba1941c6b6b28c736ac515fd9a4cf: !IronNations.Battle.Core.UnitStats,IronNations.Game
                         Id: 5534e41f-dbbb-4b35-a1da-df83b2f68e8c
                         unitType: Infantery
                         isEnemy: false
@@ -967,7 +795,8 @@ Hierarchy:
                         attackEffect: ref!! 37d6a844-8a38-4898-865b-e66f004d9231
                         projectile: null
                         spriteUnit: null
-                    0b01e4fe5b76878c3b61ab174208c987: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        buildingSprite: null
+                    e6a402568dbc27d34d027a2af8bd8f81: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: 75ae3c57-1b65-462c-9564-95dedd2f0b6e
                         volume: 0.25
         -   Entity:
@@ -980,7 +809,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    2a876773168c8d04645ce62a280db35f: !IronNations.Battle.Core.BattleManager,IronNations.Game
+                    5c79ec45d65f9689953a12ac27d85fbd: !IronNations.Battle.Core.BattleManager,IronNations.Game
                         Id: e788b865-45fc-451d-a284-0dca2000f299
                         camera: ref!! 9f8478bf-3b2e-49fd-b2c6-7c2d4cc96f99
                         minutes: 0
@@ -990,7 +819,7 @@ Hierarchy:
                         Player2Units: {}
                         selectionColor: {R: 0, G: 255, B: 197, A: 255}
                         CannonDamage: fe90105a-f332-44b3-89c6-6acbf0f6dcce:CannonImpact
-                    3b46b254e51ca0ed9632aaaa8bc94aca: !IronNations.Battle.Core.BattleAudioManager,IronNations.Game
+                    712caa8c0a373bc3470af1efc90e664d: !IronNations.Battle.Core.BattleAudioManager,IronNations.Game
                         Id: 2bc905ea-1901-4116-b87a-798534c947fe
                         drumsSound: 4a535d78-51b2-4ebd-be41-e58d30c6ce2c:Resources/SFX/MarchDrum
                         trumpetSound: f4f981b3-44b8-4646-bd11-859f2b9af0a9:Resources/SFX/trumpetMarch
@@ -1001,95 +830,40 @@ Hierarchy:
                         Sampler: PointClamp
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
-                    59c79b925ff4f874c3238ae926363d1f: !IronNations.Battle.Core.BattleUIManager,IronNations.Game
+                    2e8b0c3390ba1bb3cad97456df2c3164: !IronNations.Battle.Core.BattleUIManager,IronNations.Game
                         Id: c691caea-6b9c-44f7-a823-02621ab3217d
         -   Entity:
-                Id: 2e2fd6ae-ab02-4742-a9df-07c726a173c8
-                Name: sprite
+                Id: 32baa59b-75bc-4e27-9b25-65bb67dc1ab1
+                Name: SpriteSheet_2
                 Components:
-                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
-                        Id: a7322c33-9f5e-4b7c-bdbb-da6a155e7cf1
-                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
-                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: fb384d32-3d09-421a-b7ba-af4c659b4c02
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
                         Children: {}
-                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
-                        Id: 7391a9ea-cab3-46a4-8bdb-323fb7e400c7
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: fe4efca0-2d72-4469-abaa-2b7fd16adee0
                         SpriteProvider: !SpriteFromSheet
-                            Sheet: 74960a46-f3ff-4460-b3fe-1ad103744f25:Resources/Units/RedUnit
-                            CurrentFrame: 3
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-        -   Folder: Units
-            Entity:
-                Id: 32d6bc44-1ab3-4ae7-ae57-be15ddb2dcac
-                Name: Musketeers
-                Components:
-                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
-                        Id: efcfe09d-a0ff-4c19-a4a0-b2225eba15ca
-                        Position: {X: -0.027460732, Y: 0.0, Z: -4.7013106}
-                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            df9127fe7cc11d35907b99d820d3bfaa: ref!! 034bbb06-357f-4aa1-a27b-eb622f6aa21f
-                            8239c71b88bf1c94de3e375d56834829: ref!! 892154a0-2123-4868-8819-6f0d00d949af
-                            468d58e6a03df21d294d1af1cc1c8d48: ref!! 8ed7cc0f-4d27-483e-9d25-5d5c073ee207
-                    1c1d15ca993b3804362cff39cee41b81: !ModelComponent
-                        Id: 6d451d78-030f-4c09-9c59-0d3b05141d9f
-                        Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
-                        Materials:
-                            53caea21e6bdf2ccc5cb403684103d01~0: 053bbe99-e66c-4d5a-985a-86b6d74fa676:Materials/BodyWhite
-                    10fd9229bc3fe3c668450c091f214df5: !CharacterComponent
-                        Id: 5b7df117-c7a3-4f02-80c4-312c140b30ae
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 0.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            13ea863b2aa4d67339a94139276dbdcd: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    524f547c44ab8fd46f5256c75e5eca6e: !IronNations.Battle.Core.UnitController,IronNations.Game
-                        Id: fd487d9a-1fbe-41cd-b9f9-084b7951931d
-                        idUnit: 0
-                        target: null
-                        isAttacking: false
-                    ba70d5b64b71093a32d0834b430f564d: !IronNations.Battle.Core.UnitStats,IronNations.Game
-                        Id: 089837cb-0bf7-42a2-b810-f22635632a41
-                        unitType: Musketeer
-                        isEnemy: true
-                        health: 450.0
-                        damage: 17.0
-                        attackRange: 7.0
-                        movementSpeed: 9.0
-                        attackRate: 3.45
-                        isEliteUnit: false
-                        searchEnemyRate: 10.0
-                        attackSound: bbc2bc1f-a882-4555-8a31-486adaf7e48b:Resources/SFX/musketsshooting
-                        attackEffect: ref!! 7040704b-f593-4585-a027-e1c9e1d7d571
-                        projectile: null
-                        spriteUnit: null
-                    d725a88e244bec8de0749eb8f14434e9: !IronNations.Battle.Core.AudioManager,IronNations.Game
-                        Id: c10388df-cae1-4c85-be11-abc624c018b7
-                        volume: 0.25
+                        Sampler: PointClamp
         -   Entity:
-                Id: 4630b6f4-b854-47ca-9b1a-d7321bdc1cb0
-                Name: HealthBar
+                Id: 3bfefb72-5d2d-4104-ab24-0951633054b5
+                Name: SpriteSheet_2
                 Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: fb3a1a09-8e81-47b3-907b-78f45eeeeb57
-                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 7dc36e3c-9911-47a0-8fe1-66232cfad1ae
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: 18a83c50-d079-4c01-ad33-559eaaa775fd
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 4fe9f7f8-35eb-48c2-b4f3-12a6edf9cab7
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
         -   Entity:
                 Id: 468fc9ce-2ba0-4b4b-a9f4-269ab4bbc22b
                 Name: HealthBar
@@ -1112,42 +886,229 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             d129caf8b9159ece3dba0d6f34042eb5: ref!! ae160835-906d-4166-96d9-4975dc82196a
-        -   Entity:
-                Id: 49f47059-ff6a-45f8-afa8-b9b9266c448a
-                Name: sprite
+        -   Folder: Units/House
+            Entity:
+                Id: 48502b9d-5020-4954-b5bf-d5a16e3a8602
+                Name: House
                 Components:
-                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
-                        Id: 034bbb06-357f-4aa1-a27b-eb622f6aa21f
-                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
-                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
-                        Children: {}
-                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
-                        Id: 12815294-2450-43ba-8079-31deb3ec882b
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 74960a46-f3ff-4460-b3fe-1ad103744f25:Resources/Units/RedUnit
-                            CurrentFrame: 2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
-                        Sampler: PointClamp
+                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
+                        Id: 6ab05a1f-a6cd-44dd-a85e-17969c585b4a
+                        Position: {X: -11.030331, Y: 0.0, Z: -7.407154}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 1.0, Z: 2.0}
+                        Children:
+                            df9127fe7cc11d35907b99d820d3bfaa: ref!! 9eed2e7b-6f72-4998-b7d2-21e90afb262f
+                            8239c71b88bf1c94de3e375d56834829: ref!! 4ee56c49-e157-4dd5-9838-f61fc94c632b
+                            8be440fef4d0e42923d6200bd4e9ffac: ref!! bd232f94-e428-487f-8b27-a19acb790ee3
+                    1c1d15ca993b3804362cff39cee41b81: !ModelComponent
+                        Id: edfab252-557a-4504-9095-2a49fa84811b
+                        Enabled: false
+                        Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
+                        Materials:
+                            53caea21e6bdf2ccc5cb403684103d01~0: 053bbe99-e66c-4d5a-985a-86b6d74fa676:Materials/BodyWhite
+                    10fd9229bc3fe3c668450c091f214df5: !CharacterComponent
+                        Id: adfafff5-ad96-4787-84d9-a4384c03e5f8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 0.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            13ea863b2aa4d67339a94139276dbdcd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    83f7d9b35272036c8f09cbc45448a726: !IronNations.Battle.Core.UnitController,IronNations.Game
+                        Id: 9d861879-7397-4e9f-9543-60747bdce285
+                        idUnit: 0
+                        target: null
+                        isAttacking: false
+                    449c629831684b35109d35fa04dcafc3: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                        Id: 9c3f0532-43cd-414c-ac3a-c247f27f27ef
+                        unitType: Building
+                        isEnemy: true
+                        health: 800.0
+                        damage: 17.0
+                        attackRange: 7.0
+                        movementSpeed: 0.0
+                        attackRate: 3.45
+                        isEliteUnit: false
+                        searchEnemyRate: 10.0
+                        attackSound: bbc2bc1f-a882-4555-8a31-486adaf7e48b:Resources/SFX/musketsshooting
+                        attackEffect: ref!! 647bfd4f-b98c-4a9b-a6a0-830b62dd6469
+                        projectile: null
+                        spriteUnit: null
+                        buildingSprite: ref!! be4ac8d4-b2d3-47d1-9119-5313f9ab1630
+                    b893ef570b335bc795132cba4bfb17ec: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        Id: 3ec51e47-c0a3-41dc-ad50-08b4512f8d11
+                        volume: 0.25
         -   Entity:
-                Id: 54666ee6-b0d7-4111-b898-e88d9cc95f39
-                Name: sprite
+                Id: 50bd359c-f930-4457-a830-d6d5c1d51fcc
+                Name: Smoke
                 Components:
-                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
-                        Id: 296ce8e3-31be-4cba-890d-f93cf4cde9c5
-                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
-                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                    df4667ca4899b14aa8233099b697ba41: !TransformComponent
+                        Id: 5aad897c-f02f-4bf0-9c12-08317f0f424b
+                        Position*: {X: -0.012596205, Y: 0.0, Z: -0.48729226}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale*: {X: 0.05, Y: 1.0, Z: 1.0}
                         Children: {}
-                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
-                        Id: eeaa35d9-5050-4d05-9b90-1e9360f6386e
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 74960a46-f3ff-4460-b3fe-1ad103744f25:Resources/Units/RedUnit
-                            CurrentFrame: 7
+                    bf1fe4b13873014684062641dc83069a: !ParticleSystemComponent
+                        Id: baba1488-5562-4c96-8912-fab44bab1456
+                        Control:
+                            ResetSeconds: 2.0
+                            Control: Play
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
-                        Sampler: PointClamp
+                        Speed: 1.0
+                        ParticleSystem:
+                            Settings: {}
+                            BoundingShape: !BoundingSpheretatic
+                                Radius: 3.0
+                            Emitters:
+                                b82fdaf2ef02c644ab0462ec43c7ec6d:
+                                    ParticleLifetime: {X: 0.5, Y: 1.0}
+                                    ShapeBuilder: !ShapeBuilderBillboard
+                                        SamplerPosition: null
+                                        SamplerSize: null
+                                        SamplerRotation: null
+                                    Material: !ParticleMaterialComputeColor
+                                        ZOffset: 0.25
+                                        ComputeColor: !ComputeTextureColor
+                                            Texture: 14ae3049-c054-4591-bf06-1f624097dfea:smoke8x8
+                                            FallbackValue:
+                                                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                            Scale: {X: 1.0, Y: 1.0}
+                                            Offset: {X: 0.0, Y: 0.0}
+                                            Swizzle: null
+                                        UVBuilder: !UVBuilderFlipbook
+                                            XDivisions: 8
+                                            YDivisions: 8
+                                            StartingFrame: 0
+                                            AnimationSpeed: 64
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        2a7fbdd91d5a594eae7f7e5a38642886: !SpawnerBurst
+                                            LoopCondition: OneShot
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 100
+                                    Initializers:
+                                        46b7991efe9dc6428410e088ac99aa2d: !InitialVelocitySeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            VelocityMin: {X: -1.0, Y: 0.0, Z: -1.0}
+                                            VelocityMax: {X: 1.0, Y: 0.0, Z: 1.0}
+                                        132b8f715578354f89ec7b0b74a7e209: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 1
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 0.5, Y: 1.0}
+                                        ef1353cc50497449804cd73287f17fde: !InitialPositionSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            PositionMin: {X: -0.1, Y: 0.3, Z: -0.1}
+                                            PositionMax: {X: 0.1, Y: 0.2, Z: 0.1}
+                                            Interpolate: false
+                                        6959a006657d6746bc17236b808abb8b: !InitialRotationSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                            AngularRotation: {X: 0.0, Y: 360.0}
+                                    Updaters:
+                                        75b283bf73a71445a9cb4250a5117a81: !UpdaterForceField
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: true
+                                            FieldShape: !FieldShapeCylinder
+                                                HalfHeight: 1.0
+                                                Radius: 1.0
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: true
+                                            DisplayParticleScaleUniform: false
+                                            FieldFalloff:
+                                                StrengthInside: 1.0
+                                                FalloffStart: 0.1
+                                                StrengthOutside: 0.0
+                                                FalloffEnd: 0.9
+                                            EnergyConservation: 0.5
+                                            ForceDirected: 0.0
+                                            ForceVortex: 0.0
+                                            ForceRepulsive: 10.0
+                                            ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
+                                        31d34beac45bd741808eb660e1b16657: !UpdaterForceField
+                                            DebugDraw: true
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: true
+                                            FieldShape: !FieldShapeCylinder
+                                                HalfHeight: 1.0
+                                                Radius: 4.0
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: true
+                                            DisplayParticleScaleUniform: false
+                                            FieldFalloff:
+                                                StrengthInside: 0.0
+                                                FalloffStart: 0.1
+                                                StrengthOutside: 1.0
+                                                FalloffEnd: 0.5
+                                            EnergyConservation: 1.0
+                                            ForceDirected: 0.0
+                                            ForceVortex: 0.0
+                                            ForceRepulsive: -20.0
+                                            ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 5aad26a9-4b7a-4b9d-af16-6b5ee64ad58c
                 Name: Directional light
@@ -1169,66 +1130,167 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 ComputeTransmittance: false
                                 BiasParameters: {}
-        -   Folder: Units
-            Entity:
-                Id: 5f7d4121-288f-4455-b634-3b44b469b387
-                Name: Cavalry
+        -   Entity:
+                Id: 6a3885f2-41f6-4bf6-8dae-b4888a627039
+                Name: Smoke
                 Components:
-                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
-                        Id: 0a4393eb-10f1-4596-9bdf-b6398dc13982
-                        Position: {X: 4.633291, Y: 0.0, Z: -4.734518}
-                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            df9127fe7cc11d35907b99d820d3bfaa: ref!! a7322c33-9f5e-4b7c-bdbb-da6a155e7cf1
-                            8239c71b88bf1c94de3e375d56834829: ref!! a1364cc9-6133-4e52-8fd5-bd4a342b6abe
-                            6fee717798a9a3bccf31acc4de479c93: ref!! 1b7f7f8e-b5fb-4cd2-8d2f-df1d0726d2ab
-                    1c1d15ca993b3804362cff39cee41b81: !ModelComponent
-                        Id: e727fc32-7cd7-463e-9a92-d6aa322ff595
-                        Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
-                        Materials:
-                            53caea21e6bdf2ccc5cb403684103d01~0: 053bbe99-e66c-4d5a-985a-86b6d74fa676:Materials/BodyWhite
-                    10fd9229bc3fe3c668450c091f214df5: !CharacterComponent
-                        Id: be11f829-c2e5-49c0-8dfb-0d77c0204410
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 0.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            13ea863b2aa4d67339a94139276dbdcd: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    270417c57b139ccbc1eb2af266fbd83e: !IronNations.Battle.Core.UnitController,IronNations.Game
-                        Id: 04b2254e-d879-4737-97b8-fc5539ac1efc
-                        idUnit: 0
-                        target: null
-                        isAttacking: false
-                    279ece060491d4031a8b936283f0640f: !IronNations.Battle.Core.UnitStats,IronNations.Game
-                        Id: 5f5af9b2-04fd-45b7-9e82-8adb9ef37180
-                        unitType: Cavalry
-                        isEnemy: true
-                        health: 600.0
-                        damage: 7.0
-                        attackRange: 1.25
-                        movementSpeed: 15.0
-                        attackRate: 1.8
-                        isEliteUnit: false
-                        searchEnemyRate: 10.0
-                        attackSound: 6c885ba3-ba4c-4ea2-9d46-e923ed44aba2:Resources/SFX/sword-arm-2a
-                        attackEffect: ref!! 0fbecdd5-b6d6-40b5-96a5-213a659ad675
-                        projectile: null
-                        spriteUnit: null
-                    b45c100ece9a891330df176083fb7294: !IronNations.Battle.Core.AudioManager,IronNations.Game
-                        Id: 661b5bfd-e16e-4ee8-bac9-6338b7e7d924
-                        volume: 0.25
+                    df4667ca4899b14aa8233099b697ba41: !TransformComponent
+                        Id: 7d76688a-ed46-4b06-9643-3d3d7e6f3978
+                        Position*: {X: -0.012596205, Y: 0.0, Z: -0.48729226}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale*: {X: 0.05, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    bf1fe4b13873014684062641dc83069a: !ParticleSystemComponent
+                        Id: 63917ec6-b29e-47b6-b36e-86cc6c102247
+                        Control:
+                            ResetSeconds: 2.0
+                            Control: Play
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Speed: 1.0
+                        ParticleSystem:
+                            Settings: {}
+                            BoundingShape: !BoundingSpheretatic
+                                Radius: 3.0
+                            Emitters:
+                                b82fdaf2ef02c644ab0462ec43c7ec6d:
+                                    ParticleLifetime: {X: 0.5, Y: 1.0}
+                                    ShapeBuilder: !ShapeBuilderBillboard
+                                        SamplerPosition: null
+                                        SamplerSize: null
+                                        SamplerRotation: null
+                                    Material: !ParticleMaterialComputeColor
+                                        ZOffset: 0.25
+                                        ComputeColor: !ComputeTextureColor
+                                            Texture: 14ae3049-c054-4591-bf06-1f624097dfea:smoke8x8
+                                            FallbackValue:
+                                                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                            Scale: {X: 1.0, Y: 1.0}
+                                            Offset: {X: 0.0, Y: 0.0}
+                                            Swizzle: null
+                                        UVBuilder: !UVBuilderFlipbook
+                                            XDivisions: 8
+                                            YDivisions: 8
+                                            StartingFrame: 0
+                                            AnimationSpeed: 64
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        2a7fbdd91d5a594eae7f7e5a38642886: !SpawnerBurst
+                                            LoopCondition: OneShot
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 100
+                                    Initializers:
+                                        46b7991efe9dc6428410e088ac99aa2d: !InitialVelocitySeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            VelocityMin: {X: -1.0, Y: 0.0, Z: -1.0}
+                                            VelocityMax: {X: 1.0, Y: 0.0, Z: 1.0}
+                                        132b8f715578354f89ec7b0b74a7e209: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 1
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 0.5, Y: 1.0}
+                                        ef1353cc50497449804cd73287f17fde: !InitialPositionSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            PositionMin: {X: -0.1, Y: 0.3, Z: -0.1}
+                                            PositionMax: {X: 0.1, Y: 0.2, Z: 0.1}
+                                            Interpolate: false
+                                        6959a006657d6746bc17236b808abb8b: !InitialRotationSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                            AngularRotation: {X: 0.0, Y: 360.0}
+                                    Updaters:
+                                        75b283bf73a71445a9cb4250a5117a81: !UpdaterForceField
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: true
+                                            FieldShape: !FieldShapeCylinder
+                                                HalfHeight: 1.0
+                                                Radius: 1.0
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: true
+                                            DisplayParticleScaleUniform: false
+                                            FieldFalloff:
+                                                StrengthInside: 1.0
+                                                FalloffStart: 0.1
+                                                StrengthOutside: 0.0
+                                                FalloffEnd: 0.9
+                                            EnergyConservation: 0.5
+                                            ForceDirected: 0.0
+                                            ForceVortex: 0.0
+                                            ForceRepulsive: 10.0
+                                            ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
+                                        31d34beac45bd741808eb660e1b16657: !UpdaterForceField
+                                            DebugDraw: true
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: true
+                                            FieldShape: !FieldShapeCylinder
+                                                HalfHeight: 1.0
+                                                Radius: 4.0
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: true
+                                            DisplayParticleScaleUniform: false
+                                            FieldFalloff:
+                                                StrengthInside: 0.0
+                                                FalloffStart: 0.1
+                                                StrengthOutside: 1.0
+                                                FalloffEnd: 0.5
+                                            EnergyConservation: 1.0
+                                            ForceDirected: 0.0
+                                            ForceVortex: 0.0
+                                            ForceRepulsive: -20.0
+                                            ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Folder: Units
             Entity:
                 Id: 6a7e5ac6-6d60-4bab-b0db-27b27ee5cfb1
@@ -1236,7 +1298,7 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 8331cb1a-bb37-456b-bff7-7fd4b5b9a8d5
-                        Position: {X: -0.05170409, Y: 0.0, Z: 5.938891}
+                        Position: {X: -0.05170409, Y: 0.0, Z: 1.0513229}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1267,12 +1329,12 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    848dc58d601eee4ca8c62445bad148c7: !IronNations.Battle.Core.UnitController,IronNations.Game
+                    efcad318a4caa8b1d7d7467b50e315ec: !IronNations.Battle.Core.UnitController,IronNations.Game
                         Id: 4bae4c17-f80b-4e25-8c7b-f38fc531f897
                         idUnit: 0
                         target: null
                         isAttacking: false
-                    83e2a5457a801f353f8bceaabdc852e8: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                    ee8b78ce663ee1c4c7a68e267c4dd752: !IronNations.Battle.Core.UnitStats,IronNations.Game
                         Id: caef699a-2474-45c3-8998-e129208f85c0
                         unitType: Artillery
                         isEnemy: false
@@ -1287,170 +1349,10 @@ Hierarchy:
                         attackEffect: ref!! c46ae0f7-c89a-4a70-b694-a28b1a842ae3
                         projectile: null
                         spriteUnit: null
-                    ff09b7c75068a60000864e0d4d77870f: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        buildingSprite: null
+                    cb3456d15ad9bd76759635c0b6e449cc: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: ccf12983-302d-40d2-bc6b-30c9e367f722
                         volume: 0.25
-        -   Entity:
-                Id: 706df99e-ab82-49c5-85a2-41cfc4b4dfcd
-                Name: Smoke
-                Components:
-                    df4667ca4899b14aa8233099b697ba41: !TransformComponent
-                        Id: a1364cc9-6133-4e52-8fd5-bd4a342b6abe
-                        Position*: {X: 0.0, Y: 0.0, Z: -0.4090268}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale*: {X: 0.2578019, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    bf1fe4b13873014684062641dc83069a: !ParticleSystemComponent
-                        Id: 0fbecdd5-b6d6-40b5-96a5-213a659ad675
-                        Control:
-                            ResetSeconds: 2.0
-                            Control: Play
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Speed: 1.0
-                        ParticleSystem:
-                            Settings: {}
-                            BoundingShape: !BoundingSpheretatic
-                                Radius: 3.0
-                            Emitters:
-                                b82fdaf2ef02c644ab0462ec43c7ec6d:
-                                    ParticleLifetime: {X: 0.5, Y: 1.0}
-                                    ShapeBuilder: !ShapeBuilderBillboard
-                                        SamplerPosition: null
-                                        SamplerSize: null
-                                        SamplerRotation: null
-                                    Material: !ParticleMaterialComputeColor
-                                        ZOffset: 0.25
-                                        ComputeColor: !ComputeTextureColor
-                                            Texture: 14ae3049-c054-4591-bf06-1f624097dfea:smoke8x8
-                                            FallbackValue:
-                                                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                                            Scale: {X: 1.0, Y: 1.0}
-                                            Offset: {X: 0.0, Y: 0.0}
-                                            Swizzle: null
-                                        UVBuilder: !UVBuilderFlipbook
-                                            XDivisions: 8
-                                            YDivisions: 8
-                                            StartingFrame: 0
-                                            AnimationSpeed: 64
-                                        ForceTexCoords: false
-                                    Spawners:
-                                        2a7fbdd91d5a594eae7f7e5a38642886: !SpawnerBurst
-                                            LoopCondition: OneShot
-                                            Delay: {X: 0.0, Y: 0.0}
-                                            Duration: {X: 1.0, Y: 1.0}
-                                            SpawnCount: 100
-                                    Initializers:
-                                        46b7991efe9dc6428410e088ac99aa2d: !InitialVelocitySeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: true
-                                            VelocityMin: {X: -1.0, Y: 0.0, Z: -1.0}
-                                            VelocityMax: {X: 1.0, Y: 0.0, Z: 1.0}
-                                        132b8f715578354f89ec7b0b74a7e209: !InitialSizeSeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 1
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: false
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: true
-                                            RandomSize: {X: 0.5, Y: 1.0}
-                                        ef1353cc50497449804cd73287f17fde: !InitialPositionSeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: true
-                                            PositionMin: {X: -0.1, Y: 0.3, Z: -0.1}
-                                            PositionMax: {X: 0.1, Y: 0.2, Z: 0.1}
-                                            Interpolate: false
-                                        6959a006657d6746bc17236b808abb8b: !InitialRotationSeed
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            SeedOffset: 0
-                                            DisplayParticlePosition: false
-                                            DisplayParticleRotation: false
-                                            DisplayParticleScale: false
-                                            DisplayParticleScaleUniform: false
-                                            AngularRotation: {X: 0.0, Y: 360.0}
-                                    Updaters:
-                                        75b283bf73a71445a9cb4250a5117a81: !UpdaterForceField
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            DisplayParticlePosition: true
-                                            FieldShape: !FieldShapeCylinder
-                                                HalfHeight: 1.0
-                                                Radius: 1.0
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: true
-                                            DisplayParticleScaleUniform: false
-                                            FieldFalloff:
-                                                StrengthInside: 1.0
-                                                FalloffStart: 0.1
-                                                StrengthOutside: 0.0
-                                                FalloffEnd: 0.9
-                                            EnergyConservation: 0.5
-                                            ForceDirected: 0.0
-                                            ForceVortex: 0.0
-                                            ForceRepulsive: 10.0
-                                            ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
-                                        31d34beac45bd741808eb660e1b16657: !UpdaterForceField
-                                            DebugDraw: true
-                                            InheritPosition: true
-                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                                            InheritRotation: true
-                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                                            InheritScale: true
-                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                                            ScaleUniform: 1.0
-                                            DisplayParticlePosition: true
-                                            FieldShape: !FieldShapeCylinder
-                                                HalfHeight: 1.0
-                                                Radius: 4.0
-                                            DisplayParticleRotation: true
-                                            DisplayParticleScale: true
-                                            DisplayParticleScaleUniform: false
-                                            FieldFalloff:
-                                                StrengthInside: 0.0
-                                                FalloffStart: 0.1
-                                                StrengthOutside: 1.0
-                                                FalloffEnd: 0.5
-                                            EnergyConservation: 1.0
-                                            ForceDirected: 0.0
-                                            ForceVortex: 0.0
-                                            ForceRepulsive: -20.0
-                                            ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 75fe1bf2-0f57-4d04-b88a-645774473c77
                 Name: DestinationMark
@@ -1462,22 +1364,22 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             6d0e02700df013832aa190a4fa263950: ref!! 88d8e455-4be0-4244-9a06-c5b3f9a4dac0
-        -   Entity:
-                Id: 77d1cd32-8633-4ddd-902b-b9b065e6fbb1
-                Name: SpriteSheet_2
+        -   Folder: Units/House
+            Entity:
+                Id: 76ddbac3-61ce-4fbe-8001-938f2abc551b
+                Name: BuildingSprite
                 Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: 2450198a-4959-424a-a437-885172b5a832
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                    eadc3c57ecc8f2895541a21d3166685c: !TransformComponent
+                        Id: be89e1ae-86df-49bd-b91f-d784909ede14
+                        Position: {X: -10.940986, Y: 1.0, Z: -7.561127}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.7, Y: 0.7, Z: 0.7}
                         Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 16656808-601d-4ed5-b9b0-cd9a04676be9
+                    77b686000decebd57dc9298f55658f5d: !SpriteComponent
+                        Id: be4ac8d4-b2d3-47d1-9119-5313f9ab1630
                         SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                            Sheet: 69caf551-8017-410f-8ebf-1ef60b5335e1:Resources/Buildings/SpriteSheet
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
         -   Entity:
                 Id: 78a55307-970a-4649-83c6-3562b142da35
                 Name: Camera
@@ -1497,130 +1399,17 @@ Hierarchy:
                         FarClipPlane: 50.0
                         Slot: 3217b71f-b48d-4321-bab1-7cb4da999c19
         -   Entity:
-                Id: 797fb63e-f3ab-44be-be19-68a13c7b8b0a
-                Name: HealthBar
-                Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: 0b141737-e5ba-493a-9416-08173f17f66c
-                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 3ac76d97-f244-4cb2-970d-da926ce5b969
-        -   Entity:
-                Id: 79b076ee-00fb-4891-b13f-5f41071f3740
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: 7dc36e3c-9911-47a0-8fe1-66232cfad1ae
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 6b3efb5c-93f6-4284-9282-e78e88a55552
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-        -   Entity:
-                Id: 8610a6f8-904b-42c2-ac6b-c9d0cdf9903c
-                Name: sprite
-                Components:
-                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
-                        Id: f29500fd-a0eb-4049-9d8f-2560aa5c83af
-                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
-                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
-                        Children: {}
-                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
-                        Id: 6e13b324-053c-469d-9f78-18fd8f6d20b0
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 51c5318b-1479-45e8-97f6-5b3819ec1910:Resources/Units/SpriteSheet
-                            CurrentFrame: 2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
-                        Sampler: PointClamp
-        -   Entity:
-                Id: 8cb802dd-29e6-4b39-a45a-1495cc7ef6e9
-                Name: HealthBar
-                Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: c47acb17-d365-4e7a-a12e-33d7d48e63b7
-                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! bada4bfd-bf4b-4037-9671-49fb520d2de6
-        -   Entity:
-                Id: 8eb0f820-8b19-4796-8c27-ae6e2b06def3
-                Name: SpriteSheet
-                Components:
-                    2c05922bb3a6967cd7b5df70c86be562: !TransformComponent
-                        Id: 447508d4-8841-4ee8-b2ab-88f4ddb337ff
-                        Position: {X: 0.07372123, Y: 0.1, Z: 0.043947488}
-                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 6.3574295, Y: 6.3574295, Z: 6.3574295}
-                        Children: {}
-                    1fff318db05f4c5d6d6d1590e818aae5: !SpriteComponent
-                        Id: 5004ca47-46e8-40e1-8afa-3f412eb72c0e
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 34b77296-796c-43de-a65f-81db00be5a8f:Resources/General/SpriteSheet
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-            Base:
-                BasePartAsset: fe90105a-f332-44b3-89c6-6acbf0f6dcce:CannonImpact
-                BasePartId: 03e9e82c-dce4-4ecd-8389-e0daaca238f7
-                InstanceId: e988b843-9702-4eaf-876a-ffe4d9b06a60
-        -   Entity:
-                Id: 95f683f6-6e5d-47c6-b8d6-5483abcadaf3
-                Name: HealthBar
-                Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: 1b7f7f8e-b5fb-4cd2-8d2f-df1d0726d2ab
-                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! ce4734be-ff9c-43d8-bd08-b8072419fda9
-        -   Entity:
-                Id: a30964da-74c1-4e7f-8235-c7d49f7e64b6
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: 484cc04a-c402-437f-93dc-6b5f7265795c
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 32bb7ddc-9d05-47c5-b93e-7774d430bec1
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-        -   Entity:
-                Id: b8ec6044-f224-4862-93cd-78568bae49e9
-                Name: HealthBar
-                Components:
-                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
-                        Id: 8ed7cc0f-4d27-483e-9d25-5d5c073ee207
-                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 2450198a-4959-424a-a437-885172b5a832
-        -   Entity:
-                Id: bc2a9fb9-412b-4233-9b6b-ca2a1877ecd3
+                Id: 84e0d3d3-05ac-4c05-991f-b00a369d2c53
                 Name: Smoke
                 Components:
                     df4667ca4899b14aa8233099b697ba41: !TransformComponent
-                        Id: 9fd48225-5527-456c-a2b6-04f067ebbbcc
-                        Position*: {X: 0.0, Y: 0.0, Z: -0.4090268}
+                        Id: cd8e5347-10cb-49ab-b46d-aa3d3f900c6b
+                        Position*: {X: -0.012596205, Y: 0.0, Z: -0.48729226}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale*: {X: 0.2578019, Y: 1.0, Z: 1.0}
+                        Scale*: {X: 0.05, Y: 1.0, Z: 1.0}
                         Children: {}
                     bf1fe4b13873014684062641dc83069a: !ParticleSystemComponent
-                        Id: fd19b614-c7fc-4d2c-ba79-2babf85bb793
+                        Id: aa8e4917-1d91-4676-8508-55b54af221ea
                         Control:
                             ResetSeconds: 2.0
                             Control: Play
@@ -1770,27 +1559,151 @@ Hierarchy:
                                             ForceVortex: 0.0
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
-        -   Folder: Units
-            Entity:
-                Id: c00439f2-a216-42c5-a666-86b91b0647a1
-                Name: Infantry
+        -   Entity:
+                Id: 8610a6f8-904b-42c2-ac6b-c9d0cdf9903c
+                Name: sprite
                 Components:
-                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
-                        Id: 48253cc3-75d1-4814-af31-47921acb306f
-                        Position: {X: -4.8726883, Y: 0.0, Z: -4.7356687}
-                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
+                        Id: f29500fd-a0eb-4049-9d8f-2560aa5c83af
+                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
+                        Id: 6e13b324-053c-469d-9f78-18fd8f6d20b0
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 51c5318b-1479-45e8-97f6-5b3819ec1910:Resources/Units/SpriteSheet
+                            CurrentFrame: 2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
+                        Sampler: PointClamp
+        -   Entity:
+                Id: 895157ab-27d4-4771-954e-396f4affab75
+                Name: sprite
+                Components:
+                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
+                        Id: d821dc19-add7-498d-8c68-d101fae92ad4
+                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
+                        Id: 63023469-d7d1-4f08-83cc-6c8840f40ac5
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 51c5318b-1479-45e8-97f6-5b3819ec1910:Resources/Units/SpriteSheet
+                            CurrentFrame: 7
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
+                        Sampler: PointClamp
+        -   Entity:
+                Id: 8997f35d-3542-48be-b87d-c071f6d0db2e
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: f2adf334-8557-430d-b95a-4ed5d4903e9d
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
-                            df9127fe7cc11d35907b99d820d3bfaa: ref!! cbfb47d3-aa6c-4589-8a6f-9e94ad0dca9b
-                            8239c71b88bf1c94de3e375d56834829: ref!! 9fd48225-5527-456c-a2b6-04f067ebbbcc
-                            998e88ea2c794eb7e5c0d552d0fd809e: ref!! 0b141737-e5ba-493a-9416-08173f17f66c
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 18a83c50-d079-4c01-ad33-559eaaa775fd
+        -   Entity:
+                Id: 89f9ac09-9e1f-443a-b8c2-fde2d708e3dc
+                Name: sprite
+                Components:
+                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
+                        Id: 9eed2e7b-6f72-4998-b7d2-21e90afb262f
+                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
+                        Id: b2edb3ae-237e-481d-b66e-fd1294db78ed
+                        Enabled: false
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 51c5318b-1479-45e8-97f6-5b3819ec1910:Resources/Units/SpriteSheet
+                            CurrentFrame: 2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
+                        Sampler: PointClamp
+        -   Entity:
+                Id: 8c8efae3-375b-4f8f-911b-b5ad80d08061
+                Name: SpriteSheet_2
+                Components:
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: 757ab085-7446-4cb8-ae53-14700c6e9327
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 1601802c-35ad-4b0c-a99a-f17bfa2cb74f
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
+        -   Entity:
+                Id: 8cb802dd-29e6-4b39-a45a-1495cc7ef6e9
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: c47acb17-d365-4e7a-a12e-33d7d48e63b7
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! bada4bfd-bf4b-4037-9671-49fb520d2de6
+        -   Entity:
+                Id: 8dc6d44a-59d9-40a5-9d31-886a8841a722
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: 9ff02a64-5d30-4365-a7f8-1a15c72b61b9
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 757ab085-7446-4cb8-ae53-14700c6e9327
+        -   Entity:
+                Id: 8eb0f820-8b19-4796-8c27-ae6e2b06def3
+                Name: SpriteSheet
+                Components:
+                    2c05922bb3a6967cd7b5df70c86be562: !TransformComponent
+                        Id: 447508d4-8841-4ee8-b2ab-88f4ddb337ff
+                        Position: {X: 0.07372123, Y: 0.1, Z: 0.043947488}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 6.3574295, Y: 6.3574295, Z: 6.3574295}
+                        Children: {}
+                    1fff318db05f4c5d6d6d1590e818aae5: !SpriteComponent
+                        Id: 5004ca47-46e8-40e1-8afa-3f412eb72c0e
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 34b77296-796c-43de-a65f-81db00be5a8f:Resources/General/SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: fe90105a-f332-44b3-89c6-6acbf0f6dcce:CannonImpact
+                BasePartId: 03e9e82c-dce4-4ecd-8389-e0daaca238f7
+                InstanceId: e988b843-9702-4eaf-876a-ffe4d9b06a60
+        -   Folder: Units
+            Entity:
+                Id: 909303a9-4d75-448b-99fa-db4f160c5b5d
+                Name: Artillery
+                Components:
+                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
+                        Id: 50930bbe-9297-4128-adf5-a8e6b7256143
+                        Position: {X: -10.333702, Y: 0.0, Z: 1.0513229}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            df9127fe7cc11d35907b99d820d3bfaa: ref!! f1086dcb-aa97-4397-b0e4-bd65134beae3
+                            8239c71b88bf1c94de3e375d56834829: ref!! 7d76688a-ed46-4b06-9643-3d3d7e6f3978
+                            bfb7b1206eb5e94c60e060d8790835b2: ref!! 9ff02a64-5d30-4365-a7f8-1a15c72b61b9
                     1c1d15ca993b3804362cff39cee41b81: !ModelComponent
-                        Id: 1a8a357d-1655-4c2a-b799-517c922e528f
+                        Id: 8496bfc5-3e5b-489d-888a-168a16e29bfd
+                        Enabled: false
                         Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
                         Materials:
                             53caea21e6bdf2ccc5cb403684103d01~0: 053bbe99-e66c-4d5a-985a-86b6d74fa676:Materials/BodyWhite
                     10fd9229bc3fe3c668450c091f214df5: !CharacterComponent
-                        Id: 9bcbf9a1-beda-4a83-a0d2-67c4eea65d6e
+                        Id: 48e50652-a538-4ac8-9202-a8d771f8f839
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1807,41 +1720,58 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    e7ae1fb9fc7b02dfc3356a0d2663c43a: !IronNations.Battle.Core.UnitController,IronNations.Game
-                        Id: f5da3a32-9768-4ee9-b38a-f23213c2688a
+                    0f8adee02a018f86278551f2fc477a63: !IronNations.Battle.Core.UnitController,IronNations.Game
+                        Id: 0013a2b1-4484-42df-8962-10370895e3ac
                         idUnit: 0
                         target: null
                         isAttacking: false
-                    f0d418000fef1248118eb21a7ccd9779: !IronNations.Battle.Core.UnitStats,IronNations.Game
-                        Id: f7c6fea3-367c-4477-b12f-a08c6a4f6604
-                        unitType: Infantery
-                        isEnemy: true
-                        health: 450.0
-                        damage: 9.0
-                        attackRange: 1.25
-                        movementSpeed: 10.0
-                        attackRate: 3.0
+                    6eab9f6b9e08f8ab1d47957831032f1d: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                        Id: dd50ea1f-79b8-4562-9512-31a159e10ce7
+                        unitType: Artillery
+                        isEnemy: false
+                        health: 100.0
+                        damage: 40.0
+                        attackRange: 14.0
+                        movementSpeed: 5.0
+                        attackRate: 6.5
                         isEliteUnit: false
                         searchEnemyRate: 10.0
-                        attackSound: 6c885ba3-ba4c-4ea2-9d46-e923ed44aba2:Resources/SFX/sword-arm-2a
-                        attackEffect: ref!! fd19b614-c7fc-4d2c-ba79-2babf85bb793
+                        attackSound: b4a5a2b0-50ba-4c75-8fd2-47ec6250236a:Resources/SFX/cannon_fire
+                        attackEffect: ref!! 63917ec6-b29e-47b6-b36e-86cc6c102247
                         projectile: null
                         spriteUnit: null
-                    e56c7b753ee4327601094f6aa7bdafff: !IronNations.Battle.Core.AudioManager,IronNations.Game
-                        Id: c3d55edc-85e2-441e-b7c8-da13874da72a
+                        buildingSprite: null
+                    b683d26375f64a8ce14ec80aa38ee7af: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        Id: 152a4a2b-4521-4236-a66b-8f8971bc5122
                         volume: 0.25
         -   Entity:
-                Id: c2a7e9df-be87-4538-ad65-359c98d81c67
+                Id: 980babc1-b629-4dbc-bd28-19f23f6dfe70
                 Name: SpriteSheet_2
                 Components:
                     a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: 3ac76d97-f244-4cb2-970d-da926ce5b969
+                        Id: 89b50fa5-688a-4990-8101-6c1bf101c647
                         Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
                         Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
                         Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
                         Children: {}
                     c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: a4af9cdf-13d8-49f9-93b6-297b777a4ea0
+                        Id: e13beb71-768f-4afb-8f40-1f3b1f74fc4b
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
+        -   Entity:
+                Id: a30964da-74c1-4e7f-8235-c7d49f7e64b6
+                Name: SpriteSheet_2
+                Components:
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: 484cc04a-c402-437f-93dc-6b5f7265795c
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 32bb7ddc-9d05-47c5-b93e-7774d430bec1
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
@@ -2026,22 +1956,6 @@ Hierarchy:
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
-                Id: d9b6b2e2-f58a-4ba1-8f5a-6c18d40a20f4
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: ce4734be-ff9c-43d8-bd08-b8072419fda9
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 94cd671b-dce8-42ff-9c52-6852f2b0d346
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-        -   Entity:
                 Id: dc384e1d-7daa-4fb8-a060-0e5ca6ede185
                 Name: SpriteTerrain
                 Components:
@@ -2103,6 +2017,68 @@ Hierarchy:
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         IsAlphaCutoff: true
                         Sampler: PointClamp
+        -   Folder: Units
+            Entity:
+                Id: e0d965f8-e0d3-473a-b16f-29667d62527e
+                Name: Artillery
+                Components:
+                    eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
+                        Id: 2e7d12bc-eaee-49fb-b133-5ee810947a92
+                        Position: {X: -6.4960556, Y: 0.0, Z: 1.0513229}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            df9127fe7cc11d35907b99d820d3bfaa: ref!! d821dc19-add7-498d-8c68-d101fae92ad4
+                            8239c71b88bf1c94de3e375d56834829: ref!! 5aad897c-f02f-4bf0-9c12-08317f0f424b
+                            bfb7b1206eb5e94c60e060d8790835b2: ref!! f2adf334-8557-430d-b95a-4ed5d4903e9d
+                    1c1d15ca993b3804362cff39cee41b81: !ModelComponent
+                        Id: fe486290-87db-4a15-b781-a70594678717
+                        Enabled: false
+                        Model: e50f4be3-4633-4d05-ba64-f3ec6101f2c7:Models/Cube
+                        Materials:
+                            53caea21e6bdf2ccc5cb403684103d01~0: 053bbe99-e66c-4d5a-985a-86b6d74fa676:Materials/BodyWhite
+                    10fd9229bc3fe3c668450c091f214df5: !CharacterComponent
+                        Id: 32b7b3ca-4c8a-4a82-b11e-6a1dbd6e52fc
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 0.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            13ea863b2aa4d67339a94139276dbdcd: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    55e6ed63e8e1a1face44db56a130d13b: !IronNations.Battle.Core.UnitController,IronNations.Game
+                        Id: b898055b-459e-48a5-9a51-95b1f6498f44
+                        idUnit: 0
+                        target: null
+                        isAttacking: false
+                    9d97986eea7400c70821f3feffc8a80c: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                        Id: 3439f997-2c63-406c-9268-800badaad8f7
+                        unitType: Artillery
+                        isEnemy: false
+                        health: 100.0
+                        damage: 40.0
+                        attackRange: 14.0
+                        movementSpeed: 5.0
+                        attackRate: 6.5
+                        isEliteUnit: false
+                        searchEnemyRate: 10.0
+                        attackSound: b4a5a2b0-50ba-4c75-8fd2-47ec6250236a:Resources/SFX/cannon_fire
+                        attackEffect: ref!! baba1488-5562-4c96-8912-fab44bab1456
+                        projectile: null
+                        spriteUnit: null
+                        buildingSprite: null
+                    27db24d67c0aab405a5ca5fb77037d82: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        Id: 75c486af-7040-4d7d-96eb-eaccec79e6f6
+                        volume: 0.25
         -   Entity:
                 Id: f0cfb7e2-f5a6-4f35-b732-44cc2543cf74
                 Name: sprite
@@ -2122,33 +2098,17 @@ Hierarchy:
                         IsAlphaCutoff: true
                         Sampler: PointClamp
         -   Entity:
-                Id: f3599426-9b0b-4810-b047-1916e1894377
-                Name: SpriteSheet_2
-                Components:
-                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
-                        Id: bada4bfd-bf4b-4037-9671-49fb520d2de6
-                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
-                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
-                        Children: {}
-                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
-                        Id: 260aed74-8afc-4c09-9c87-bcc26e766d8e
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-        -   Entity:
-                Id: f6578fe8-6df9-4e07-a67d-7e643dca02cd
+                Id: f1a17bfb-b599-43cf-b2de-6ccebced31df
                 Name: Smoke
                 Components:
                     df4667ca4899b14aa8233099b697ba41: !TransformComponent
-                        Id: 892154a0-2123-4868-8819-6f0d00d949af
+                        Id: 4ee56c49-e157-4dd5-9838-f61fc94c632b
                         Position*: {X: 0.0, Y: 0.0, Z: -0.4090268}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale*: {X: 0.2578019, Y: 1.0, Z: 1.0}
                         Children: {}
                     bf1fe4b13873014684062641dc83069a: !ParticleSystemComponent
-                        Id: 7040704b-f593-4585-a027-e1c9e1d7d571
+                        Id: 647bfd4f-b98c-4a9b-a6a0-830b62dd6469
                         Control:
                             ResetSeconds: 2.0
                             Control: Play
@@ -2298,6 +2258,58 @@ Hierarchy:
                                             ForceVortex: 0.0
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: f3599426-9b0b-4810-b047-1916e1894377
+                Name: SpriteSheet_2
+                Components:
+                    a758122f2a14e7ed45e55195f12d8927: !TransformComponent
+                        Id: bada4bfd-bf4b-4037-9671-49fb520d2de6
+                        Position: {X: 8.8242636E-08, Y: 1.1290635E-07, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 3.9888027, Y: 0.62270373, Z: 4.960492}
+                        Children: {}
+                    c68e0fdb47afc9423ef4e33c70cd1c10: !SpriteComponent
+                        Id: 260aed74-8afc-4c09-9c87-bcc26e766d8e
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4106d030-85fa-423d-8ebc-d899b813970a:Resources/General/SpriteSheet_2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
+        -   Entity:
+                Id: f9fc9687-1df7-4de2-94d6-23adb3be3381
+                Name: sprite
+                Components:
+                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
+                        Id: f1086dcb-aa97-4397-b0e4-bd65134beae3
+                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
+                        Id: c653e006-7f89-42c3-a2f6-a08bffc3f3b9
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 51c5318b-1479-45e8-97f6-5b3819ec1910:Resources/Units/SpriteSheet
+                            CurrentFrame: 7
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
+                        Sampler: PointClamp
+        -   Entity:
+                Id: fb952bfb-9134-49c9-aa7b-697b807bb449
+                Name: sprite
+                Components:
+                    e2802cb6a0a2b19575c7a9548a466cc9: !TransformComponent
+                        Id: 4233742c-55ec-4c3c-8ba9-1e01030961f0
+                        Position: {X: 0.0, Y: 0.53, Z: 0.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.8, Y: 0.8, Z: 0.8}
+                        Children: {}
+                    08fafb3da4badedfea542ce70fbb3179: !SpriteComponent
+                        Id: 3d32e089-813d-499c-8fb2-1078b626a766
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 51c5318b-1479-45e8-97f6-5b3819ec1910:Resources/Units/SpriteSheet
+                            CurrentFrame: 7
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
+                        Sampler: PointClamp
         -   Folder: Units
             Entity:
                 Id: fbb93530-d469-494b-861e-24cb02aed3da
@@ -2305,7 +2317,7 @@ Hierarchy:
                 Components:
                     eda83e4394daaaeff6d5fbe39cde267d: !TransformComponent
                         Id: 8331fed9-a045-4771-bcf0-72476c428c59
-                        Position: {X: 0.05831178, Y: 0.0, Z: 3.95706}
+                        Position: {X: 0.05831178, Y: 0.0, Z: -6.0462303}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -2335,12 +2347,12 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    b15cf397c3b10dda4aada8d2b353bbf5: !IronNations.Battle.Core.UnitController,IronNations.Game
+                    9ab3c88b7e783696a1ec55e9ffb044c8: !IronNations.Battle.Core.UnitController,IronNations.Game
                         Id: a010473b-6c58-4ab7-8de6-68e3afeb4027
                         idUnit: 0
                         target: null
                         isAttacking: false
-                    b782a0854044dc4eeb2812e9189a7f04: !IronNations.Battle.Core.UnitStats,IronNations.Game
+                    fd482588b91695c40222a76c6f701f45: !IronNations.Battle.Core.UnitStats,IronNations.Game
                         Id: f7e419a2-c525-40ab-b04b-02e6ad882d2d
                         unitType: Musketeer
                         isEnemy: false
@@ -2355,9 +2367,21 @@ Hierarchy:
                         attackEffect: ref!! 3fc2340f-40a3-416b-8e28-7e4c66f30e95
                         projectile: null
                         spriteUnit: null
-                    b5eb7f1dbde35a6d9215128f534b36a0: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        buildingSprite: null
+                    17a3097ff82f7dc2c922f00027f41403: !IronNations.Battle.Core.AudioManager,IronNations.Game
                         Id: 3508ec82-aa56-4233-be63-4a689d94f5de
                         volume: 0.25
+        -   Entity:
+                Id: fc8b792c-1a19-46fb-ac8d-c08585d50cbc
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: bd232f94-e428-487f-8b27-a19acb790ee3
+                        Position: {X: 0.0, Y: 1.0, Z: 0.9855648}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! fb384d32-3d09-421a-b7ba-af4c659b4c02
         -   Entity:
                 Id: fd655f13-50ff-4226-a69c-3c96de9b804d
                 Name: SpriteSheet_2
@@ -2535,3 +2559,14 @@ Hierarchy:
                                             ForceVortex: 0.0
                                             ForceRepulsive: -20.0
                                             ForceFixed: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: fe7c5549-e26a-4156-84fc-0cd73ecfaa7b
+                Name: HealthBar
+                Components:
+                    e7aaae3ce201057bf190d395c920180a: !TransformComponent
+                        Id: 9a8c3210-a872-4557-a69d-fe7b2cab2b58
+                        Position: {X: 0.0, Y: 1.0, Z: 0.8}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            d129caf8b9159ece3dba0d6f34042eb5: ref!! 89b50fa5-688a-4990-8101-6c1bf101c647
