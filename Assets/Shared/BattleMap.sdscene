@@ -819,6 +819,8 @@ Hierarchy:
                         Player2Units: {}
                         selectionColor: {R: 0, G: 255, B: 197, A: 255}
                         CannonDamage: fe90105a-f332-44b3-89c6-6acbf0f6dcce:CannonImpact
+                        selectSound: e58032f4-155c-4e30-b5b8-0f1337e606b3:Resources/SFX/SelectSound
+                        setDestinationSound: df550964-7215-4967-bb66-25b58aa35f61:Resources/SFX/diggSound
                     712caa8c0a373bc3470af1efc90e664d: !IronNations.Battle.Core.BattleAudioManager,IronNations.Game
                         Id: 2bc905ea-1901-4116-b87a-798534c947fe
                         drumsSound: 4a535d78-51b2-4ebd-be41-e58d30c6ce2c:Resources/SFX/MarchDrum
@@ -832,6 +834,9 @@ Hierarchy:
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
                     2e8b0c3390ba1bb3cad97456df2c3164: !IronNations.Battle.Core.BattleUIManager,IronNations.Game
                         Id: c691caea-6b9c-44f7-a823-02621ab3217d
+                    9ede25a94a368336c32b37e4a1db37e0: !IronNations.Battle.Core.AudioManager,IronNations.Game
+                        Id: b62e79dc-4399-4797-9d17-71ea6e81e084
+                        volume: 1.0
         -   Entity:
                 Id: 32baa59b-75bc-4e27-9b25-65bb67dc1ab1
                 Name: SpriteSheet_2

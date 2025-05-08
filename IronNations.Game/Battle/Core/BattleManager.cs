@@ -8,6 +8,7 @@ using Stride.Input;
 using Stride.Engine;
 using Stride.Physics;
 using Valve.VR;
+using Stride.Audio;
 
 namespace IronNations.Battle.Core
 {
@@ -45,6 +46,9 @@ namespace IronNations.Battle.Core
 
         public Prefab CannonDamage;
 
+        public Sound selectSound, setDestinationSound;
+
+
         public override void Update()
         {
             deltaTime = (float)Game.UpdateTime.Elapsed.TotalSeconds;
@@ -80,6 +84,7 @@ namespace IronNations.Battle.Core
                     deselectPreviousUnit();
                     currentUnitSelected = hitResult.Collider.Entity.Get<UnitController>().idUnit;
                     Player1Units[currentUnitSelected].Entity.Get<UnitStats>().spriteUnit.Color = selectionColor;
+                    Entity.Get<AudioManager>().PlaySound(selectSound);
                 }
             }
             else
@@ -133,6 +138,7 @@ namespace IronNations.Battle.Core
                 Player1Units[currentUnitSelected].target = auxTarget;
                 Player1Units[currentUnitSelected].isAttacking = false;
                 Entity.Get<BattleAudioManager>().PlayDrums();
+                Entity.Get<AudioManager>().PlaySound(setDestinationSound);
             }
         }
 

@@ -1,0 +1,8 @@
+!Sound
+Id: e58032f4-155c-4e30-b5b8-0f1337e606b3
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/SFX/land.wav
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

@@ -1,0 +1,8 @@
+!Sound
+Id: df550964-7215-4967-bb66-25b58aa35f61
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/Resources/SFX/diggSound.ogg
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false
