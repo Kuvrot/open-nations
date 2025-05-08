@@ -7,7 +7,6 @@ using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
 using Stride.Physics;
-using System.Windows.Media.Media3D;
 using Valve.VR;
 
 namespace IronNations.Battle.Core
