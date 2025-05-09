@@ -86,16 +86,7 @@ namespace IronNations.Battle.Core
                 if (isAttacking)
                 {
                     enemyUnitStats = target.Entity.Get<UnitStats>();
-                    //Check if the unit is attacking a building
-                    if (enemyUnitStats.unitType == UnitType.Building && !IsRangeUnit())
-                    {
-                        //If is attacking a building and is not a range unit, then increase the attackRange
-                        auxRange = unitStats.attackRange * 2;
-                    }
-                    else
-                    {
-                        auxRange = unitStats.attackRange;
-                    }
+                    auxRange = unitStats.attackRange;
                 }
                 else
                 {

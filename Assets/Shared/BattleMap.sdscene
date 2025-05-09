@@ -900,7 +900,7 @@ Hierarchy:
                         Id: 6ab05a1f-a6cd-44dd-a85e-17969c585b4a
                         Position: {X: -11.030331, Y: 0.0, Z: -7.407154}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 1.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             df9127fe7cc11d35907b99d820d3bfaa: ref!! 9eed2e7b-6f72-4998-b7d2-21e90afb262f
                             8239c71b88bf1c94de3e375d56834829: ref!! 4ee56c49-e157-4dd5-9838-f61fc94c632b
@@ -1378,7 +1378,7 @@ Hierarchy:
                         Id: be89e1ae-86df-49bd-b91f-d784909ede14
                         Position: {X: -10.940986, Y: 1.0, Z: -7.561127}
                         Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 0.7, Y: 0.7, Z: 0.7}
+                        Scale: {X: 0.35, Y: 0.35, Z: 0.35}
                         Children: {}
                     77b686000decebd57dc9298f55658f5d: !SpriteComponent
                         Id: be4ac8d4-b2d3-47d1-9119-5313f9ab1630
